@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catatan Lengkap — Minna no Nihongo 1 Bab 1</title>
+<style>
+  :root{
+    --bg:#f5f6fa;
+    --card:#ffffff;
+    --ink:#1f2430;
+    --muted:#5b6472;
+    --accent:#c0392b;
+    --accent2:#0f6ab4;
+    --orange:#e67e22;
+    --line:#e4e8f0;
+    --green:#12805c;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.8;
+    font-size:16px;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:22px 18px 90px;}
+
+  /* ===== Header ===== */
+  header.hero{
+    background:linear-gradient(135deg,#c0392b 0%,#e67e22 100%);
+    color:#fff;border-radius:18px;padding:28px 26px;
+    box-shadow:0 12px 30px rgba(192,57,43,.25);
+    position:relative;overflow:hidden;
+  }
+  header.hero::after{
+    content:"1";
+    position:absolute;right:18px;bottom:-30px;
+    font-size:150px;font-weight:900;opacity:.13;line-height:1;
+  }
+  header.hero h1{margin:0 0 6px;font-size:1.65rem;letter-spacing:.02em}
+  header.hero p{margin:0;opacity:.95;font-size:.95rem}
+  .badge{
+    display:inline-block;background:rgba(255,255,255,.22);
+    border:1px solid rgba(255,255,255,.45);
+    padding:2px 12px;border-radius:999px;font-size:.78rem;
+    margin-bottom:12px;letter-spacing:.08em;
+  }
+  .toolbar{margin:16px 0 0;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{
+    background:#fff;color:var(--accent);border:1.5px solid #fff;
+    padding:8px 16px;border-radius:999px;font-size:.85rem;font-weight:700;
+    cursor:pointer;transition:.2s;font-family:inherit;
+  }
+  .btn:hover{background:rgba(255,255,255,.85);transform:translateY(-1px)}
+
+  /* ===== Daftar Isi ===== */
+  nav.toc{
+    background:var(--card);border-radius:16px;padding:18px 22px;margin-top:20px;
+    box-shadow:0 4px 16px rgba(31,36,48,.06);border:1px solid var(--line);
+  }
+  nav.toc h2{margin:0 0 10px;font-size:1rem;color:var(--accent);letter-spacing:.05em}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  nav.toc li{margin:3px 0;font-size:.92rem}
+  nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px dashed #c9d0dd}
+  nav.toc a:hover{color:var(--accent2);border-bottom-color:var(--accent2)}
+  @media(max-width:620px){nav.toc ol{columns:1}}
+
+  /* ===== Section / Card ===== */
+  section{
+    background:var(--card);border-radius:16px;padding:24px 24px 26px;margin-top:22px;
+    box-shadow:0 4px 18px rgba(31,36,48,.06);border:1px solid var(--line);
+  }
+  h2.sec{
+    font-size:1.22rem;margin:0 0 6px;color:var(--accent);
+    display:flex;align-items:center;gap:10px;
+  }
+  h2.sec .num{
+    background:var(--accent);color:#fff;width:30px;height:30px;flex:0 0 30px;
+    border-radius:9px;display:grid;place-items:center;font-size:.9rem;font-weight:800;
+  }
+  h3.sub{
+    font-size:1.02rem;margin:26px 0 8px;color:var(--accent2);
+    border-left:5px solid var(--accent2);padding-left:10px;
+  }
+  h4.mini{font-size:.95rem;margin:18px 0 6px;color:var(--ink)}
+  .lead{color:var(--muted);font-size:.9rem;margin:0 0 14px}
+
+  /* ===== Tabel ===== */
+  .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px;border:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;font-size:.93rem;background:#fff}
+  th{
+    background:#fdf1ec;color:#8c2b1f;text-align:left;font-weight:700;
+    padding:10px 12px;border-bottom:2px solid #f3d8ce;white-space:nowrap;font-size:.85rem;
+  }
+  td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  tbody tr:nth-child(even){background:#fbfcfe}
+  td.jp{font-size:1.02rem;white-space:nowrap}
+  td.art{color:#2b3240}
+  .note{color:var(--muted);font-size:.85rem}
+
+  /* ===== Furigana ===== */
+  ruby{ruby-position:over}
+  rt{font-size:.55em;color:var(--accent);font-weight:700;letter-spacing:.02em;line-height:1.2;font-style:normal}
+  body.no-furi rt{display:none}
+
+  /* ===== Kotak contoh ===== */
+  .ex{
+    background:#fff9f2;border-left:5px solid var(--orange);
+    border-radius:0 10px 10px 0;padding:12px 16px;margin:10px 0;
+  }
+  .ex .jp-line{font-size:1.06rem;line-height:2.1;margin:0}
+  .ex .id-line{margin:2px 0 0;color:var(--muted);font-size:.88rem}
+  .ex .lbl{
+    display:inline-block;background:var(--orange);color:#fff;font-size:.68rem;
+    padding:1px 8px;border-radius:999px;margin-right:6px;vertical-align:2px;font-weight:700;
+  }
+  .ok{color:var(--green);font-weight:700}
+  .ng{color:var(--accent);font-weight:700}
+  .hl{background:linear-gradient(transparent 62%, #ffe08a 62%);font-weight:700}
+
+  /* ===== Kotak info ===== */
+  .tip{
+    background:#eef7ff;border:1px solid #cfe6fb;border-left:5px solid var(--accent2);
+    border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;font-size:.9rem;
+  }
+  .tip b{color:var(--accent2)}
+  .warn{
+    background:#fff2f0;border:1px solid #f7d5cf;border-left:5px solid var(--accent);
+    border-radius:0 10px 10px 0;padding:12px 16px;margin:14px 0;font-size:.9rem;
+  }
+  .warn b{color:var(--accent)}
+
+  /* ===== Rumus pola ===== */
+  .formula{
+    display:inline-block;background:#1f2430;color:#fff;font-weight:700;
+    padding:8px 16px;border-radius:10px;letter-spacing:.03em;font-size:1rem;margin:4px 0 10px;
+  }
+  .formula .p{color:#ffd166}
+
+  /* ===== Dialog ===== */
+  .dialog{background:#f9fbfd;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+  .dialog .who{
+    display:inline-block;min-width:74px;font-weight:800;color:var(--accent2);font-size:.88rem;
+  }
+  .dialog p{margin:6px 0;font-size:1rem}
+
+  /* ===== Latihan ===== */
+  details{
+    background:#f7fbf8;border:1px solid #d6ece3;border-radius:10px;
+    padding:10px 14px;margin:8px 0;font-size:.92rem;
+  }
+  details summary{cursor:pointer;font-weight:700;color:var(--green)}
+  details[open] summary{margin-bottom:8px}
+  ol.latihan{padding-left:22px}
+  ol.latihan li{margin:10px 0}
+
+  footer{
+    text-align:center;color:var(--muted);font-size:.82rem;margin-top:30px;line-height:1.9;
+  }
+  .kbd{
+    background:#eef1f6;border:1px solid #d8dee9;border-bottom-width:2px;
+    border-radius:6px;padding:1px 7px;font-size:.85em;font-family:inherit;font-weight:700;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ================= HEADER ================= -->
+<header class="hero">
+  <span class="badge">みんなの日本語 Ⅰ ・ 第１課</span>
+  <h1>Catatan Lengkap Minna no Nihongo 1 — Bab 1</h1>
+  <p>Perkenalan Diri ・ 自己紹介（じこしょうかい）— Kosa Kata, Pola Kalimat, Contoh, Percakapan &amp; Tata Bahasa</p>
+  <div class="toolbar">
+    <button class="btn" id="furiBtn" onclick="toggleFuri()">🙈 Sembunyikan Furigana</button>
+  </div>
+</header>
+
+<!-- ================= DAFTAR ISI ================= -->
+<nav class="toc">
+  <h2>📑 DAFTAR ISI</h2>
+  <ol>
+    <li><a href="#kosakata">Kosa Kata (単語)</a></li>
+    <li><a href="#pola">Pola Kalimat (文型)</a></li>
+    <li><a href="#contoh">Contoh Kalimat (例文)</a></li>
+    <li><a href="#percakapan">Percakapan (会話)</a></li>
+    <li><a href="#tatabahasa">Keterangan Tata Bahasa (文法)</a></li>
+    <li><a href="#referensi">Kata-Kata Referensi（国・人・ことば）</a></li>
+    <li><a href="#jikoshoukai">Bonus: Contoh Perkenalan Diri</a></li>
+    <li><a href="#latihan">Latihan Mandiri</a></li>
+  </ol>
+</nav>
+
+<!-- ================= 1. KOSA KATA ================= -->
+<section id="kosakata">
+  <h2 class="sec"><span class="num">Ⅰ</span> Kosa Kata（単語）</h2>
+  <p class="lead">Tips membaca tabel: kolom <b>Jepang</b> memakai furigana (huruf kecil di atas kanji) sebagai panduan baca. Klik tombol di atas untuk menyembunyikan furigana saat berlatih.</p>
+
+  <h3 class="sub">1) Kata Ganti Orang &amp; Kata Tunjuk</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bahasa Jepang</th><th>Romaji</th><th>Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">わたし</td><td>watashi</td><td class="art">saya</td></tr>
+        <tr><td class="jp">あなた</td><td>anata</td><td class="art">Anda <span class="note">(dipakai hanya kepada orang yang sangat dekat)</span></td></tr>
+        <tr><td class="jp">あの<ruby>人<rt>ひと</rt></ruby></td><td>ano hito</td><td class="art">orang itu</td></tr>
+        <tr><td class="jp">あの<ruby>方<rt>かた</rt></ruby></td><td>ano kata</td><td class="art">orang itu, beliau <span class="note">(bentuk sopan dari あの人)</span></td></tr>
+        <tr><td class="jp">～さん</td><td>~san</td><td class="art">Sdr. ~, Bapak ~, Ibu ~ <span class="note">(akhiran kesopanan pada nama orang lain)</span></td></tr>
+        <tr><td class="jp">～ちゃん</td><td>~chan</td><td class="art">akhiran akrab untuk anak laki-laki &amp; perempuan, pengganti ~さん</td></tr>
+        <tr><td class="jp">～<ruby>人<rt>じん</rt></ruby></td><td>~jin</td><td class="art">orang ~ (menyatakan kewarganegaraan). Contoh: インドネシア人</td></tr>
+        <tr><td class="jp">だれ</td><td>dare</td><td class="art">siapa</td></tr>
+        <tr><td class="jp">どなた</td><td>donata</td><td class="art">siapa <span class="note">(bentuk sopan dari だれ)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">2) Pekerjaan（職業）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bahasa Jepang</th><th>Romaji</th><th>Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>先生<rt>せんせい</rt></ruby></td><td>sensei</td><td class="art">guru, dosen <span class="note">(TIDAK dipakai bila menyebut pekerjaan sendiri)</span></td></tr>
+        <tr><td class="jp"><ruby>教師<rt>きょうし</rt></ruby></td><td>kyōshi</td><td class="art">guru <span class="note">(sebutan profesi; boleh dipakai untuk diri sendiri)</span></td></tr>
+        <tr><td class="jp"><ruby>学生<rt>がくせい</rt></ruby></td><td>gakusei</td><td class="art">mahasiswa, pelajar</td></tr>
+        <tr><td class="jp"><ruby>会社員<rt>かいしゃいん</rt></ruby></td><td>kaishain</td><td class="art">karyawan perusahaan (sebutan umum)</td></tr>
+        <tr><td class="jp"><ruby>社員<rt>しゃいん</rt></ruby></td><td>shain</td><td class="art">pegawai <span class="note">(dipakai bersama nama perusahaan: IMCの社員)</span></td></tr>
+        <tr><td class="jp"><ruby>銀行員<rt>ぎんこういん</rt></ruby></td><td>ginkōin</td><td class="art">pegawai bank</td></tr>
+        <tr><td class="jp"><ruby>医者<rt>いしゃ</rt></ruby></td><td>isha</td><td class="art">dokter</td></tr>
+        <tr><td class="jp"><ruby>研究者<rt>けんきゅうしゃ</rt></ruby></td><td>kenkyūsha</td><td class="art">peneliti</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">3) Tempat（場所）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bahasa Jepang</th><th>Romaji</th><th>Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>大学<rt>だいがく</rt></ruby></td><td>daigaku</td><td class="art">universitas</td></tr>
+        <tr><td class="jp"><ruby>病院<rt>びょういん</rt></ruby></td><td>byōin</td><td class="art">rumah sakit</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">4) Umur（年齢）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bahasa Jepang</th><th>Romaji</th><th>Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">～<ruby>歳<rt>さい</rt></ruby></td><td>~sai</td><td class="art">~ tahun <span class="note">(contoh: 9歳 = きゅうさい)</span></td></tr>
+        <tr><td class="jp"><ruby>何歳<rt>なんさい</rt></ruby></td><td>nansai</td><td class="art">berapa tahun (umur)</td></tr>
+        <tr><td class="jp">おいくつ</td><td>oikutsu</td><td class="art">berapa umur <span class="note">(bentuk sopan dari なんさい)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">5) Ungkapan &amp; Salam（表現・挨拶）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bahasa Jepang</th><th>Romaji</th><th>Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">はい</td><td>hai</td><td class="art">ya</td></tr>
+        <tr><td class="jp">いいえ</td><td>iie</td><td class="art">tidak, bukan</td></tr>
+        <tr><td class="jp"><ruby>練習<rt>れんしゅう</rt></ruby></td><td>renshū</td><td class="art">latihan（練習C）</td></tr>
+        <tr><td class="jp"><ruby>初<rt>はじ</rt></ruby>めまして。</td><td>hajimemashite</td><td class="art">Perkenalkan. <span class="note">(salam saat pertama kali berkenalan)</span></td></tr>
+        <tr><td class="jp">～から <ruby>来<rt>き</rt></ruby>ました。</td><td>~ kara kimashita</td><td class="art">datang dari ~, berasal dari ~</td></tr>
+        <tr><td class="jp">［どうぞ］よろしく［お<ruby>願<rt>ねが</rt></ruby>いします］。</td><td>yoroshiku onegaishimasu</td><td class="art">Salam kenal / mohon bantuannya. <span class="note">(ucapan terakhir saat memperkenalkan diri)</span></td></tr>
+        <tr><td class="jp"><ruby>失礼<rt>しつれい</rt></ruby>ですが</td><td>shitsurei desu ga</td><td class="art">permisi, maaf <span class="note">(dipakai saat menanyakan hal pribadi: nama, alamat, dll.)</span></td></tr>
+        <tr><td class="jp">お<ruby>名前<rt>なまえ</rt></ruby>は？</td><td>o-namae wa?</td><td class="art">Siapa namanya?</td></tr>
+        <tr><td class="jp">こちらは～さんです。</td><td>kochira wa ~san desu</td><td class="art">Ini Bapak ~ / Ibu ~ / Sdr. ~.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">6) Nama Negara（国）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bahasa Jepang</th><th>Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">アメリカ</td><td class="art">Amerika Serikat</td></tr>
+        <tr><td class="jp">イギリス</td><td class="art">Inggris</td></tr>
+        <tr><td class="jp">インド</td><td class="art">India</td></tr>
+        <tr><td class="jp">インドネシア</td><td class="art">Indonesia</td></tr>
+        <tr><td class="jp"><ruby>韓国<rt>かんこく</rt></ruby></td><td class="art">Korea Selatan</td></tr>
+        <tr><td class="jp">タイ</td><td class="art">Thailand</td></tr>
+        <tr><td class="jp"><ruby>中国<rt>ちゅうごく</rt></ruby></td><td class="art">Cina</td></tr>
+        <tr><td class="jp">ドイツ</td><td class="art">Jerman</td></tr>
+        <tr><td class="jp"><ruby>日本<rt>にほん</rt></ruby></td><td class="art">Jepang</td></tr>
+        <tr><td class="jp">ブラジル</td><td class="art">Brasil</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">7) Nama Perusahaan / Institusi Fiktif</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bahasa Jepang</th><th>Keterangan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">IMC ／ パワー<ruby>電気<rt>でんき</rt></ruby> ／ ブラジルエアー</td><td class="art">nama perusahaan fiktif</td></tr>
+        <tr><td class="jp">AKC ／ <ruby>神戸<rt>こうべ</rt></ruby><ruby>病院<rt>びょういん</rt></ruby></td><td class="art">organisasi &amp; rumah sakit fiktif</td></tr>
+        <tr><td class="jp">さくら<ruby>大学<rt>だいがく</rt></ruby> ／ <ruby>富士<rt>ふじ</rt></ruby><ruby>大学<rt>だいがく</rt></ruby></td><td class="art">universitas fiktif</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 2. POLA KALIMAT ================= -->
+<section id="pola">
+  <h2 class="sec"><span class="num">Ⅱ</span> Pola Kalimat（文型）</h2>
+  <p class="lead">Inilah 4 pola dasar Bab 1. Semua percakapan di bab ini dibangun dari pola-pola ini.</p>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">1</span>わたしは マイク・ミラーです。</p>
+    <p class="id-line">Saya Mike Miller.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">2</span>サントスさんは <ruby>学生<rt>がくせい</rt></ruby>じゃありません。</p>
+    <p class="id-line">Sdr. Santos bukan mahasiswa.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">3</span>ミラーさんは <ruby>会社員<rt>かいしゃいん</rt></ruby>ですか。</p>
+    <p class="id-line">Apakah Sdr. Miller pegawai perusahaan?</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">4</span>サントスさんも <ruby>会社員<rt>かいしゃいん</rt></ruby>です。</p>
+    <p class="id-line">Sdr. Santos juga pegawai perusahaan.</p>
+  </div>
+</section>
+
+<!-- ================= 3. CONTOH KALIMAT ================= -->
+<section id="contoh">
+  <h2 class="sec"><span class="num">Ⅲ</span> Contoh Kalimat（例文）</h2>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">1</span>［あなたは］マイク・ミラーさんですか。<br>……はい、［わたしは］マイク・ミラーです。</p>
+    <p class="id-line">[Apakah Anda] Sdr. Mike Miller? — Ya, [saya] Mike Miller.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">2</span>ミラーさんは <ruby>学生<rt>がくせい</rt></ruby>ですか。<br>……いいえ、［わたしは］<ruby>学生<rt>がくせい</rt></ruby>じゃありません。</p>
+    <p class="id-line">Apakah Sdr. Miller mahasiswa? — Bukan, [saya] bukan mahasiswa.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">3</span>ワンさんは <ruby>銀行員<rt>ぎんこういん</rt></ruby>ですか。<br>……いいえ、［ワンさんは］<ruby>銀行員<rt>ぎんこういん</rt></ruby>じゃありません。<ruby>医者<rt>いしゃ</rt></ruby>です。</p>
+    <p class="id-line">Apakah Sdr. Wang pegawai bank? — Bukan, [Sdr. Wang] bukan pegawai bank. Dokter.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">4</span>あの<ruby>方<rt>かた</rt></ruby>は どなたですか。<br>……［あの<ruby>方<rt>かた</rt></ruby>は］ワットさんです。さくら<ruby>大学<rt>だいがく</rt></ruby>の <ruby>先生<rt>せんせい</rt></ruby>です。</p>
+    <p class="id-line">Beliau siapa? — Sdr. Wat. Dosen Universitas Sakura.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">5</span>グプタさんは <ruby>会社員<rt>かいしゃいん</rt></ruby>ですか。<br>……はい、<ruby>会社員<rt>かいしゃいん</rt></ruby>です。カリナさんも <ruby>会社員<rt>かいしゃいん</rt></ruby>ですか。<br>……いいえ。［カリナさんは］<ruby>学生<rt>がくせい</rt></ruby>です。</p>
+    <p class="id-line">Apakah Sdr. Gupta pegawai perusahaan? — Ya, pegawai perusahaan. Apakah Sdr. Karina juga pegawai perusahaan? — Bukan. [Sdr. Karina] mahasiswi.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">6</span>テレサちゃんは <ruby>何歳<rt>なんさい</rt></ruby>ですか。<br>……<ruby>９歳<rt>きゅうさい</rt></ruby>です。</p>
+    <p class="id-line">Berapa usia Teresa? — Sembilan tahun.</p>
+  </div>
+</section>
+
+<!-- ================= 4. PERCAKAPAN ================= -->
+<section id="percakapan">
+  <h2 class="sec"><span class="num">Ⅳ</span> Percakapan（会話）— はじめまして</h2>
+  <p class="lead">Situasi: Yamada memperkenalkan Miller kepada Sato.</p>
+
+  <div class="dialog">
+    <p><span class="who">佐藤：</span>おはよう ございます。</p>
+    <p><span class="who">山田：</span>おはよう ございます。佐藤さん、こちらは マイク・ミラーさんです。</p>
+    <p><span class="who">ミラー：</span><ruby>初<rt>はじ</rt></ruby>めまして。マイク・ミラーです。アメリカから <ruby>来<rt>き</rt></ruby>ました。どうぞ よろしく。</p>
+    <p><span class="who">佐藤：</span>佐藤けい子です。どうぞ よろしく。</p>
+  </div>
+
+  <h4 class="mini">Terjemahan</h4>
+  <div class="dialog">
+    <p><span class="who">Sato：</span>Selamat pagi.</p>
+    <p><span class="who">Yamada：</span>Selamat pagi. Sdr. Sato, ini Sdr. Mike Miller.</p>
+    <p><span class="who">Miller：</span>Salam kenal! Saya Mike Miller. Saya datang dari Amerika Serikat. Senang berkenalan dengan Anda.</p>
+    <p><span class="who">Sato：</span>Saya Keiko Sato. Senang berkenalan dengan Anda.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Perhatikan:</b> <span class="kbd">おはようございます</span> (selamat pagi) dan <span class="kbd">どうぞよろしく</span> (senang berkenalan) muncul di percakapan ini, meskipun bukan kosa kata resmi Bab 1. Hafalkan sebagai ungkapan utuh.
+  </div>
+</section>
+
+<!-- ================= 5. TATA BAHASA ================= -->
+<section id="tatabahasa">
+  <h2 class="sec"><span class="num">Ⅴ</span> Keterangan Tata Bahasa（文法）</h2>
+
+  <!-- 1 -->
+  <h3 class="sub">1. Kata Benda₁ は Kata Benda₂ です</h3>
+  <span class="formula">N₁ <span class="p">は</span> N₂ <span class="p">です</span></span>
+
+  <h4 class="mini">① Partikel は（dibaca <b>wa</b>）</h4>
+  <p>Partikel <span class="kbd">は</span> menunjukkan bahwa kata di depannya adalah <b>topik kalimat</b> (topic/subjek). Pembicara memakai <span class="kbd">は</span> untuk hal yang mau dibicarakan, lalu melanjutkan kalimat dengan menambahkan berbagai deskripsi.</p>
+  <div class="ex">
+    <p class="jp-line">① わたし<span class="hl">は</span> マイク・ミラーです。</p>
+    <p class="id-line">Saya Mike Miller.</p>
+  </div>
+  <div class="warn"><b>⚠ Perhatian:</b> Partikel <span class="kbd">は</span> ditulis dengan huruf <i>ha</i>, tetapi <b>dibaca "wa"</b> ketika berfungsi sebagai partikel.</div>
+
+  <h4 class="mini">② です</h4>
+  <p>Kata Benda yang diikuti <span class="kbd">です</span> menjadi <b>predikat</b>. <span class="kbd">です</span> menyatakan maksud penilaian dan kepastian, juga menunjukkan <b>sikap sopan</b> terhadap lawan bicara. Bentuk negatif atau bentuk lampaunya berubah.</p>
+  <div class="ex">
+    <p class="jp-line">② わたしは <ruby>会社員<rt>かいしゃいん</rt></ruby>です。</p>
+    <p class="id-line">Saya pegawai perusahaan.</p>
+  </div>
+
+  <div class="tip">
+    <b>📌 Struktur dasar bahasa Jepang:</b> predikat selalu di <b>akhir kalimat</b>.<br>
+    <span class="kbd">[Topik] は [Predikat] です。</span> → "Kalau [Topik], [Predikat]."
+  </div>
+
+  <!-- 2 -->
+  <h3 class="sub">2. Kata Benda₁ は Kata Benda₂ じゃ（では）ありません</h3>
+  <span class="formula">N₁ <span class="p">は</span> N₂ <span class="p">じゃ／では ありません</span></span>
+  <p><span class="kbd">じゃ（では）ありません</span> adalah bentuk negatif dari <span class="kbd">です</span>.</p>
+  <ul>
+    <li><span class="kbd">じゃ ありません</span> → dipakai dalam <b>percakapan sehari-hari</b>.</li>
+    <li><span class="kbd">では ありません</span> → dipakai dalam <b>pidato resmi</b> atau <b>bahasa tulis</b>.</li>
+  </ul>
+  <div class="ex">
+    <p class="jp-line">③ サントスさんは <ruby>学生<rt>がくせい</rt></ruby>じゃ ありません。<span class="note">（では）</span></p>
+    <p class="id-line">Sdr. Santos bukan mahasiswa.</p>
+  </div>
+  <div class="warn"><b>⚠ Perhatian:</b> <span class="kbd">では</span> di sini juga <b>dibaca "wa"</b>, bukan "deha".</div>
+
+  <!-- 3 -->
+  <h3 class="sub">3. Kata Benda₁ は Kata Benda₂ ですか（kalimat tanya）</h3>
+  <span class="formula">N₁ <span class="p">は</span> N₂ <span class="p">ですか</span></span>
+
+  <h4 class="mini">① Partikel か</h4>
+  <p>Partikel <span class="kbd">か</span> menyatakan perasaan <b>ketidakpastian</b> atau <b>heran</b> pembicara. Dengan memakai <span class="kbd">か</span> di akhir kalimat, kalimat berubah menjadi <b>kalimat tanya</b>. Kalimat tanya biasanya menyertai <b>intonasi naik</b> pada akhir kalimat.</p>
+
+  <h4 class="mini">② Kalimat tanya "Ya / Tidak"</h4>
+  <p>Tanpa mengubah susunan kata, cukup tambahkan <span class="kbd">か</span> di akhir kalimat. Kalimat tanya ini menanyakan apakah isi kalimat benar atau tidak:</p>
+  <ul>
+    <li>Jika <b>benar</b> → jawab dengan <span class="kbd">はい</span>.</li>
+    <li>Jika <b>salah</b> → jawab dengan <span class="kbd">いいえ</span>.</li>
+  </ul>
+  <div class="ex">
+    <p class="jp-line">④ ミラーさんは アメリカ<ruby>人<rt>じん</rt></ruby>ですか。</p>
+    <p class="id-line">Apakah Sdr. Miller orang Amerika?</p>
+    <p class="jp-line">……はい、アメリカ<ruby>人<rt>じん</rt></ruby>です。</p>
+    <p class="id-line">……Ya, orang Amerika.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑤ ミラーさんは <ruby>先生<rt>せんせい</rt></ruby>ですか。</p>
+    <p class="id-line">Apakah Sdr. Miller guru?</p>
+    <p class="jp-line">……いいえ、<ruby>先生<rt>せんせい</rt></ruby>じゃ ありません。</p>
+    <p class="id-line">……Bukan, dia bukan guru.</p>
+  </div>
+
+  <h4 class="mini">③ Kalimat tanya dengan kata tanya</h4>
+  <p>Bagian yang ingin ditanyakan diganti dengan <b>kata tanya</b>, dan dibubuhkan <span class="kbd">か</span> pada akhir kalimat. Kata tanya penting di Bab 1: <span class="kbd">だれ</span> / <span class="kbd">どなた</span> (siapa), <span class="kbd">なんさい</span> / <span class="kbd">おいくつ</span> (berapa umur).</p>
+  <div class="ex">
+    <p class="jp-line">⑥ あの<ruby>方<rt>かた</rt></ruby>は どなたですか。</p>
+    <p class="id-line">Siapakah orang itu?</p>
+    <p class="jp-line">……［あの<ruby>方<rt>かた</rt></ruby>は］ミラーさんです。</p>
+    <p class="id-line">……[Beliau] Sdr. Miller.</p>
+  </div>
+
+  <!-- 4 -->
+  <h3 class="sub">4. Kata Benda も</h3>
+  <span class="formula">N <span class="p">も</span></span>
+  <p><span class="kbd">も</span> digunakan apabila predikatnya dianggap <b>sama dengan predikat sebelumnya</b>. Artinya "juga".</p>
+  <div class="ex">
+    <p class="jp-line">⑦ ミラーさんは <ruby>会社員<rt>かいしゃいん</rt></ruby>です。グプタさん<span class="hl">も</span> <ruby>会社員<rt>かいしゃいん</rt></ruby>です。</p>
+    <p class="id-line">Sdr. Miller pegawai perusahaan. Sdr. Gupta juga pegawai perusahaan.</p>
+  </div>
+  <div class="warn"><b>⚠ Penting:</b> <span class="kbd">も</span> <b>menggantikan</b> partikel <span class="kbd">は</span>. Jangan menulis <span class="ng">✗ グプタさんはも</span> — yang benar <span class="ok">✓ グプタさんも</span>.</div>
+
+  <!-- 5 -->
+  <h3 class="sub">5. Kata Benda₁ の Kata Benda₂</h3>
+  <span class="formula">N₁ <span class="p">の</span> N₂</span>
+  <p>Jika Kata Benda₁ di depan menerangkan Kata Benda₂ di belakangnya, maka kedua Kata Benda disambung dengan <span class="kbd">の</span>. Pada Pelajaran 1, Kata Benda₁ menunjukkan satu <b>kesatuan</b> dengan Kata Benda₂ (kelompok/organisasi/institusi).</p>
+  <div class="ex">
+    <p class="jp-line">⑧ ミラーさんは IMC<span class="hl">の</span> <ruby>社員<rt>しゃいん</rt></ruby>です。</p>
+    <p class="id-line">Sdr. Miller pegawai perusahaan IMC.</p>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Contoh</th><th>Arti</th><th>Fungsi の</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">IMCの<ruby>社員<rt>しゃいん</rt></ruby></td><td class="art">pegawai IMC</td><td class="art">kesatuan organisasi</td></tr>
+        <tr><td class="jp">さくら<ruby>大学<rt>だいがく</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby></td><td class="art">mahasiswa Universitas Sakura</td><td class="art">kesatuan institusi</td></tr>
+        <tr><td class="jp"><ruby>神戸<rt>こうべ</rt></ruby><ruby>病院<rt>びょういん</rt></ruby>の<ruby>医者<rt>いしゃ</rt></ruby></td><td class="art">dokter RS Kobe</td><td class="art">kesatuan tempat kerja</td></tr>
+        <tr><td class="jp">わたしの<ruby>本<rt>ほん</rt></ruby></td><td class="art">buku saya</td><td class="art">kepemilikan (bonus)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 6 -->
+  <h3 class="sub">6. ～さん</h3>
+  <p>Dalam bahasa Jepang dipakai <span class="kbd">さん</span> di belakang marga atau nama <b>lawan bicara</b> atau <b>orang pihak ketiga</b>.</p>
+  <ul>
+    <li>Karena <span class="kbd">さん</span> menunjukkan kesopanan, <b>tidak dipakai untuk marga atau nama diri sendiri</b>.</li>
+    <li>Sebagai gantinya, untuk <b>anak kecil</b> dengan rasa akrab dipakai <span class="kbd">ちゃん</span>.</li>
+  </ul>
+  <div class="ex">
+    <p class="jp-line">⑨ あの<ruby>方<rt>かた</rt></ruby>は ミラーさんです。</p>
+    <p class="id-line">Beliau Sdr. Miller.</p>
+  </div>
+  <div class="warn">
+    <b>⚠ Contoh kesalahan umum:</b><br>
+    <span class="ng">✗ わたしは ミラーさんです。</span> (salah — memakai さん untuk diri sendiri)<br>
+    <span class="ok">✓ わたしは ミラーです。</span> (benar)
+  </div>
+
+  <h4 class="mini">Cara memanggil lawan bicara</h4>
+  <p>Ketika memanggil lawan bicara, jika telah mengenal namanya maka <span class="kbd">あなた</span> tidak dipakai lagi, tetapi memanggil <b>marga atau namanya + さん</b>.</p>
+  <div class="ex">
+    <p class="jp-line">⑩ <ruby>鈴木<rt>すずき</rt></ruby>：ミラーさんは <ruby>学生<rt>がくせい</rt></ruby>ですか。<br>ミラー：いいえ、<ruby>会社員<rt>かいしゃいん</rt></ruby>です。</p>
+    <p class="id-line">Suzuki: Apakah Sdr. Miller mahasiswa? — Miller: Bukan, saya pegawai perusahaan.</p>
+  </div>
+  <div class="warn">
+    <b>⚠ Perhatian tentang あなた:</b> <span class="kbd">あなた</span> digunakan terhadap orang yang berhubungan <b>sangat dekat</b> (suami-istri, pacar, dll.). Hati-hati: jika menggunakannya kepada lawan bicara yang hubungannya tidak dekat, akan memberi kesan <b>kurang sopan</b>. Lebih aman memakai <b>nama + さん</b>.
+  </div>
+
+  <!-- Tambahan -->
+  <h3 class="sub">➕ Tambahan Penting (Referensi Lain yang Relevan)</h3>
+
+  <h4 class="mini">a) ～人（じん）— menyatakan kewarganegaraan</h4>
+  <p>Kata negara + <span class="kbd">じん</span> = orang dari negara tersebut.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Negara</th><th>Orang</th><th>Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">インドネシア</td><td class="jp">インドネシア<ruby>人<rt>じん</rt></ruby></td><td class="art">orang Indonesia</td></tr>
+        <tr><td class="jp"><ruby>日本<rt>にほん</rt></ruby></td><td class="jp"><ruby>日本<rt>にほん</rt></ruby><ruby>人<rt>じん</rt></ruby></td><td class="art">orang Jepang</td></tr>
+        <tr><td class="jp"><ruby>中国<rt>ちゅうごく</rt></ruby></td><td class="jp"><ruby>中国<rt>ちゅうごく</rt></ruby><ruby>人<rt>じん</rt></ruby></td><td class="art">orang Cina</td></tr>
+        <tr><td class="jp"><ruby>韓国<rt>かんこく</rt></ruby></td><td class="jp"><ruby>韓国<rt>かんこく</rt></ruby><ruby>人<rt>じん</rt></ruby></td><td class="art">orang Korea</td></tr>
+        <tr><td class="jp">アメリカ</td><td class="jp">アメリカ<ruby>人<rt>じん</rt></ruby></td><td class="art">orang Amerika</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 class="mini">b) ～歳（さい）— menyatakan umur</h4>
+  <div class="ex">
+    <p class="jp-line"><ruby>田中<rt>たなか</rt></ruby>さんは <ruby>２５歳<rt>にじゅうごさい</rt></ruby>です。</p>
+    <p class="id-line">Sdr. Tanaka berumur 25 tahun.</p>
+  </div>
+  <div class="tip"><b>💡 Catatan:</b> untuk menanyakan umur secara sopan (terutama kepada orang yang lebih tua), gunakan <span class="kbd">おいくつですか</span> daripada <span class="kbd">なんさいですか</span>.</div>
+
+  <h4 class="mini">c) 先生 vs 教師 — kapan memakai yang mana?</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Situasi</th><th>Yang dipakai</th><th>Contoh</th></tr></thead>
+      <tbody>
+        <tr><td>Menyebut pekerjaan <b>orang lain</b></td><td class="jp">先生</td><td class="jp">ミラーさんは <ruby>先生<rt>せんせい</rt></ruby>です。</td></tr>
+        <tr><td>Menyebut pekerjaan <b>sendiri</b></td><td class="jp">教師</td><td class="jp">わたしは <ruby>教師<rt>きょうし</rt></ruby>です。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 class="mini">d) 会社員 vs 社員 — bedanya?</h4>
+  <ul>
+    <li><span class="kbd">会社員</span> = karyawan perusahaan (sebutan profesi secara <b>umum</b>).</li>
+    <li><span class="kbd">社員</span> = pegawai, biasanya dipakai bersama <b>nama perusahaan</b> → <span class="kbd">IMCの社員</span>.</li>
+  </ul>
+
+  <h4 class="mini">e) Ringkasan bentuk です</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Bentuk</th><th>Rumus</th><th>Contoh</th></tr></thead>
+      <tbody>
+        <tr><td>Positif</td><td class="jp">N は N です</td><td class="jp"><ruby>学生<rt>がくせい</rt></ruby>です</td></tr>
+        <tr><td>Negatif (sehari-hari)</td><td class="jp">N は N じゃありません</td><td class="jp"><ruby>学生<rt>がくせい</rt></ruby>じゃありません</td></tr>
+        <tr><td>Negatif (formal)</td><td class="jp">N は N ではありません</td><td class="jp"><ruby>学生<rt>がくせい</rt></ruby>ではありません</td></tr>
+        <tr><td>Tanya</td><td class="jp">N は N ですか</td><td class="jp"><ruby>学生<rt>がくせい</rt></ruby>ですか</td></tr>
+        <tr><td>"Juga"</td><td class="jp">N も N です</td><td class="jp">わたしも <ruby>学生<rt>がくせい</rt></ruby>です</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 6. REFERENSI ================= -->
+<section id="referensi">
+  <h2 class="sec"><span class="num">Ⅵ</span> Kata-Kata Referensi — 国・人・ことば</h2>
+  <p class="lead">Negara（国）・Orang（人）・Bahasa（ことば）— hafalkan pola ini: <b>negara + 人 = orang negara itu</b>, dan <b>negara + 語 = bahasa negara itu</b>.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>国（Negara）</th><th>人（Orang）</th><th>ことば（Bahasa）</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">アメリカ <span class="note">(Amerika Serikat)</span></td><td class="jp">アメリカ<ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>英語<rt>えいご</rt></ruby> <span class="note">(b. Inggris)</span></td></tr>
+        <tr><td class="jp">イギリス <span class="note">(Inggris)</span></td><td class="jp">イギリス<ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>英語<rt>えいご</rt></ruby> <span class="note">(b. Inggris)</span></td></tr>
+        <tr><td class="jp">イタリア <span class="note">(Italia)</span></td><td class="jp">イタリア<ruby>人<rt>じん</rt></ruby></td><td class="jp">イタリア<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">イラン <span class="note">(Iran)</span></td><td class="jp">イラン<ruby>人<rt>じん</rt></ruby></td><td class="jp">ペルシア<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">インド <span class="note">(India)</span></td><td class="jp">インド<ruby>人<rt>じん</rt></ruby></td><td class="jp">ヒンディー<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">インドネシア <span class="note">(Indonesia)</span></td><td class="jp">インドネシア<ruby>人<rt>じん</rt></ruby></td><td class="jp">インドネシア<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">エジプト <span class="note">(Mesir)</span></td><td class="jp">エジプト<ruby>人<rt>じん</rt></ruby></td><td class="jp">アラビア<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">オーストラリア <span class="note">(Australia)</span></td><td class="jp">オーストラリア<ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>英語<rt>えいご</rt></ruby></td></tr>
+        <tr><td class="jp">カナダ <span class="note">(Kanada)</span></td><td class="jp">カナダ<ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>英語<rt>えいご</rt></ruby>／フランス<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp"><ruby>韓国<rt>かんこく</rt></ruby> <span class="note">(Korea Selatan)</span></td><td class="jp"><ruby>韓国<rt>かんこく</rt></ruby><ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>韓国語<rt>かんこくご</rt></ruby></td></tr>
+        <tr><td class="jp">サウジアラビア <span class="note">(Arab Saudi)</span></td><td class="jp">サウジアラビア<ruby>人<rt>じん</rt></ruby></td><td class="jp">アラビア<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">シンガポール <span class="note">(Singapura)</span></td><td class="jp">シンガポール<ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>英語<rt>えいご</rt></ruby></td></tr>
+        <tr><td class="jp">スペイン <span class="note">(Spanyol)</span></td><td class="jp">スペイン<ruby>人<rt>じん</rt></ruby></td><td class="jp">スペイン<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">タイ <span class="note">(Thailand)</span></td><td class="jp">タイ<ruby>人<rt>じん</rt></ruby></td><td class="jp">タイ<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp"><ruby>中国<rt>ちゅうごく</rt></ruby> <span class="note">(Cina)</span></td><td class="jp"><ruby>中国<rt>ちゅうごく</rt></ruby><ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>中国語<rt>ちゅうごくご</rt></ruby></td></tr>
+        <tr><td class="jp">ドイツ <span class="note">(Jerman)</span></td><td class="jp">ドイツ<ruby>人<rt>じん</rt></ruby></td><td class="jp">ドイツ<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp"><ruby>日本<rt>にほん</rt></ruby> <span class="note">(Jepang)</span></td><td class="jp"><ruby>日本<rt>にほん</rt></ruby><ruby>人<rt>じん</rt></ruby></td><td class="jp"><ruby>日本語<rt>にほんご</rt></ruby></td></tr>
+        <tr><td class="jp">フランス <span class="note">(Perancis)</span></td><td class="jp">フランス<ruby>人<rt>じん</rt></ruby></td><td class="jp">フランス<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">フィリピン <span class="note">(Filipina)</span></td><td class="jp">フィリピン<ruby>人<rt>じん</rt></ruby></td><td class="jp">フィリピン<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">ブラジル <span class="note">(Brasil)</span></td><td class="jp">ブラジル<ruby>人<rt>じん</rt></ruby></td><td class="jp">ポルトガル<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">ベトナム <span class="note">(Vietnam)</span></td><td class="jp">ベトナム<ruby>人<rt>じん</rt></ruby></td><td class="jp">ベトナム<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">マレーシア <span class="note">(Malaysia)</span></td><td class="jp">マレーシア<ruby>人<rt>じん</rt></ruby></td><td class="jp">マレーシア<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">メキシコ <span class="note">(Meksiko)</span></td><td class="jp">メキシコ<ruby>人<rt>じん</rt></ruby></td><td class="jp">スペイン<ruby>語<rt>ご</rt></ruby></td></tr>
+        <tr><td class="jp">ロシア <span class="note">(Rusia)</span></td><td class="jp">ロシア<ruby>人<rt>じん</rt></ruby></td><td class="jp">ロシア<ruby>語<rt>ご</rt></ruby></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 7. BONUS ================= -->
+<section id="jikoshoukai">
+  <h2 class="sec"><span class="num">＋</span> Bonus: Contoh Perkenalan Diri（自己紹介）</h2>
+  <p class="lead">Gabungan semua pola Bab 1. Coba tiru dan ganti bagian yang bercetak miring dengan data dirimu sendiri!</p>
+
+  <div class="ex">
+    <p class="jp-line">
+      <ruby>初<rt>はじ</rt></ruby>めまして。<br>
+      わたしは <b><i>アンディ</i></b>です。<br>
+      <b><i>インドネシア</i></b>から <ruby>来<rt>き</rt></ruby>ました。<br>
+      <b><i>さくら<ruby>大学<rt>だいがく</rt></ruby></i></b>の <ruby>学生<rt>がくせい</rt></ruby>です。<br>
+      <ruby>何歳<rt>なんさい</rt></ruby>ですか。……<b><i><ruby>２０歳<rt>はたち</rt></ruby></i></b>です。<span class="note">（はたち = 20 tahun, bacaan khusus）</span><br>
+      どうぞ よろしく お<ruby>願<rt>ねが</rt></ruby>いします。
+    </p>
+    <p class="id-line">
+      Salam kenal. Saya Andi. Saya datang dari Indonesia. Saya mahasiswa Universitas Sakura.
+      Berapa umur Anda? — 20 tahun. Mohon bantuannya.
+    </p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Urutan standar 自己紹介:</b><br>
+    ① 初めまして → ② 名前（なまえ） → ③ 国（くに）／～から来ました → ④ 仕事（しごと）／学生 → ⑤ どうぞよろしくお願いします。
+  </div>
+</section>
+
+<!-- ================= 8. LATIHAN ================= -->
+<section id="latihan">
+  <h2 class="sec"><span class="num">✎</span> Latihan Mandiri</h2>
+  <p class="lead">Kerjakan dulu, baru buka jawabannya. Klik "Lihat jawaban" untuk memeriksa.</p>
+
+  <ol class="latihan">
+    <li>
+      Terjemahkan ke bahasa Jepang: <b>"Saya Andi. Saya mahasiswa."</b>
+      <details><summary>Lihat jawaban</summary>わたしは アンディです。わたしは <ruby>学生<rt>がくせい</rt></ruby>です。</details>
+    </li>
+    <li>
+      Ubah ke bentuk negatif: <b>ミラーさんは <ruby>先生<rt>せんせい</rt></ruby>です。</b>
+      <details><summary>Lihat jawaban</summary>ミラーさんは <ruby>先生<rt>せんせい</rt></ruby>じゃ ありません。<span class="note">（bentuk formal: ではありません）</span></details>
+    </li>
+    <li>
+      Ubah menjadi kalimat tanya: <b>あなたは インドネシア<ruby>人<rt>じん</rt></ruby>です。</b>
+      <details><summary>Lihat jawaban</summary>あなたは インドネシア<ruby>人<rt>じん</rt></ruby>ですか。<span class="note">（lebih sopan: インドネシア<ruby>人<rt>じん</rt></ruby>ですか。）</span></details>
+    </li>
+    <li>
+      Isi dengan <b>は</b> atau <b>も</b>:<br>
+      グプタさんは <ruby>会社員<rt>かいしゃいん</rt></ruby>です。カリナさん（　　）<ruby>会社員<rt>かいしゃいん</rt></ruby>です。
+      <details><summary>Lihat jawaban</summary>カリナさん<b>も</b> <ruby>会社員<rt>かいしゃいん</rt></ruby>です。<span class="note">（も menggantikan は）</span></details>
+    </li>
+    <li>
+      Susun menjadi kalimat yang benar:<br>
+      <span class="kbd">の ／ IMC ／ ミラーさん ／ <ruby>社員<rt>しゃいん</rt></ruby> ／ は ／ です</span>
+      <details><summary>Lihat jawaban</summary>ミラーさんは IMCの <ruby>社員<rt>しゃいん</rt></ruby>です。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Beliau siapa? — Beliau dosen Universitas Sakura."</b>
+      <details><summary>Lihat jawaban</summary>あの<ruby>方<rt>かた</rt></ruby>は どなたですか。……［あの<ruby>方<rt>かた</rt></ruby>は］さくら<ruby>大学<rt>だいがく</rt></ruby>の <ruby>先生<rt>せんせい</rt></ruby>です。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Berapa umur Teresa? — Sembilan tahun."</b>
+      <details><summary>Lihat jawaban</summary>テレサちゃんは <ruby>何歳<rt>なんさい</rt></ruby>ですか。……<ruby>９歳<rt>きゅうさい</rt></ruby>です。</details>
+    </li>
+  </ol>
+</section>
+
+<footer>
+  📘 Catatan Belajar — <b>Minna no Nihongo 1 (みんなの日本語 初級Ⅰ) Bab 1</b><br>
+  Kosa Kata ・ 文型 ・ 例文 ・ 会話 ・ 文法<br>
+  がんばってください！ ✨
+</footer>
+
+</div>
+
+<script>
+  function toggleFuri(){
+    var b = document.body;
+    var btn = document.getElementById('furiBtn');
+    b.classList.toggle('no-furi');
+    if(b.classList.contains('no-furi')){
+      btn.textContent = '👀 Tampilkan Furigana';
+    } else {
+      btn.textContent = '🙈 Sembunyikan Furigana';
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kumpulan catatan lengkap Minna no Nihongo 1 (Bab 1–25) — kosa kata, pola kalimat, contoh, percakapan, dan tata bahasa.">
+<title>Minna no Nihongo 1 — Kumpulan Catatan Bab 1–25</title>
+<style>
+  :root{
+    --bg:#0f1a24; --bg-soft:#16222f;
+    --card:#1b2938; --card-hover:#233448;
+    --ink:#eaf2f8; --muted:#8ba3b8; --line:#27394c;
+    --accent:#ffb454; --accent2:#4cc9f0;
+    --green:#52d29c; --pink:#ff6b9d;
+    --purple:#a78bfa; --red:#ff7b72;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #1b3a52 0%, transparent 60%),
+      radial-gradient(1000px 500px at 100% 0%, #3a1e4f 0%, transparent 55%),
+      var(--bg);
+    color:var(--ink); line-height:1.7; font-size:16px; min-height:100vh;
+  }
+  a{color:inherit;text-decoration:none}
+  a:focus-visible,button:focus-visible,input:focus-visible{
+    outline:3px solid var(--accent); outline-offset:3px; border-radius:8px;
+  }
+
+  /* ===== Header ===== */
+  .hero{padding:64px 20px 40px; text-align:center; position:relative; overflow:hidden;}
+  .hero::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(circle at 50% 0%, rgba(255,180,84,.15) 0%, transparent 55%);
+    pointer-events:none;
+  }
+  .hero .badge{
+    display:inline-block; background:rgba(255,180,84,.12);
+    border:1px solid rgba(255,180,84,.4); color:var(--accent);
+    padding:6px 18px; border-radius:999px; font-size:.8rem;
+    font-weight:700; letter-spacing:.14em; margin-bottom:18px;
+  }
+  .hero h1{
+    margin:0 0 12px; font-size:clamp(1.7rem, 4vw, 2.6rem); font-weight:900;
+    letter-spacing:.01em;
+    background:linear-gradient(135deg,#fff 20%,#ffb454 60%,#4cc9f0 100%);
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .hero p{margin:0 auto; max-width:640px; color:var(--muted); font-size:1rem;}
+  .hero .kanji{display:block; font-size:.95rem; color:#6a8299; margin-top:10px; letter-spacing:.25em;}
+
+  /* ===== Stats ===== */
+  .stats{
+    display:flex; justify-content:center; gap:14px; flex-wrap:wrap;
+    margin:32px auto 0; max-width:760px; padding:0 20px;
+  }
+  .stat{
+    flex:1 1 150px; background:var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:14px 18px; text-align:center;
+    box-shadow:var(--shadow);
+  }
+  .stat .num{display:block; font-size:1.7rem; font-weight:900; color:var(--accent); line-height:1.1;}
+  .stat .lbl{font-size:.78rem; color:var(--muted); letter-spacing:.08em; text-transform:uppercase;}
+
+  /* ===== Toolbar ===== */
+  .toolbar{
+    max-width:1120px; margin:38px auto 0; padding:0 20px;
+    display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:center;
+  }
+  .search-wrap{position:relative; flex:1 1 280px; max-width:420px;}
+  .search-wrap input{
+    width:100%; padding:12px 16px 12px 44px; border-radius:999px;
+    border:1px solid var(--line); background:var(--card); color:var(--ink);
+    font-size:.95rem; font-family:inherit; transition:.2s;
+  }
+  .search-wrap input::placeholder{color:#5d7a92}
+  .search-wrap input:focus{border-color:var(--accent); background:var(--card-hover);}
+  .search-wrap::before{
+    content:"🔍"; position:absolute; left:16px; top:50%;
+    transform:translateY(-50%); font-size:.95rem; opacity:.6;
+  }
+
+  .filter-chips{
+    display:flex; flex-wrap:wrap; gap:8px; justify-content:center;
+    margin:22px auto 0; max-width:1120px; padding:0 20px;
+  }
+  .chip{
+    background:var(--card); border:1px solid var(--line); color:var(--muted);
+    padding:8px 16px; border-radius:999px; font-size:.82rem; font-weight:700;
+    cursor:pointer; transition:.2s; font-family:inherit;
+  }
+  .chip:hover{color:var(--ink); border-color:#3a5570}
+  .chip.active{background:var(--accent); border-color:var(--accent); color:#0f1a24;}
+  .chip[data-cat="dasar"].active{background:var(--green); border-color:var(--green)}
+  .chip[data-cat="kegiatan"].active{background:var(--accent2); border-color:var(--accent2)}
+  .chip[data-cat="ekspresi"].active{background:var(--pink); border-color:var(--pink)}
+  .chip[data-cat="lanjutan"].active{background:var(--purple); border-color:var(--purple)}
+  .chip[data-cat="mahir"].active{background:var(--red); border-color:var(--red)}
+
+  /* ===== Grid ===== */
+  main{max-width:1120px; margin:0 auto; padding:34px 20px 80px;}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
+    gap:18px;
+  }
+
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:18px; padding:22px 20px 20px;
+    position:relative; overflow:hidden;
+    transition:transform .22s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease;
+    display:flex; flex-direction:column; min-height:200px;
+  }
+  .card::before{
+    content:""; position:absolute; top:0; left:0; right:0; height:4px;
+    background:var(--accent);
+    transform:scaleX(0); transform-origin:left;
+    transition:transform .3s ease;
+  }
+  .card:hover{
+    transform:translateY(-5px);
+    background:var(--card-hover);
+    border-color:#3a5570;
+    box-shadow:0 14px 34px rgba(0,0,0,.45);
+  }
+  .card:hover::before{transform:scaleX(1)}
+
+  .card[data-cat="dasar"]::before{background:var(--green)}
+  .card[data-cat="kegiatan"]::before{background:var(--accent2)}
+  .card[data-cat="ekspresi"]::before{background:var(--pink)}
+  .card[data-cat="lanjutan"]::before{background:var(--purple)}
+  .card[data-cat="mahir"]::before{background:var(--red)}
+
+  .card-head{
+    display:flex; align-items:flex-start; justify-content:space-between;
+    gap:12px; margin-bottom:12px;
+  }
+  .card .bab-num{
+    font-size:2.2rem; font-weight:900; line-height:1;
+    color:var(--accent); letter-spacing:-.02em; font-variant-numeric:tabular-nums;
+  }
+  .card[data-cat="dasar"]    .bab-num{color:var(--green)}
+  .card[data-cat="kegiatan"] .bab-num{color:var(--accent2)}
+  .card[data-cat="ekspresi"] .bab-num{color:var(--pink)}
+  .card[data-cat="lanjutan"] .bab-num{color:var(--purple)}
+  .card[data-cat="mahir"]    .bab-num{color:var(--red)}
+
+  .card .kanji-tag{
+    font-size:.72rem; font-weight:800; color:var(--muted);
+    background:rgba(255,255,255,.05); border:1px solid var(--line);
+    border-radius:999px; padding:3px 10px; white-space:nowrap;
+  }
+
+  .card h3{margin:0 0 6px; font-size:1.05rem; font-weight:800; line-height:1.35; color:var(--ink);}
+  .card h3 span{display:block; font-size:.78rem; font-weight:600; color:var(--muted); margin-top:3px;}
+  .card p{margin:0; font-size:.86rem; color:var(--muted); flex-grow:1;}
+  .card .meta{display:flex; flex-wrap:wrap; gap:6px; margin-top:14px;}
+  .card .tag{
+    font-size:.7rem; font-weight:700; padding:3px 9px;
+    border-radius:999px; background:rgba(255,255,255,.06);
+    color:#a8c0d4; border:1px solid var(--line);
+  }
+
+  /* ===== 🔧 FIX #1: Kartu locked — badge dipindah ke BAWAH, tidak tabrakan ===== */
+  .card.locked{
+    opacity:.6;
+    cursor:not-allowed;
+    filter:grayscale(.4);
+  }
+  .card.locked:hover{
+    transform:none;
+    background:var(--card);
+    border-color:var(--line);
+    box-shadow:none;
+  }
+  .card.locked:hover::before{transform:scaleX(0)}
+  .card.locked .status-badge{
+    display:inline-block;
+    align-self:flex-start;
+    margin-top:12px;
+    font-size:.68rem;
+    font-weight:800;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:#7a93aa;
+    background:rgba(255,255,255,.04);
+    padding:3px 10px;
+    border-radius:999px;
+    border:1px dashed #3a5570;
+  }
+  .card.locked .status-badge::before{content:"🔒 ";}
+
+  /* ===== Section headings ===== */
+  .section-title{
+    grid-column:1/-1;
+    display:flex; align-items:center; gap:14px;
+    margin:26px 0 4px; font-size:.95rem; font-weight:800;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--muted);
+  }
+  .section-title::after{
+    content:""; flex:1; height:1px;
+    background:linear-gradient(90deg, var(--line), transparent);
+  }
+  .section-title .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
+  .section-title.dasar    .dot{background:var(--green)}
+  .section-title.kegiatan .dot{background:var(--accent2)}
+  .section-title.ekspresi .dot{background:var(--pink)}
+  .section-title.lanjutan .dot{background:var(--purple)}
+  .section-title.mahir    .dot{background:var(--red)}
+
+  .empty{
+    grid-column:1/-1; text-align:center; padding:60px 20px;
+    color:var(--muted); font-size:.95rem; display:none;
+  }
+  .empty.show{display:block}
+
+  /* ===== Footer ===== */
+  footer{
+    text-align:center; padding:40px 20px 60px; color:var(--muted);
+    font-size:.85rem; border-top:1px solid var(--line); margin-top:20px;
+  }
+  footer b{color:var(--accent)}
+  footer .love{color:var(--pink)}
+
+  /* ===== Back to top ===== */
+  #topBtn{
+    position:fixed; bottom:26px; right:26px;
+    width:48px; height:48px; border-radius:50%; border:none;
+    background:var(--accent); color:#0f1a24; font-size:1.2rem; font-weight:900;
+    cursor:pointer; box-shadow:0 8px 24px rgba(255,180,84,.35);
+    opacity:0; visibility:hidden; transform:translateY(10px);
+    transition:.3s; z-index:99;
+  }
+  #topBtn.show{opacity:1; visibility:visible; transform:translateY(0)}
+  #topBtn:hover{background:#ffc46b; transform:translateY(-3px)}
+
+  @media (max-width:520px){
+    .hero{padding:48px 16px 30px}
+    .grid{grid-template-columns:1fr}
+    .stat .num{font-size:1.4rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <span class="badge">みんなの日本語 初級Ⅰ</span>
+  <h1>Minna no Nihongo 1 — Kumpulan Catatan</h1>
+  <p>Kosa Kata ・ 文型 ・ 例文 ・ 会話 ・ 文法 — Rangkuman lengkap Bab 1 sampai Bab 25, dengan furigana yang bisa disembunyikan.</p>
+  <span class="kanji">単語・文型・例文・会話・文法</span>
+</header>
+
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="stat">
+    <span class="num">25</span>
+    <span class="lbl">Total Bab</span>
+  </div>
+  <div class="stat">
+    <!-- 🔧 FIX: ID ini akan diupdate otomatis oleh JS -->
+    <span class="num" id="readyCount">5</span>
+    <span class="lbl">Siap Dibaca</span>
+  </div>
+  <div class="stat">
+    <span class="num">~1.000</span>
+    <span class="lbl">Kosa Kata</span>
+  </div>
+  <div class="stat">
+    <span class="num">5</span>
+    <span class="lbl">Kategori Tema</span>
+  </div>
+</div>
+
+<!-- ================= TOOLBAR ================= -->
+<div class="toolbar">
+  <div class="search-wrap">
+    <input type="search" id="searchInput"
+           placeholder="Cari bab atau tema… (mis. tempat, kata kerja, perkenalan)"
+           aria-label="Cari bab berdasarkan judul atau tema">
+  </div>
+</div>
+
+<div class="filter-chips" role="tablist" aria-label="Filter kategori bab">
+  <button class="chip active" data-cat="all"      role="tab">Semua</button>
+  <button class="chip"        data-cat="dasar"    role="tab">🟢 Dasar</button>
+  <button class="chip"        data-cat="kegiatan" role="tab">🔵 Kegiatan</button>
+  <button class="chip"        data-cat="ekspresi" role="tab">🩷 Ekspresi</button>
+  <button class="chip"        data-cat="lanjutan" role="tab">🟣 Lanjutan</button>
+  <button class="chip"        data-cat="mahir"    role="tab">🔴 Mahir</button>
+</div>
+
+<!-- ================= GRID ================= -->
+<main>
+  <div class="grid" id="grid">
+
+    <!-- ================================================================
+         CARA UNLOCK KARTU (untuk Bab 6–25 nanti):
+         1. Hapus class  "locked"  dari kartu
+         2. Hapus         <span class="status-badge">Segera hadir</span>
+         3. Tambahkan     href="BAB X.html"   pada tag <a>
+         4. Isi judul, deskripsi, meta tag sesuai isi asli Bab X
+         Statistik "Siap Dibaca" akan otomatis bertambah.
+         ================================================================ -->
+
+    <!-- ============ DASAR (1–5) — READY ============ -->
+    <h2 class="section-title dasar"><span class="dot"></span>Bab 1 – 5 · Dasar-Dasar Bahasa Jepang</h2>
+
+    <a class="card" data-cat="dasar"
+       data-search="perkenalan diri jikoshoukai 名詞 は です negara pekerjaan umur"
+       href="BAB 1.html">
+      <div class="card-head">
+        <span class="bab-num">01</span>
+        <span class="kanji-tag">第１課</span>
+      </div>
+      <h3>Perkenalan Diri <span>自己紹介</span></h3>
+      <p>Pola <em>N₁ は N₂ です</em>, kalimat tanya, partikel も, の, dan akhiran ～さん. Termasuk daftar negara, pekerjaan, dan umur.</p>
+      <div class="meta">
+        <span class="tag">Kata ganti</span>
+        <span class="tag">Pekerjaan</span>
+        <span class="tag">自己紹介</span>
+      </div>
+    </a>
+
+    <a class="card" data-cat="dasar"
+       data-search="benda kepemilikan これ それ あれ この その あの の"
+       href="BAB 2.html">
+      <div class="card-head">
+        <span class="bab-num">02</span>
+        <span class="kanji-tag">第２課</span>
+      </div>
+      <h3>Benda &amp; Kepemilikan <span>これ・それ・あれ</span></h3>
+      <p>Kata tunjuk benda dan kata tunjuk + Kata Benda, menyatakan pemilik, serta pola pertanyaan <em>A ですか、B ですか</em>.</p>
+      <div class="meta">
+        <span class="tag">指示詞</span>
+        <span class="tag">Kepemilikan</span>
+        <span class="tag">～語</span>
+      </div>
+    </a>
+
+    <a class="card" data-cat="dasar"
+       data-search="tempat arah lokasi ここ そこ あそこ こちら どちら 階 売り場"
+       href="BAB 3.html">
+      <div class="card-head">
+        <span class="bab-num">03</span>
+        <span class="kanji-tag">第３課</span>
+      </div>
+      <h3>Tempat &amp; Arah <span>ここ・そこ・あそこ</span></h3>
+      <p>Menunjuk lokasi (sini/situ/sana), bentuk sopan こちら・そちら・あちら, harga dengan いくら, dan denah lantai toserba.</p>
+      <div class="meta">
+        <span class="tag">場所</span>
+        <span class="tag">Angka besar</span>
+        <span class="tag">Denah</span>
+      </div>
+    </a>
+
+    <a class="card" data-cat="dasar"
+       data-search="waktu jam kegiatan sehari-hari ます ました ません に から まで"
+       href="BAB 4.html">
+      <div class="card-head">
+        <span class="bab-num">04</span>
+        <span class="kanji-tag">第４課</span>
+      </div>
+      <h3>Waktu &amp; Kegiatan <span>時間と動詞</span></h3>
+      <p>Membaca jam (～時～分), konjugasi kata kerja ます, partikel に (waktu), serta pola rentang から～まで.</p>
+      <div class="meta">
+        <span class="tag">時刻</span>
+        <span class="tag">動詞</span>
+        <span class="tag">Konjugasi</span>
+      </div>
+    </a>
+
+    <a class="card" data-cat="dasar"
+       data-search="perpindahan pergi datang pulang 行きます 来ます 帰ります で と へ"
+       href="BAB 5.html">
+      <div class="card-head">
+        <span class="bab-num">05</span>
+        <span class="kanji-tag">第５課</span>
+      </div>
+      <h3>Pergi, Datang &amp; Pulang <span>行きます・来ます・帰ります</span></h3>
+      <p>Kata kerja perpindahan, partikel へ (arah), で (kendaraan), と (bersama), serta tanggal, bulan, dan hari libur Jepang.</p>
+      <div class="meta">
+        <span class="tag">移動</span>
+        <span class="tag">日・月</span>
+        <span class="tag">祝日</span>
+      </div>
+    </a>
+
+    <!-- ============ KEGIATAN (6–10) — LOCKED ============ -->
+    <h2 class="section-title kegiatan"><span class="dot"></span>Bab 6 – 10 · Kegiatan &amp; Keberadaan</h2>
+
+    <!-- 🔧 FIX #2: locked pakai <a href="#"> + aria-disabled, biar gampang di-unlock -->
+    <a class="card locked" href="#" aria-disabled="true" data-cat="kegiatan"
+       data-search="makan minum alat kata kerja objek を で ませんか ましょう">
+      <div class="card-head">
+        <span class="bab-num">06</span>
+        <span class="kanji-tag">第６課</span>
+      </div>
+      <h3>Makan, Minum &amp; Aktivitas <span>を・で・ませんか</span></h3>
+      <p>Kata kerja dengan objek (partikel を), ajakan ませんか, dan tawaran ましょう. Termasuk kosa kata makanan dan minuman.</p>
+      <div class="meta">
+        <span class="tag">を</span>
+        <span class="tag">Ajakan</span>
+        <span class="tag">食べ物</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="kegiatan"
+       data-search="alat memberi menerima で に あげます もらいます 貸します 教えます">
+      <div class="card-head">
+        <span class="bab-num">07</span>
+        <span class="kanji-tag">第７課</span>
+      </div>
+      <h3>Alat &amp; Memberi-Menerima <span>あげます・もらいます</span></h3>
+      <p>Kata kerja memberi/menerima, meminjam, mengajar, dan penggunaan partikel で (alat) serta に (penerima).</p>
+      <div class="meta">
+        <span class="tag">授受</span>
+        <span class="tag">道具</span>
+        <span class="tag">人</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="kegiatan"
+       data-search="kata sifat i na い形容詞 な形容詞 とても あまり どんな">
+      <div class="card-head">
+        <span class="bab-num">08</span>
+        <span class="kanji-tag">第８課</span>
+      </div>
+      <h3>Kata Sifat <span>い形容詞・な形容詞</span></h3>
+      <p>Dua jenis kata sifat, bentuk negatif, とても dan あまり, serta pertanyaan どんな. Termasuk kata sifat sehari-hari.</p>
+      <div class="meta">
+        <span class="tag">形容詞</span>
+        <span class="tag">とても</span>
+        <span class="tag">どんな</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="kegiatan"
+       data-search="kesukaan kemampuan 好き 嫌い 上手 下手 わかります あります から">
+      <div class="card-head">
+        <span class="bab-num">09</span>
+        <span class="kanji-tag">第９課</span>
+      </div>
+      <h3>Kesukaan &amp; Kemampuan <span>好き・上手・わかります</span></h3>
+      <p>Menyatakan suka/tidak suka, mahir/tidak mahir, mengerti, dan memiliki. Termasuk alasan dengan から.</p>
+      <div class="meta">
+        <span class="tag">好き嫌い</span>
+        <span class="tag">能力</span>
+        <span class="tag">から</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="kegiatan"
+       data-search="keberadaan ada あります います 位置 上 下 前 後ろ 隣 中 外">
+      <div class="card-head">
+        <span class="bab-num">10</span>
+        <span class="kanji-tag">第１０課</span>
+      </div>
+      <h3>Keberadaan &amp; Posisi <span>あります・います</span></h3>
+      <p>Menyatakan ada/tidak ada (benda vs orang/hewan), posisi 上・下・前・後ろ・隣・中・外, dan daftar tempat.</p>
+      <div class="meta">
+        <span class="tag">存在</span>
+        <span class="tag">位置</span>
+        <span class="tag">場所</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <!-- ============ EKSPRESI (11–15) — LOCKED ============ -->
+    <h2 class="section-title ekspresi"><span class="dot"></span>Bab 11 – 15 · Frekuensi, Perbandingan &amp; Permintaan</h2>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="ekspresi"
+       data-search="frekuensi hitungan kali 回 時間 だけ が を かかります">
+      <div class="card-head">
+        <span class="bab-num">11</span>
+        <span class="kanji-tag">第１１課</span>
+      </div>
+      <h3>Frekuensi &amp; Durasi <span>回・時間・かかります</span></h3>
+      <p>Kata bantu bilangan 回 (kali), 時間 (jam), menyatakan durasi, dan pola ～だけ (hanya).</p>
+      <div class="meta">
+        <span class="tag">頻度</span>
+        <span class="tag">回数</span>
+        <span class="tag">時間</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="ekspresi"
+       data-search="perbandingan lebih paling より のほうが 一番 同じ と どちら">
+      <div class="card-head">
+        <span class="bab-num">12</span>
+        <span class="kanji-tag">第１２課</span>
+      </div>
+      <h3>Perbandingan <span>より・のほうが・一番</span></h3>
+      <p>Membandingkan dua hal, memilih salah satu, menyatakan paling, dan bertanya dengan どちら / どの.</p>
+      <div class="meta">
+        <span class="tag">比較</span>
+        <span class="tag">より</span>
+        <span class="tag">一番</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="ekspresi"
+       data-search="keinginan ほしい たい に を が ましょうか">
+      <div class="card-head">
+        <span class="bab-num">13</span>
+        <span class="kanji-tag">第１３課</span>
+      </div>
+      <h3>Keinginan <span>ほしい・たい</span></h3>
+      <p>Menyatakan ingin sesuatu (ほしい) dan ingin melakukan sesuatu (～たい), serta pola に (tujuan).</p>
+      <div class="meta">
+        <span class="tag">希望</span>
+        <span class="tag">ほしい</span>
+        <span class="tag">たい</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="ekspresi"
+       data-search="permintaan perintah てください ないでください ましょうか が を">
+      <div class="card-head">
+        <span class="bab-num">14</span>
+        <span class="kanji-tag">第１４課</span>
+      </div>
+      <h3>Permintaan &amp; Perintah <span>てください</span></h3>
+      <p>Kata kerja bentuk て, permintaan てください, larangan ないでください, dan tawaran bantuan ましょうか.</p>
+      <div class="meta">
+        <span class="tag">依頼</span>
+        <span class="tag">て形</span>
+        <span class="tag">禁止</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="ekspresi"
+       data-search="izin larangan てもいいですか てはいけません ています 知っています">
+      <div class="card-head">
+        <span class="bab-num">15</span>
+        <span class="kanji-tag">第１５課</span>
+      </div>
+      <h3>Izin &amp; Larangan <span>てもいいですか</span></h3>
+      <p>Meminta izin, menyatakan larangan, dan kata kerja bentuk ています (sedang melakukan).</p>
+      <div class="meta">
+        <span class="tag">許可</span>
+        <span class="tag">禁止</span>
+        <span class="tag">ています</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <!-- ============ LANJUTAN (16–20) — LOCKED ============ -->
+    <h2 class="section-title lanjutan"><span class="dot"></span>Bab 16 – 20 · Pola Kalimat Lanjutan</h2>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="lanjutan"
+       data-search="urutan tindakan てから どうやって どの どれ あげます もらいます くれます">
+      <div class="card-head">
+        <span class="bab-num">16</span>
+        <span class="kanji-tag">第１６課</span>
+      </div>
+      <h3>Urutan Tindakan <span>てから・どうやって</span></h3>
+      <p>Menyatakan urutan (setelah ~), cara melakukan (どうやって), dan kata tanya どの・どれ dengan pola あげます・もらいます・くれます.</p>
+      <div class="meta">
+        <span class="tag">順序</span>
+        <span class="tag">方法</span>
+        <span class="tag">授受</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="lanjutan"
+       data-search="pengalaman pernah たことがあります ないほうがいいです ましょうか 前に">
+      <div class="card-head">
+        <span class="bab-num">17</span>
+        <span class="kanji-tag">第１７課</span>
+      </div>
+      <h3>Pengalaman <span>たことがあります</span></h3>
+      <p>Menyatakan pernah/tidak pernah melakukan, saran ないほうがいいです, dan pola ～前に.</p>
+      <div class="meta">
+        <span class="tag">経験</span>
+        <span class="tag">た形</span>
+        <span class="tag">助言</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="lanjutan"
+       data-search="bisa dapat ことができます 趣味 しゅみ なかなか とき">
+      <div class="card-head">
+        <span class="bab-num">18</span>
+        <span class="kanji-tag">第１８課</span>
+      </div>
+      <h3>Kemampuan &amp; Hobi <span>ことができます・趣味</span></h3>
+      <p>Menyatakan bisa melakukan sesuatu, membicarakan hobi, dan pola ～とき (ketika ~).</p>
+      <div class="meta">
+        <span class="tag">可能</span>
+        <span class="tag">趣味</span>
+        <span class="tag">とき</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="lanjutan"
+       data-search="perubahan keadaan なります くします になります ています たばかり ながら">
+      <div class="card-head">
+        <span class="bab-num">19</span>
+        <span class="kanji-tag">第１９課</span>
+      </div>
+      <h3>Perubahan Keadaan <span>なります・くします</span></h3>
+      <p>Menyatakan sesuatu berubah menjadi ~, menyatakan kebiasaan dengan ています, dan pola たばかり・ながら.</p>
+      <div class="meta">
+        <span class="tag">変化</span>
+        <span class="tag">習慣</span>
+        <span class="tag">ながら</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="lanjutan"
+       data-search="kalimat sopan biasa casual 普通形 敬語 話し言葉 書き言葉">
+      <div class="card-head">
+        <span class="bab-num">20</span>
+        <span class="kanji-tag">第２０課</span>
+      </div>
+      <h3>Bentuk Biasa <span>普通形・話し言葉</span></h3>
+      <p>Perbedaan kalimat sopan (丁寧形) dan kalimat biasa (普通形), termasuk percakapan kasual dengan teman dekat.</p>
+      <div class="meta">
+        <span class="tag">普通形</span>
+        <span class="tag">Casual</span>
+        <span class="tag">会話</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <!-- ============ MAHIR (21–25) — LOCKED ============ -->
+    <h2 class="section-title mahir"><span class="dot"></span>Bab 21 – 25 · Ekspresi Tingkat Mahir</h2>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="mahir"
+       data-search="pendapat pikiran と思います と言います でしょう かもしれません">
+      <div class="card-head">
+        <span class="bab-num">21</span>
+        <span class="kanji-tag">第２１課</span>
+      </div>
+      <h3>Pendapat &amp; Pikiran <span>と思います</span></h3>
+      <p>Menyampaikan pendapat, perkataan (と言います), kemungkinan (でしょう・かもしれません), dan kalimat 普通形 + と思います.</p>
+      <div class="meta">
+        <span class="tag">意見</span>
+        <span class="tag">推量</span>
+        <span class="tag">と言います</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="mahir"
+       data-search="pemberian kata bantu kata kerja bantu てあげます てもらいます てくれます 使役">
+      <div class="card-head">
+        <span class="bab-num">22</span>
+        <span class="kanji-tag">第２２課</span>
+      </div>
+      <h3>Kata Kerja Bantu <span>てあげます・てもらいます</span></h3>
+      <p>Pola kata kerja bantu memberi/menerima jasa: てあげます, てもらいます, てくれます. Termasuk nuansa kesopanan.</p>
+      <div class="meta">
+        <span class="tag">授受動詞</span>
+        <span class="tag">補助動詞</span>
+        <span class="tag">丁寧</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="mahir"
+       data-search="kondisi sebab とき と ば たら なら 条件形">
+      <div class="card-head">
+        <span class="bab-num">23</span>
+        <span class="kanji-tag">第２３課</span>
+      </div>
+      <h3>Kondisi &amp; Sebab <span>と・ば・たら・なら</span></h3>
+      <p>Empat pola pengandaian/kondisi dalam bahasa Jepang: と, ば, たら, なら, beserta perbedaan penggunaannya.</p>
+      <div class="meta">
+        <span class="tag">条件形</span>
+        <span class="tag">仮定</span>
+        <span class="tag">原因</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="mahir"
+       data-search="bantuan てくれます てもらいます ていただけませんか てあげます">
+      <div class="card-head">
+        <span class="bab-num">24</span>
+        <span class="kanji-tag">第２４課</span>
+      </div>
+      <h3>Memberi &amp; Menerima Jasa <span>てくれます・てもらいます</span></h3>
+      <p>Menyatakan orang lain melakukan sesuatu untuk kita (てくれます) dan kita menerima jasa (てもらいます) dengan tingkat kesopanan.</p>
+      <div class="meta">
+        <span class="tag">授受</span>
+        <span class="tag">依頼</span>
+        <span class="tag">恩恵</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+    <a class="card locked" href="#" aria-disabled="true" data-cat="mahir"
+       data-search="pengandaian たら ても のに ので おかげで せいで">
+      <div class="card-head">
+        <span class="bab-num">25</span>
+        <span class="kanji-tag">第２５課</span>
+      </div>
+      <h3>Pengandaian Lanjutan <span>たら・ても・のに</span></h3>
+      <p>Pola pengandaian lanjutan: たら (jika), ても (meskipun), のに (padahal), ので (karena), dan おかげで・せいで.</p>
+      <div class="meta">
+        <span class="tag">仮定</span>
+        <span class="tag">逆接</span>
+        <span class="tag">理由</span>
+      </div>
+      <span class="status-badge">Segera hadir</span>
+    </a>
+
+  </div>
+
+  <div class="empty" id="empty">
+    😅 Tidak ada bab yang cocok. Coba kata kunci lain.
+  </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  📘 <b>Minna no Nihongo 1 (みんなの日本語 初級Ⅰ)</b> — Kumpulan Catatan Bab 1–25<br>
+  Kosa Kata ・ 文型 ・ 例文 ・ 会話 ・ 文法<br>
+  Dibuat dengan <span class="love">❤</span> untuk belajar bersama · がんばってください！ ✨
+</footer>
+
+<button id="topBtn" aria-label="Kembali ke atas halaman">↑</button>
+
+<script>
+(function(){
+  'use strict';
+
+  const grid        = document.getElementById('grid');
+  const cards       = Array.from(grid.querySelectorAll('.card'));
+  const chips       = Array.from(document.querySelectorAll('.chip'));
+  const searchInput = document.getElementById('searchInput');
+  const empty       = document.getElementById('empty');
+  const topBtn      = document.getElementById('topBtn');
+  const readyCount  = document.getElementById('readyCount');
+
+  // Hitung otomatis jumlah bab yang sudah siap (bukan locked)
+  const ready = cards.filter(c => !c.classList.contains('locked')).length;
+  if (readyCount) readyCount.textContent = ready;
+
+  let activeCat = 'all';
+  let keyword   = '';
+
+  function applyFilters(){
+    let visible = 0;
+    cards.forEach(card => {
+      const cat  = card.dataset.cat || '';
+      const text = ((card.dataset.search || '') + ' ' + card.textContent).toLowerCase();
+      const matchCat = activeCat === 'all' || cat === activeCat;
+      const matchKey = keyword === '' || text.includes(keyword);
+      const show     = matchCat && matchKey;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    // Sembunyikan heading kategori yang tidak punya kartu tampil
+    grid.querySelectorAll('.section-title').forEach(t => {
+      let sib = t.nextElementSibling;
+      let hasVisible = false;
+      while (sib && !sib.classList.contains('section-title')) {
+        if (sib.classList.contains('card') && sib.style.display !== 'none') {
+          hasVisible = true; break;
+        }
+        sib = sib.nextElementSibling;
+      }
+      t.style.display = hasVisible ? '' : 'none';
+    });
+
+    empty.classList.toggle('show', visible === 0);
+  }
+
+  // Filter kategori
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      activeCat = chip.dataset.cat;
+      applyFilters();
+    });
+  });
+
+  // Pencarian
+  searchInput.addEventListener('input', (e) => {
+    keyword = e.target.value.trim().toLowerCase();
+    applyFilters();
+  });
+
+  // Back to top
+  window.addEventListener('scroll', () => {
+    topBtn.classList.toggle('show', window.scrollY > 400);
+  });
+  topBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // 🔧 FIX #3: Kartu locked (`<a href="#" aria-disabled>`) tidak bisa diklik
+  cards.forEach(card => {
+    if (card.classList.contains('locked')) {
+      card.addEventListener('click', e => {
+        e.preventDefault();
+        e.stopPropagation();
+      });
+    }
+  });
+
+  applyFilters();
+})();
+</script>
+</body>
+</html>
