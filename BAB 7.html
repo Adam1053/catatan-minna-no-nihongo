@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Catatan lengkap Minna no Nihongo 1 Bab 7: kosa kata, pola kalimat, contoh, percakapan, dan tata bahasa tentang memberi & menerima (あげます・もらいます).">
+<title>Catatan Lengkap — Minna no Nihongo 1 Bab 7</title>
+<style>
+  /* ============================================================
+     Minna no Nihongo — Bab 7 (Emas)
+     Tema warna: cukup ubah --hue (0–360) per bab
+     ============================================================ */
+  :root{
+    /* ===== Struktural — identik di semua bab ===== */
+    --bg:#f6f9fc;
+    --card:#ffffff;
+    --ink:#1f2430;
+    --ink-2:#2b3240;
+    --muted:#5b6472;
+    --line:#e3e9f0;
+    --line-2:#eef2f8;
+    --green:#12805c;
+    --orange:#e67e22;
+    --red:#c0392b;
+
+    /* ===== Aksen — cukup ubah --hue per bab ===== */
+    --hue:50;                                      /* Bab 7: amber/kuning */
+    --accent:      hsl(var(--hue) 55% 40%);
+    --accent2:     hsl(var(--hue) 50% 54%);
+    --accent-deep: hsl(var(--hue) 58% 26%);
+    --accent-soft: hsl(var(--hue) 55% 96%);
+    --accent-line: hsl(var(--hue) 45% 86%);
+    --accent-ink:  hsl(var(--hue) 58% 26%);
+    --accent-p:    hsl(var(--hue) 70% 72%);
+    --accent-hl:   hsl(var(--hue) 65% 82%);
+    --accent-even: hsl(var(--hue) 55% 98%);
+    --accent-glow: hsl(var(--hue) 70% 55% / .35);
+    --accent-shadow: hsl(var(--hue) 55% 40% / .22);
+
+    /* ===== Sistem ukuran ===== */
+    --radius-sm: 8px;
+    --radius:    12px;
+    --radius-lg: 18px;
+    --radius-xl: 22px;
+    --shadow-sm: 0 1px 3px rgba(31,36,48,.04), 0 1px 2px rgba(31,36,48,.03);
+    --shadow:    0 4px 16px rgba(31,36,48,.06), 0 2px 4px rgba(31,36,48,.03);
+    --shadow-lg: 0 12px 32px rgba(31,36,48,.08), 0 4px 8px rgba(31,36,48,.04);
+    --transition: .25s cubic-bezier(.4,0,.2,1);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);
+    line-height:1.75;font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+  }
+
+  /* ===== Aksesibilitas ===== */
+  .skip-link{
+    position:absolute;left:-9999px;top:0;z-index:999;
+    background:var(--accent);color:#fff;padding:10px 18px;
+    border-radius:0 0 10px 0;font-weight:700;text-decoration:none;
+    transition:left var(--transition);
+  }
+  .skip-link:focus{left:0}
+  a:focus-visible,button:focus-visible,summary:focus-visible{
+    outline:3px solid var(--accent2);outline-offset:2px;border-radius:6px;
+  }
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:24px 18px 96px;}
+
+  /* ===== Header Hero ===== */
+  header.hero{
+    position:relative;overflow:hidden;
+    background:linear-gradient(135deg,
+      hsl(var(--hue) 62% 22%) 0%,
+      hsl(var(--hue) 58% 34%) 45%,
+      hsl(var(--hue) 55% 46%) 100%);
+    color:#fff;
+    border-radius:var(--radius-xl);
+    padding:32px 30px 30px;
+    box-shadow:
+      0 16px 40px -10px var(--accent-shadow),
+      0 4px 12px -4px var(--accent-shadow);
+    isolation:isolate;
+  }
+  header.hero::before{
+    content:"";
+    position:absolute;inset:0;z-index:-1;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(255,255,255,.18) 0%, transparent 45%),
+      radial-gradient(circle at 85% 90%, rgba(255,255,255,.10) 0%, transparent 55%);
+    pointer-events:none;
+  }
+  header.hero::after{
+    content:"7";
+    position:absolute;right:20px;bottom:-38px;
+    font-size:170px;font-weight:900;opacity:.13;line-height:1;
+    pointer-events:none;user-select:none;
+    letter-spacing:-.05em;
+    text-shadow:0 4px 20px rgba(0,0,0,.15);
+  }
+  header.hero h1{
+    margin:0 0 8px;font-size:1.7rem;font-weight:800;
+    letter-spacing:.01em;line-height:1.32;
+    text-shadow:0 1px 2px rgba(0,0,0,.08);
+  }
+  header.hero p{
+    margin:0;opacity:.94;font-size:.96rem;
+    font-weight:500;letter-spacing:.005em;
+    max-width:65ch;
+  }
+  .badge{
+    display:inline-block;
+    background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.38);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    padding:3px 13px;border-radius:999px;
+    font-size:.76rem;font-weight:700;
+    margin-bottom:14px;letter-spacing:.1em;
+    text-transform:uppercase;
+  }
+  .toolbar{margin:20px 0 0;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{
+    background:#fff;color:var(--accent);
+    border:1.5px solid rgba(255,255,255,.9);
+    padding:9px 18px;border-radius:999px;
+    font-size:.85rem;font-weight:700;
+    cursor:pointer;font-family:inherit;
+    transition:all var(--transition);
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    letter-spacing:.01em;
+  }
+  .btn:hover{
+    background:rgba(255,255,255,.94);
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(0,0,0,.15);
+  }
+  .btn:active{transform:translateY(0)}
+
+  /* ===== Daftar Isi (TOC) ===== */
+  nav.toc{
+    background:var(--card);
+    border-radius:var(--radius-lg);
+    padding:20px 24px;
+    margin-top:22px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+    transition:box-shadow var(--transition);
+  }
+  nav.toc:hover{box-shadow:var(--shadow-lg)}
+  nav.toc h2{
+    margin:0 0 12px;font-size:1rem;font-weight:800;
+    color:var(--accent);letter-spacing:.06em;
+    display:flex;align-items:center;gap:8px;
+  }
+  nav.toc ol{
+    margin:0;padding-left:22px;
+    columns:2;column-gap:32px;
+  }
+  nav.toc li{margin:4px 0;font-size:.93rem}
+  nav.toc a{
+    color:var(--ink);text-decoration:none;
+    border-bottom:1px dashed transparent;
+    transition:all var(--transition);
+    padding-bottom:1px;
+  }
+  nav.toc a:hover{
+    color:var(--accent);
+    border-bottom-color:var(--accent);
+    padding-left:3px;
+  }
+
+  /* ===== Section Card ===== */
+  section{
+    background:var(--card);
+    border-radius:var(--radius-lg);
+    padding:26px 26px 28px;
+    margin-top:24px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+    scroll-margin-top:24px;
+    transition:box-shadow var(--transition);
+  }
+  section:hover{box-shadow:var(--shadow-lg)}
+
+  h2.sec{
+    font-size:1.25rem;margin:0 0 8px;
+    color:var(--accent);font-weight:800;
+    display:flex;align-items:center;gap:12px;
+    letter-spacing:.005em;
+  }
+  h2.sec .num{
+    background:linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+    color:#fff;width:32px;height:32px;flex:0 0 32px;
+    border-radius:10px;
+    display:grid;place-items:center;
+    font-size:.92rem;font-weight:800;
+    box-shadow:0 4px 10px -2px var(--accent-shadow);
+    letter-spacing:.02em;
+  }
+  h3.sub{
+    font-size:1.03rem;margin:28px 0 10px;
+    color:var(--accent2);font-weight:800;
+    border-left:4px solid var(--accent2);
+    padding-left:12px;line-height:1.4;
+  }
+  h4.mini{
+    font-size:.96rem;margin:20px 0 8px;
+    color:var(--ink);font-weight:700;
+  }
+  .lead{
+    color:var(--muted);font-size:.91rem;
+    margin:0 0 16px;line-height:1.7;
+  }
+
+  /* ===== Tabel ===== */
+  .tw{
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    margin:12px 0;
+    box-shadow:var(--shadow-sm);
+  }
+  table{
+    width:100%;border-collapse:collapse;
+    font-size:.93rem;background:#fff;
+  }
+  th{
+    background:linear-gradient(180deg, var(--accent-soft) 0%, hsl(var(--hue) 55% 94%) 100%);
+    color:var(--accent-ink);
+    text-align:left;font-weight:800;
+    padding:11px 14px;
+    border-bottom:2px solid var(--accent-line);
+    white-space:nowrap;font-size:.84rem;
+    letter-spacing:.02em;
+  }
+  td{
+    padding:11px 14px;
+    border-bottom:1px solid var(--line-2);
+    vertical-align:top;
+    transition:background var(--transition);
+  }
+  tr:last-child td{border-bottom:none}
+  tbody tr:nth-child(even){background:var(--accent-even)}
+  tbody tr:hover{background:hsl(var(--hue) 55% 95%)}
+  td.jp{font-size:1.02rem;white-space:nowrap;font-weight:500}
+  td.art{color:var(--ink-2)}
+  .note{color:var(--muted);font-size:.85rem}
+
+  /* ===== Furigana ===== */
+  ruby{ruby-position:over}
+  rt{
+    font-size:.55em;color:var(--accent);
+    font-weight:700;letter-spacing:.02em;
+    line-height:1.2;font-style:normal;
+  }
+  body.no-furi rt{display:none}
+
+  /* ===== Kotak Contoh ===== */
+  .ex{
+    background:linear-gradient(90deg, var(--accent-soft) 0%, var(--accent-even) 100%);
+    border-left:4px solid var(--accent);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:12px 0;
+    transition:all var(--transition);
+    position:relative;
+  }
+  .ex:hover{
+    border-left-width:6px;
+    padding-left:20px;
+    box-shadow:0 4px 12px -4px var(--accent-shadow);
+  }
+  .ex .jp-line{
+    font-size:1.06rem;line-height:2.05;margin:0;
+    font-weight:500;
+  }
+  .ex .id-line{
+    margin:4px 0 0;color:var(--muted);
+    font-size:.88rem;line-height:1.6;
+  }
+  .ex .lbl{
+    display:inline-block;
+    background:var(--accent);color:#fff;
+    font-size:.68rem;font-weight:800;
+    padding:2px 9px;border-radius:999px;
+    margin-right:8px;vertical-align:2px;
+    letter-spacing:.03em;
+    box-shadow:0 2px 4px -1px var(--accent-shadow);
+  }
+  .ok{color:var(--green);font-weight:700}
+  .ng{color:var(--red);font-weight:700}
+  .hl{
+    background:linear-gradient(transparent 62%, var(--accent-hl) 62%);
+    font-weight:700;padding:0 1px;
+    border-radius:2px;
+  }
+  .hl2{
+    background:linear-gradient(transparent 62%, #ffe08a 62%);
+    font-weight:700;padding:0 1px;
+    border-radius:2px;
+  }
+
+  /* ===== Kotak Informasi / Peringatan ===== */
+  .tip{
+    background:#eef7ff;
+    border:1px solid #cfe6fb;
+    border-left:4px solid #2c5aa0;
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:16px 0;
+    font-size:.9rem;line-height:1.7;
+    box-shadow:0 2px 6px -2px rgba(44,90,160,.08);
+  }
+  .tip b{color:#2c5aa0}
+  .warn{
+    background:#fff2f0;
+    border:1px solid #f7d5cf;
+    border-left:4px solid var(--red);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:16px 0;
+    font-size:.9rem;line-height:1.7;
+    box-shadow:0 2px 6px -2px rgba(192,57,43,.08);
+  }
+  .warn b{color:var(--red)}
+  .tip-amber{
+    background:#fff9ec;
+    border:1px solid #f5e0b8;
+    border-left:4px solid var(--orange);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:16px 0;
+    font-size:.9rem;line-height:1.7;
+    box-shadow:0 2px 6px -2px rgba(230,126,34,.08);
+  }
+  .tip-amber b{color:#b35c00}
+
+  /* ===== Rumus Pola Kalimat ===== */
+  .formula{
+    display:inline-block;
+    background:linear-gradient(135deg, var(--ink) 0%, #2b3240 100%);
+    color:#fff;font-weight:700;
+    padding:10px 18px;
+    border-radius:var(--radius);
+    letter-spacing:.03em;font-size:1rem;
+    margin:6px 0 12px;
+    max-width:100%;overflow-x:auto;
+    box-shadow:
+      0 6px 16px -4px rgba(31,36,48,.25),
+      0 2px 4px -1px rgba(31,36,48,.1);
+    border:1px solid rgba(255,255,255,.06);
+  }
+  .formula .p{color:var(--accent-p)}
+  .formula rt{color:var(--accent-p)}
+
+  /* ===== Dialog Percakapan ===== */
+  .dialog{
+    background:var(--accent-even);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:18px 20px;margin:14px 0;
+    position:relative;
+  }
+  .dialog .who{
+    display:inline-block;min-width:108px;
+    font-weight:800;color:var(--accent);
+    font-size:.88rem;letter-spacing:.01em;
+  }
+  .dialog p{
+    margin:8px 0;font-size:1rem;
+    line-height:1.75;
+    padding-left:2px;
+    transition:background var(--transition);
+  }
+  .dialog p:hover{background:hsl(var(--hue) 55% 96%);border-radius:6px}
+
+  /* ===== Grid Alat (Bab 7) ===== */
+  .tool-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:12px;margin:16px 0;
+  }
+  .tool-card{
+    background:linear-gradient(145deg, var(--accent-soft) 0%, var(--accent-even) 100%);
+    border:1px solid var(--accent-line);
+    border-radius:var(--radius);
+    padding:14px 12px;text-align:center;font-size:.85rem;
+    transition:all var(--transition);
+  }
+  .tool-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 16px -4px var(--accent-shadow);
+    border-color:var(--accent);
+  }
+  .tool-card .t-icon{font-size:1.9rem;display:block;margin-bottom:6px}
+  .tool-card .t-jp{
+    font-size:.98rem;font-weight:800;
+    color:var(--accent);display:block;
+    letter-spacing:.01em;
+  }
+  .tool-card .t-art{font-size:.78rem;color:var(--muted);display:block;margin-top:3px}
+
+  /* ===== Tabel Keluarga (Bab 7) ===== */
+  .family-table{table-layout:auto}
+  .family-table th{
+    text-align:center;font-size:.82rem;
+    vertical-align:middle;font-weight:800;
+    letter-spacing:.02em;
+  }
+  .family-table td{
+    vertical-align:middle;text-align:center;
+    font-weight:500;
+  }
+  .family-table td:first-child{
+    text-align:left;font-weight:800;color:var(--ink);
+    font-size:.9rem;background:#fafbfc;
+    letter-spacing:.01em;
+  }
+  .family-table .self-col{background:hsl(var(--hue) 55% 97%)}
+  .family-table .other-col{background:#fff5e6}
+  .family-table thead th.self-h{
+    background:linear-gradient(180deg, hsl(var(--hue) 60% 92%) 0%, hsl(var(--hue) 55% 88%) 100%);
+    color:hsl(var(--hue) 58% 26%);
+  }
+  .family-table thead th.other-h{
+    background:linear-gradient(180deg, #ffe8b8 0%, #ffd98a 100%);
+    color:#8a5a00;
+  }
+  .family-table td.self-col .kname{color:var(--accent);font-weight:800}
+  .family-table td.other-col .kname{color:#b35c00;font-weight:800}
+
+  /* ===== Tabel Konjugasi (Bab 7) ===== */
+  .conj-table th{text-align:center;font-size:.8rem}
+  .conj-table td{text-align:center;font-size:1rem;font-weight:500}
+  .conj-table td:first-child{
+    text-align:left;font-weight:800;color:var(--muted);
+    font-size:.85rem;letter-spacing:.02em;
+  }
+  .conj-table .pos{background:var(--accent-soft)}
+  .conj-table .neg{background:#fff0f0}
+  .conj-table .past{background:#eefbf5}
+  .conj-table .pastneg{background:#fdf0f5}
+
+  /* ===== Latihan Mandiri ===== */
+  details{
+    background:#f7fbf8;
+    border:1px solid #d6ece3;
+    border-radius:var(--radius);
+    padding:12px 16px;margin:10px 0;
+    font-size:.92rem;
+    transition:all var(--transition);
+  }
+  details:hover{border-color:#b8dccb;background:#f4faf6}
+  details[open]{
+    background:#fff;
+    box-shadow:var(--shadow-sm);
+  }
+  details summary{
+    cursor:pointer;font-weight:700;
+    color:var(--green);
+    list-style:none;
+    display:flex;align-items:center;gap:8px;
+    padding:2px 0;
+    transition:color var(--transition);
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::before{
+    content:"▸";display:inline-block;
+    transition:transform var(--transition);
+    color:var(--green);font-size:1.1em;
+  }
+  details[open] summary::before{transform:rotate(90deg)}
+  details[open] summary{margin-bottom:10px}
+  ol.latihan{padding-left:24px}
+  ol.latihan li{margin:12px 0;line-height:1.75}
+
+  /* ===== Footer & Kbd ===== */
+  footer{
+    text-align:center;color:var(--muted);
+    font-size:.83rem;margin-top:36px;
+    line-height:2;padding-top:24px;
+    border-top:1px solid var(--line);
+  }
+  .kbd{
+    background:var(--accent-soft);
+    border:1px solid var(--accent-line);
+    border-bottom-width:2px;
+    border-radius:6px;
+    padding:2px 8px;
+    font-size:.85em;font-family:inherit;font-weight:700;
+    color:var(--accent-ink);
+    white-space:nowrap;
+    transition:all var(--transition);
+  }
+  .kbd:hover{background:hsl(var(--hue) 55% 92%)}
+
+  /* ===== Animasi masuk ===== */
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(8px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+  section{animation:fadeUp .5s ease-out backwards}
+  section:nth-of-type(1){animation-delay:.05s}
+  section:nth-of-type(2){animation-delay:.1s}
+  section:nth-of-type(3){animation-delay:.15s}
+  section:nth-of-type(4){animation-delay:.2s}
+
+  /* ===== Responsif Mobile ===== */
+  @media(max-width:620px){
+    .wrap{padding:18px 14px 80px}
+    header.hero{padding:26px 22px 24px;border-radius:var(--radius-lg)}
+    header.hero h1{font-size:1.45rem}
+    header.hero::after{font-size:120px;right:14px;bottom:-24px}
+    section{padding:20px 18px 22px;border-radius:var(--radius);margin-top:18px}
+    nav.toc{padding:16px 18px;border-radius:var(--radius)}
+    nav.toc ol{columns:1}
+    .dialog .who{min-width:auto;display:block;margin-bottom:3px}
+    .formula{font-size:.92rem;padding:9px 14px}
+    h2.sec{font-size:1.15rem}
+    h2.sec .num{width:28px;height:28px;flex:0 0 28px;font-size:.85rem}
+    h3.sub{font-size:.98rem}
+    .btn{font-size:.82rem;padding:8px 15px}
+    .tool-grid{grid-template-columns:repeat(2,1fr)}
+    .family-table{font-size:.82rem}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#kosakata">Lewati ke konten utama</a>
+
+<div class="wrap">
+
+<!-- ================= HEADER ================= -->
+<header class="hero">
+  <span class="badge">みんなの日本語 Ⅰ ・ 第７課</span>
+  <h1>Catatan Lengkap Minna no Nihongo 1 — Bab 7</h1>
+  <p>Memberi &amp; Menerima ・ あげます・もらいます — Kosa Kata, Pola Kalimat, Contoh, Percakapan &amp; Tata Bahasa</p>
+  <div class="toolbar">
+    <button type="button" class="btn" id="furiBtn" onclick="toggleFuri()" aria-pressed="false">🙈 Sembunyikan Furigana</button>
+  </div>
+</header>
+
+<!-- ================= DAFTAR ISI ================= -->
+<nav class="toc" aria-label="Daftar isi">
+  <h2>📑 DAFTAR ISI</h2>
+  <ol>
+    <li><a href="#kosakata">Kosa Kata（単語）</a></li>
+    <li><a href="#pola">Pola Kalimat（文型）</a></li>
+    <li><a href="#contoh">Contoh Kalimat（例文）</a></li>
+    <li><a href="#percakapan">Percakapan（会話）</a></li>
+    <li><a href="#tatabahasa">Keterangan Tata Bahasa（文法）</a></li>
+    <li><a href="#keluarga">Tabel Keluarga（家族）</a></li>
+    <li><a href="#konjugasi">Tabel Konjugasi Kata Kerja（動詞の活用）</a></li>
+    <li><a href="#latihan">Latihan Mandiri</a></li>
+  </ol>
+</nav>
+
+<!-- ================= 1. KOSA KATA ================= -->
+<section id="kosakata">
+  <h2 class="sec"><span class="num">Ⅰ</span> Kosa Kata（単語）</h2>
+  <p class="lead">Tips membaca tabel: kolom <b>Jepang</b> memakai furigana (huruf kecil di atas kanji) sebagai panduan baca. Klik tombol di atas untuk menyembunyikan furigana saat berlatih.</p>
+
+  <h3 class="sub">1) Kata Kerja（動詞）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>切<rt>き</rt></ruby>ります</td><td>kirimasu</td><td class="art">memotong, menggunting</td></tr>
+        <tr><td class="jp"><ruby>送<rt>おく</rt></ruby>ります</td><td>okurimasu</td><td class="art">mengirim</td></tr>
+        <tr><td class="jp">あげます</td><td>agemasu</td><td class="art">memberikan <span class="note">(saya → orang lain)</span></td></tr>
+        <tr><td class="jp">もらいます</td><td>moraimasu</td><td class="art">mendapatkan, menerima <span class="note">(orang lain → saya)</span></td></tr>
+        <tr><td class="jp"><ruby>貸<rt>か</rt></ruby>します</td><td>kashimasu</td><td class="art">meminjamkan, menyewakan</td></tr>
+        <tr><td class="jp"><ruby>借<rt>か</rt></ruby>ります</td><td>karimasu</td><td class="art">meminjam, menyewa</td></tr>
+        <tr><td class="jp"><ruby>教<rt>おし</rt></ruby>えます</td><td>oshiemasu</td><td class="art">mengajar</td></tr>
+        <tr><td class="jp"><ruby>習<rt>なら</rt></ruby>います</td><td>naraimasu</td><td class="art">belajar <span class="note">(dari seseorang)</span></td></tr>
+        <tr><td class="jp">かけます <span class="note">［でんわを～］</span></td><td>kakemasu</td><td class="art">menelepon <span class="note">(denwa o kakemasu)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">2) Alat &amp; Perkakas（道具）</h3>
+  <div class="tool-grid">
+    <div class="tool-card">
+      <span class="t-icon">🥢</span>
+      <span class="t-jp">はし</span>
+      <span class="t-art">sumpit</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">🥄</span>
+      <span class="t-jp">スプーン</span>
+      <span class="t-art">sendok</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">🔪</span>
+      <span class="t-jp">ナイフ</span>
+      <span class="t-art">pisau</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">🍴</span>
+      <span class="t-jp">フォーク</span>
+      <span class="t-art">garpu</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">✂️</span>
+      <span class="t-jp">はさみ</span>
+      <span class="t-art">gunting</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">📌</span>
+      <span class="t-jp">パンチ</span>
+      <span class="t-art">pelubang kertas</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">📎</span>
+      <span class="t-jp">ホッチキス</span>
+      <span class="t-art">stapler</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">📏</span>
+      <span class="t-jp">セロテープ</span>
+      <span class="t-art">selotip</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">🧽</span>
+      <span class="t-jp"><ruby>消<rt>け</rt></ruby>しゴム</span>
+      <span class="t-art">penghapus karet</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">📄</span>
+      <span class="t-jp"><ruby>紙<rt>かみ</rt></ruby></span>
+      <span class="t-art">kertas</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">💻</span>
+      <span class="t-jp">パソコン</span>
+      <span class="t-art">komputer, PC</span>
+    </div>
+    <div class="tool-card">
+      <span class="t-icon">📱</span>
+      <span class="t-jp">ケータイ</span>
+      <span class="t-art">HP (handphone)</span>
+    </div>
+  </div>
+
+  <h3 class="sub">3) Benda &amp; Kebutuhan Sehari-hari（物）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>手<rt>て</rt></ruby></td><td>te</td><td class="art">tangan</td></tr>
+        <tr><td class="jp">メール</td><td>mēru</td><td class="art">e-mail</td></tr>
+        <tr><td class="jp"><ruby>年賀状<rt>ねんがじょう</rt></ruby></td><td>nengajō</td><td class="art">kartu tahun baru</td></tr>
+        <tr><td class="jp"><ruby>花<rt>はな</rt></ruby></td><td>hana</td><td class="art">bunga</td></tr>
+        <tr><td class="jp">シャツ</td><td>shatsu</td><td class="art">kemeja</td></tr>
+        <tr><td class="jp">プレゼント</td><td>purezento</td><td class="art">kado, hadiah</td></tr>
+        <tr><td class="jp"><ruby>荷物<rt>にもつ</rt></ruby></td><td>nimotsu</td><td class="art">barang</td></tr>
+        <tr><td class="jp">お<ruby>金<rt>かね</rt></ruby></td><td>okane</td><td class="art">uang</td></tr>
+        <tr><td class="jp"><ruby>切符<rt>きっぷ</rt></ruby></td><td>kippu</td><td class="art">karcis</td></tr>
+        <tr><td class="jp">クリスマス</td><td>kurisumasu</td><td class="art">Natal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">4) Anggota Keluarga（家族）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>父<rt>ちち</rt></ruby></td><td>chichi</td><td class="art">bapak, ayah <span class="note">(menyebut ayah sendiri)</span></td></tr>
+        <tr><td class="jp"><ruby>母<rt>はは</rt></ruby></td><td>haha</td><td class="art">ibu <span class="note">(menyebut ibu sendiri)</span></td></tr>
+        <tr><td class="jp">おとうさん</td><td>otōsan</td><td class="art">bapak, ayah <span class="note">(ayah orang lain; juga untuk memanggil ayah sendiri)</span></td></tr>
+        <tr><td class="jp">おかあさん</td><td>okāsan</td><td class="art">ibu <span class="note">(ibu orang lain; juga untuk memanggil ibu sendiri)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip-amber">
+    <b>💡 Catatan penting:</b> Dalam bahasa Jepang, panggilan anggota keluarga <b>berbeda</b> antara "keluarga sendiri" dan "keluarga orang lain". Lihat <a href="#keluarga">Tabel Keluarga lengkap di Seksi Ⅵ</a>.
+  </div>
+
+  <h3 class="sub">5) Kata Keterangan（副詞）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">もう</td><td>mō</td><td class="art">sudah <span class="note">(dipakai dengan ました)</span></td></tr>
+        <tr><td class="jp">まだ</td><td>mada</td><td class="art">belum <span class="note">(untuk jawaban negatif)</span></td></tr>
+        <tr><td class="jp">これから</td><td>korekara</td><td class="art">mulai dari sekarang</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">6) Ungkapan（表現）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">［～、］すてきですね。</td><td>~ suteki desu ne</td><td class="art">[~] bagus ya / [~] indah ya <span class="note">(ungkapan memuji)</span></td></tr>
+        <tr><td class="jp">いらっしゃい。</td><td>irasshai</td><td class="art">Selamat datang. <span class="note">(diucapkan tuan rumah saat tamu datang)</span></td></tr>
+        <tr><td class="jp">どうぞ お<ruby>上<rt>あ</rt></ruby>がり ください。</td><td>dōzo oagari kudasai</td><td class="art">Silakan masuk. <span class="note">(diucapkan tuan rumah)</span></td></tr>
+        <tr><td class="jp"><ruby>失礼<rt>しつれい</rt></ruby>します。</td><td>shitsurei shimasu</td><td class="art">Permisi. <span class="note">(diucapkan tamu saat masuk rumah orang)</span></td></tr>
+        <tr><td class="jp">～は いかがですか。</td><td>~ wa ikaga desu ka</td><td class="art">Bagaimana [~]? <span class="note">(saat menawarkan sesuatu kepada orang)</span></td></tr>
+        <tr><td class="jp">いただきます。</td><td>itadakimasu</td><td class="art">Selamat makan! <span class="note">(diucapkan sebelum makan/minum)</span></td></tr>
+        <tr><td class="jp">ごちそうさま［でした］。</td><td>gochisōsama [deshita]</td><td class="art">Terima kasih atas hidangannya. <span class="note">(diucapkan setelah makan/minum)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">7) Nama Tempat</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">スペイン</td><td class="art">Spanyol</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 2. POLA KALIMAT ================= -->
+<section id="pola">
+  <h2 class="sec"><span class="num">Ⅱ</span> Pola Kalimat（文型）</h2>
+  <p class="lead">Empat pola dasar Bab 7. Semua berkaitan dengan memberi/menerima dan cara melakukan sesuatu.</p>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">1</span>パソコンで <ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>ます。</p>
+    <p class="id-line">Saya menonton film dengan komputer.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">2</span>わたしは <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を あげました。</p>
+    <p class="id-line">Saya memberikan bunga kepada Sdr. Kimura.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">3</span>わたしは <ruby>カリナ<rt>かりな</rt></ruby>さんに チョコレートを もらいました。</p>
+    <p class="id-line">Saya mendapatkan cokelat dari Sdr. Karina.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">4</span>もう メールを <ruby>送<rt>おく</rt></ruby>りました。</p>
+    <p class="id-line">Saya telah mengirim e-mail.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Tiga partikel penting Bab 7:</b><br>
+    ① <span class="kbd">で</span> → menandai <b>alat/sarana</b> (dengan apa)<br>
+    ② <span class="kbd">に</span> → menandai <b>lawan</b> (kepada siapa / dari siapa)<br>
+    ③ <span class="kbd">から</span> → alternatif <span class="kbd">に</span> untuk もらいます, terutama untuk organisasi
+  </div>
+</section>
+
+<!-- ================= 3. CONTOH KALIMAT ================= -->
+<section id="contoh">
+  <h2 class="sec"><span class="num">Ⅲ</span> Contoh Kalimat（例文）</h2>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">1</span>テレビで <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>しますか。<br>……いいえ、ラジオで <ruby>勉強<rt>べんきょう</rt></ruby>します。</p>
+    <p class="id-line">Apakah belajar bahasa Jepang dengan televisi? — Tidak, belajar dengan radio.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">2</span><ruby>日本語<rt>にほんご</rt></ruby>で レポートを <ruby>書<rt>か</rt></ruby>きますか。<br>……いいえ、<ruby>英語<rt>えいご</rt></ruby>で <ruby>書<rt>か</rt></ruby>きます。</p>
+    <p class="id-line">Menulis laporan dalam bahasa Jepang? — Tidak, menulis dalam bahasa Inggris.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">3</span>「さようなら」は <ruby>英語<rt>えいご</rt></ruby>で <ruby>何<rt>なん</rt></ruby>ですか。<br>……「Goodbye」です。</p>
+    <p class="id-line">Apa bahasa Inggrisnya "Sayonara"? — "Goodbye".</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">4</span><ruby>年賀状<rt>ねんがじょう</rt></ruby>は だれに <ruby>書<rt>か</rt></ruby>きますか。<br>……<ruby>先生<rt>せんせい</rt></ruby>と <ruby>友達<rt>ともだち</rt></ruby>に <ruby>書<rt>か</rt></ruby>きます。</p>
+    <p class="id-line">Menulis kartu tahun baru untuk siapa? — Menulis untuk guru dan teman.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">5</span>それは <ruby>何<rt>なん</rt></ruby>ですか。<br>……<ruby>手帳<rt>てちょう</rt></ruby>です。<ruby>山田<rt>やまだ</rt></ruby>さんに もらいました。</p>
+    <p class="id-line">Apa itu? — Buku agenda. Saya mendapatkannya dari Sdr. Yamada.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">6</span><ruby>新幹線<rt>しんかんせん</rt></ruby>の <ruby>切符<rt>きっぷ</rt></ruby>を もう <ruby>買<rt>か</rt></ruby>いましたか。<br>……はい、もう <ruby>買<rt>か</rt></ruby>いました。</p>
+    <p class="id-line">Karcis Shinkansen sudah Anda beli? — Ya, sudah saya beli.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">7</span>もう <ruby>昼<rt>ひる</rt></ruby>ごはんを <ruby>食<rt>た</rt></ruby>べましたか。<br>……いいえ、まだです。これから <ruby>食<rt>た</rt></ruby>べます。</p>
+    <p class="id-line">Sudah makan siang? — Belum. Mau makan sekarang.</p>
+  </div>
+</section>
+
+<!-- ================= 4. PERCAKAPAN ================= -->
+<section id="percakapan">
+  <h2 class="sec"><span class="num">Ⅳ</span> Percakapan（会話）— いらっしゃい</h2>
+  <p class="lead">Situasi: Keluarga Santos (Jose &amp; Maria) berkunjung ke rumah keluarga Yamada (Ichiro &amp; Tomoko). Mereka disambut dengan ramah dan disuguhi kopi.</p>
+
+  <div class="dialog">
+    <p><span class="who">山田：</span>はい！</p>
+    <p><span class="who">サントス：</span>こんにちは。サントスです。</p>
+    <p><span class="who">山田：</span>あ、サントスさん。いらっしゃい。どうぞ お<ruby>上<rt>あ</rt></ruby>がり ください。</p>
+    <p><span class="who">サントス：</span><ruby>失礼<rt>しつれい</rt></ruby>します。</p>
+    <p><span class="who">トモコ：</span>コーヒーは いかがですか。</p>
+    <p><span class="who">マリア：</span>どうも ありがとう ございます。</p>
+    <p><span class="who">トモコ：</span>どうぞ。</p>
+    <p><span class="who">マリア：</span>いただきます。</p>
+    <p><span class="who">マリア：</span>この コーヒー、おいしいですね。</p>
+    <p><span class="who">トモコ：</span>ええ。<ruby>会社<rt>かいしゃ</rt></ruby>の <ruby>友達<rt>ともだち</rt></ruby>に もらいました。メキシコの お<ruby>土産<rt>みやげ</rt></ruby>です。</p>
+  </div>
+
+  <h4 class="mini">Terjemahan</h4>
+  <div class="dialog">
+    <p><span class="who">Yamada：</span>Ya!</p>
+    <p><span class="who">Santos：</span>Selamat siang. Saya Santos.</p>
+    <p><span class="who">Yamada：</span>O, Sdr. Santos. Selamat datang. Silakan masuk!</p>
+    <p><span class="who">Santos：</span>Permisi.</p>
+    <p><span class="who">Tomoko：</span>Bagaimana kalau minum kopi?</p>
+    <p><span class="who">Maria：</span>Terima kasih banyak.</p>
+    <p><span class="who">Tomoko：</span>Silakan.</p>
+    <p><span class="who">Maria：</span>Mari minum!</p>
+    <p><span class="who">Maria：</span>Kopi ini enak, ya.</p>
+    <p><span class="who">Tomoko：</span>Ya. Saya mendapatkannya dari teman sekantor. Oleh-oleh dari Meksiko.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Perhatikan:</b> Percakapan ini penuh dengan <b>ungkapan budaya</b> khas Jepang:<br>
+    • <span class="kbd">いらっしゃい</span> → sambutan hangat dari tuan rumah<br>
+    • <span class="kbd">どうぞ お上がりください</span> → "silakan masuk" (secara harfiah: silakan naik)<br>
+    • <span class="kbd">失礼します</span> → permisi (diucapkan tamu saat masuk rumah orang)<br>
+    • <span class="kbd">いただきます</span> → "selamat makan" (sebelum makan/minum)<br>
+    • <span class="kbd">ごちそうさま</span> → terima kasih atas hidangannya (setelah selesai)
+  </div>
+</section>
+
+<!-- ================= 5. TATA BAHASA ================= -->
+<section id="tatabahasa">
+  <h2 class="sec"><span class="num">Ⅴ</span> Keterangan Tata Bahasa（文法）</h2>
+
+  <!-- 1 -->
+  <h3 class="sub">1. Kata Benda (alat/sarana) で Kata Kerja</h3>
+  <span class="formula">N（alat/sarana）<span class="p">で</span> Kata Kerja</span>
+  <p>Partikel <span class="kbd">で</span> di sini menunjukkan <b>sarana dan cara</b> melakukan sesuatu. Berbeda dengan Bab 5 yang memakai <span class="kbd">で</span> untuk <b>kendaraan</b>, Bab 7 memakai <span class="kbd">で</span> untuk <b>alat</b> dan <b>bahasa</b>.</p>
+
+  <div class="ex">
+    <p class="jp-line">① はし<span class="hl">で</span> <ruby>食<rt>た</rt></ruby>べます。</p>
+    <p class="id-line">Makan dengan sumpit.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">② <ruby>日本語<rt>にほんご</rt></ruby><span class="hl">で</span> レポートを <ruby>書<rt>か</rt></ruby>きます。</p>
+    <p class="id-line">Menulis laporan dalam bahasa Jepang.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">③ パソコン<span class="hl">で</span> <ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>ます。</p>
+    <p class="id-line">Menonton film dengan komputer.</p>
+  </div>
+
+  <div class="tip-amber">
+    <b>💡 Ingat tiga fungsi で:</b><br>
+    • <ruby>電車<rt>でんしゃ</rt></ruby>で <ruby>行<rt>い</rt></ruby>きます → で = <b>kendaraan</b> <span class="note">(Bab 5)</span><br>
+    • <ruby>駅<rt>えき</rt></ruby>で <ruby>買<rt>か</rt></ruby>います → で = <b>tempat aksi</b> <span class="note">(Bab 6)</span><br>
+    • はしで <ruby>食<rt>た</rt></ruby>べます → で = <b>alat/sarana</b> <span class="note">(Bab 7)</span>
+  </div>
+
+  <!-- 2 -->
+  <h3 class="sub">2. 「Kata/Kalimat」は ～語で 何ですか</h3>
+  <span class="formula">「Kata」は <span class="p">～語で</span> <span class="p"><ruby>何<rt>なん</rt></ruby></span>ですか</span>
+  <p>Pertanyaan ini digunakan ketika menanyakan bagaimana cara mengatakan arti kata atau kalimat dalam bahasa lain.</p>
+
+  <div class="ex">
+    <p class="jp-line">④「ありがとう」は <ruby>英語<rt>えいご</rt></ruby>で <ruby>何<rt>なん</rt></ruby>ですか。<br>……「Thank you」です。</p>
+    <p class="id-line">Apa bahasa Inggris dari "Arigatou"? — "Thank you".</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑤「Thank you」は <ruby>日本語<rt>にほんご</rt></ruby>で <ruby>何<rt>なん</rt></ruby>ですか。<br>……「ありがとう」です。</p>
+    <p class="id-line">Apa bahasa Jepang dari "Thank you"? — "Arigatou".</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Pola umum:</b><br>
+    <span class="kbd">「A」は [B語] で 何ですか。</span> → "A dalam bahasa B apa?"<br>
+    Jawaban: <span class="kbd">「C」です。</span> → "C."
+  </div>
+
+  <!-- 3 -->
+  <h3 class="sub">3. Kata Benda (orang) に Kata Benda を あげます dan lain-lain</h3>
+  <span class="formula">N（orang）<span class="p">に</span> N（benda）<span class="p">を</span> あげます／<ruby>貸<rt>か</rt></ruby>します／<ruby>教<rt>おし</rt></ruby>えます</span>
+  <p>Kata kerja <span class="kbd">あげます</span>, <span class="kbd">かします</span>, <span class="kbd">おしえます</span> dan lain-lainnya menunjukkan arti yang <b>memberi</b> barang atau informasi, dan memerlukan <b>lawan</b> yang diberikan barang atau informasi. Kata Benda (orang) tersebut dibubuhkan dengan partikel <span class="kbd">に</span>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑥［わたしは］<ruby>木村<rt>きむら</rt></ruby>さん<span class="hl">に</span> <ruby>花<rt>はな</rt></ruby>を あげました。</p>
+    <p class="id-line">Saya memberikan Sdr. Kimura bunga.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑦［わたしは］イーさん<span class="hl">に</span> <ruby>本<rt>ほん</rt></ruby>を <ruby>貸<rt>か</rt></ruby>しました。</p>
+    <p class="id-line">Saya meminjamkan buku kepada Sdr. Lee.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑧［わたしは］<ruby>山田<rt>やまだ</rt></ruby>さん<span class="hl">に</span> <ruby>英語<rt>えいご</rt></ruby>を <ruby>教<rt>おし</rt></ruby>えます。</p>
+    <p class="id-line">Saya mengajar bahasa Inggris kepada Sdr. Yamada.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Kata Kerja</th><th scope="col">Arti</th><th scope="col">Pola</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">あげます</td><td class="art">memberikan</td><td class="art">N（orang）に N を あげます</td></tr>
+        <tr><td class="jp"><ruby>貸<rt>か</rt></ruby>します</td><td class="art">meminjamkan</td><td class="art">N（orang）に N を <ruby>貸<rt>か</rt></ruby>します</td></tr>
+        <tr><td class="jp"><ruby>教<rt>おし</rt></ruby>えます</td><td class="art">mengajar</td><td class="art">N（orang）に N を <ruby>教<rt>おし</rt></ruby>えます</td></tr>
+        <tr><td class="jp"><ruby>送<rt>おく</rt></ruby>ります</td><td class="art">mengirim</td><td class="art">N（orang）に N を <ruby>送<rt>おく</rt></ruby>ります</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 4 -->
+  <h3 class="sub">4. Kata Benda (orang) に Kata Benda を もらいます dan lain-lain</h3>
+  <span class="formula">N（orang）<span class="p">に</span> N（benda）<span class="p">を</span> もらいます／<ruby>借<rt>か</rt></ruby>ります／<ruby>習<rt>なら</rt></ruby>います</span>
+  <p>Kata kerja <span class="kbd">もらいます</span>, <span class="kbd">かります</span>, <span class="kbd">ならいます</span> dan lain-lainnya menunjukkan arti yang <b>menerima</b> barang atau informasi, dan memerlukan <b>lawan</b> yang memberikan barang atau informasi. Kata Benda (orang) tersebut dibubuhkan dengan partikel <span class="kbd">に</span>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑨［わたしは］<ruby>山田<rt>やまだ</rt></ruby>さん<span class="hl">に</span> <ruby>花<rt>はな</rt></ruby>を もらいました。</p>
+    <p class="id-line">Saya mendapatkan bunga dari Sdr. Yamada.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑩［わたしは］<ruby>カリナ<rt>かりな</rt></ruby>さん<span class="hl">に</span> CD を <ruby>借<rt>か</rt></ruby>りました。</p>
+    <p class="id-line">Saya meminjam CD dari Karina.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑪［わたしは］ワンさん<span class="hl">に</span> <ruby>中国語<rt>ちゅうごくご</rt></ruby>を <ruby>習<rt>なら</rt></ruby>います。</p>
+    <p class="id-line">Saya belajar bahasa Cina dari Sdr. Wang.</p>
+  </div>
+
+  <h4 class="mini">Pemakaian から sebagai pengganti に</h4>
+  <p>Untuk pola kalimat ini, partikel <span class="kbd">から</span> juga dapat digunakan sebagai pengganti partikel <span class="kbd">に</span>. Terutama jika lawannya <b>bukan orang</b> melainkan <b>organisasi</b> seperti perusahaan atau sekolah, maka yang digunakan adalah <span class="kbd">から</span>, bukan <span class="kbd">に</span>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑫［わたしは］<ruby>山田<rt>やまだ</rt></ruby>さん<span class="hl">から</span> <ruby>花<rt>はな</rt></ruby>を もらいました。</p>
+    <p class="id-line">Saya mendapatkan bunga dari Sdr. Yamada.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑬ <ruby>銀行<rt>ぎんこう</rt></ruby><span class="hl">から</span> お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。</p>
+    <p class="id-line">Saya meminjam uang dari bank.</p>
+  </div>
+
+  <div class="warn">
+    <b>⚠ Ingat aturan に vs から:</b><br>
+    • <b>Orang</b> → boleh <span class="kbd">に</span> atau <span class="kbd">から</span><br>
+    • <b>Organisasi/perusahaan/sekolah</b> → wajib <span class="kbd">から</span><br>
+    <span class="ok">✓ <ruby>銀行<rt>ぎんこう</rt></ruby>から お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。</span><br>
+    <span class="ng">✗ <ruby>銀行<rt>ぎんこう</rt></ruby>に お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。</span>
+  </div>
+
+  <!-- 5 -->
+  <h3 class="sub">5. もう Kata Kerja ました</h3>
+  <span class="formula"><span class="p">もう</span> Kata Kerja <span class="p">ました</span></span>
+  <p><span class="kbd">もう</span> mempunyai arti <b>"sudah"</b> dan digunakan dengan kombinasi Kata Kerja <span class="kbd">ました</span>. Dalam hal ini, Kata Kerja <span class="kbd">ました</span> bermaksud bahwa perbuatan telah <b>diselesaikan saat ini</b>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑭ もう <ruby>荷物<rt>にもつ</rt></ruby>を <ruby>送<rt>おく</rt></ruby>りましたか。<br>……はい、［もう］<ruby>送<rt>おく</rt></ruby>りました。<br>……いいえ、まだ <ruby>送<rt>おく</rt></ruby>って いません。</p>
+    <p class="id-line">Apakah barang sudah dikirim?<br>— Ya, sudah dikirim.<br>— Belum, belum dikirim.</p>
+  </div>
+
+  <h4 class="mini">Jawaban untuk pertanyaan もう ましたか</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Jawaban</th><th scope="col">Bentuk</th><th scope="col">Arti</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>Positif</b></td>
+          <td class="jp">はい、もう ～ました</td>
+          <td class="art">Ya, sudah ~</td>
+        </tr>
+        <tr>
+          <td><b>Negatif (sedang)</b></td>
+          <td class="jp">いいえ、まだ ～ていません</td>
+          <td class="art">Belum, belum ~ <span class="note">(Pel.31)</span></td>
+        </tr>
+        <tr>
+          <td><b>Negatif (singkat)</b></td>
+          <td class="jp">いいえ、まだです</td>
+          <td class="art">Belum.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">
+    <b>⚠ Perhatian penting:</b> <span class="ng">✗ いいえ、～ませんでした</span> <b>TIDAK DAPAT</b> digunakan untuk menjawab <span class="kbd">もう ～ましたか</span>, sebab <span class="kbd">ませんでした</span> mempunyai arti "<b>tidak dilakukan pada waktu lampau</b>" — berbeda maknanya dengan "belum".
+  </div>
+
+  <!-- 6 -->
+  <h3 class="sub">6. Menghilangkan partikel</h3>
+  <span class="formula">N <span class="p">［は］</span> / N <span class="p">［を］</span> ... (partikel dihilangkan)</span>
+  <p>Dalam kalimat percakapan, jika sudah dapat memahami arti dari hubungan sebelum dan sesudahnya, maka partikel sering <b>dihilangkan</b>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑮ この スプーン［は］、すてきですね。</p>
+    <p class="id-line">Sendok ini bagus ya.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑯ コーヒー［を］、もう <ruby>一杯<rt>いっぱい</rt></ruby> いかがですか。</p>
+    <p class="id-line">Bagaimana kopi secangkir lagi? <span class="note">(Pel.8)</span></p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Kapan partikel dihilangkan?</b><br>
+    • Dalam <b>percakapan kasual</b> (bukan tulisan formal)<br>
+    • Ketika <b>konteks sudah jelas</b> dari topik atau situasi<br>
+    • Partikel yang sering hilang: <span class="kbd">は</span>, <span class="kbd">を</span>, <span class="kbd">が</span><br>
+    <span class="note">Untuk pemula, sebaiknya tetap pakai partikel sampai terbiasa.</span>
+  </div>
+
+  <!-- Tambahan -->
+  <h3 class="sub">➕ Tambahan Penting (Referensi Lain yang Relevan)</h3>
+
+  <h4 class="mini">a) あげます vs もらいます — perbedaan sudut pandang</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Kata Kerja</th><th scope="col">Subjek</th><th scope="col">Partikel Lawan</th><th scope="col">Contoh</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="jp">あげます</td>
+          <td class="art">Pemberi</td>
+          <td class="jp">に</td>
+          <td class="jp">わたしは <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を あげました</td>
+        </tr>
+        <tr>
+          <td class="jp">もらいます</td>
+          <td class="art">Penerima</td>
+          <td class="jp">に／から</td>
+          <td class="jp">わたしは <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を もらいました</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tip">
+    <b>💡 Sudut pandang:</b><br>
+    • <span class="kbd">あげます</span> → dilihat dari <b>yang memberi</b> ("saya memberi ke X")<br>
+    • <span class="kbd">もらいます</span> → dilihat dari <b>yang menerima</b> ("saya menerima dari X")<br>
+    Dua kalimat ini bisa menggambarkan <b>situasi yang sama</b>, hanya beda sudut pandang.
+  </div>
+
+  <h4 class="mini">b) に vs から untuk もらいます</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Lawan</th><th scope="col">Partikel</th><th scope="col">Contoh</th></tr></thead>
+      <tbody>
+        <tr><td>Orang</td><td class="jp"><span class="ok">に ✓</span> atau <span class="ok">から ✓</span></td><td class="jp"><ruby>山田<rt>やまだ</rt></ruby>さんに／から もらいました</td></tr>
+        <tr><td>Organisasi</td><td class="jp"><span class="ok">から ✓</span>（<span class="ng">に ✗</span>）</td><td class="jp"><ruby>銀行<rt>ぎんこう</rt></ruby>から <ruby>借<rt>か</rt></ruby>りました</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 class="mini">c) もう vs まだ — tabel ringkas</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Kata</th><th scope="col">Arti</th><th scope="col">Dipakai dengan</th><th scope="col">Contoh</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">もう</td><td class="art">sudah</td><td class="jp">ました (positif)</td><td class="jp">もう <ruby>食<rt>た</rt></ruby>べました</td></tr>
+        <tr><td class="jp">まだ</td><td class="art">belum</td><td class="jp">～ていません / まだです</td><td class="jp">まだ <ruby>食<rt>た</rt></ruby>べて いません</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 class="mini">d) Ringkasan bentuk kalimat Bab 7</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bentuk</th><th scope="col">Rumus</th><th scope="col">Contoh</th></tr></thead>
+      <tbody>
+        <tr><td>Alat/sarana</td><td class="jp">N で V</td><td class="jp">はしで <ruby>食<rt>た</rt></ruby>べます</td></tr>
+        <tr><td>Menanyakan bahasa</td><td class="jp">「A」は ～語で <ruby>何<rt>なん</rt></ruby>ですか</td><td class="jp">「ありがとう」は <ruby>英語<rt>えいご</rt></ruby>で <ruby>何<rt>なん</rt></ruby>ですか</td></tr>
+        <tr><td>Memberi</td><td class="jp">N（orang）に N を あげます</td><td class="jp"><ruby>木村<rt>きむら</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を あげました</td></tr>
+        <tr><td>Menerima</td><td class="jp">N（orang）に N を もらいます</td><td class="jp"><ruby>山田<rt>やまだ</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を もらいました</td></tr>
+        <tr><td>Sudah</td><td class="jp">もう V ました</td><td class="jp">もう <ruby>送<rt>おく</rt></ruby>りました</td></tr>
+        <tr><td>Belum</td><td class="jp">まだ V ていません / まだです</td><td class="jp">まだ <ruby>送<rt>おく</rt></ruby>って いません</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 6. TABEL KELUARGA ================= -->
+<section id="keluarga">
+  <h2 class="sec"><span class="num">Ⅵ</span> Tabel Keluarga（家族）</h2>
+  <p class="lead">Dalam bahasa Jepang, panggilan anggota keluarga <b>berbeda</b> antara keluarga sendiri (内) dan keluarga orang lain (外). Hafalkan tabel ini dengan baik — sering muncul di percakapan sehari-hari!</p>
+
+  <div class="tw">
+    <table class="family-table">
+      <thead>
+        <tr>
+          <th scope="col">Arti</th>
+          <th scope="col" class="self-h">わたしの家族<br><span style="font-weight:600;font-size:.72rem">(keluarga sendiri)</span></th>
+          <th scope="col" class="other-h">～さんの家族<br><span style="font-weight:600;font-size:.72rem">(keluarga orang lain)</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kakek</td>
+          <td class="self-col"><span class="kname"><ruby>祖父<rt>そふ</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">おじいさん</span></td>
+        </tr>
+        <tr>
+          <td>Nenek</td>
+          <td class="self-col"><span class="kname"><ruby>祖母<rt>そぼ</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">おばあさん</span></td>
+        </tr>
+        <tr>
+          <td>Ayah</td>
+          <td class="self-col"><span class="kname"><ruby>父<rt>ちち</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">おとうさん <span class="note">／お<ruby>父<rt>とう</rt></ruby>さん</span></span></td>
+        </tr>
+        <tr>
+          <td>Ibu</td>
+          <td class="self-col"><span class="kname"><ruby>母<rt>はは</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">おかあさん <span class="note">／お<ruby>母<rt>かあ</rt></ruby>さん</span></span></td>
+        </tr>
+        <tr>
+          <td>Kakak laki-laki</td>
+          <td class="self-col"><span class="kname"><ruby>兄<rt>あに</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">おにいさん <span class="note">／お<ruby>兄<rt>にい</rt></ruby>さん</span></span></td>
+        </tr>
+        <tr>
+          <td>Kakak perempuan</td>
+          <td class="self-col"><span class="kname"><ruby>姉<rt>あね</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">おねえさん <span class="note">／お<ruby>姉<rt>ねえ</rt></ruby>さん</span></span></td>
+        </tr>
+        <tr>
+          <td>Adik laki-laki</td>
+          <td class="self-col"><span class="kname"><ruby>弟<rt>おとうと</rt></ruby></span></td>
+          <td class="other-col"><span class="kname"><ruby>弟<rt>おとうと</rt></ruby>さん</span></td>
+        </tr>
+        <tr>
+          <td>Adik perempuan</td>
+          <td class="self-col"><span class="kname"><ruby>妹<rt>いもうと</rt></ruby></span></td>
+          <td class="other-col"><span class="kname"><ruby>妹<rt>いもうと</rt></ruby>さん</span></td>
+        </tr>
+        <tr>
+          <td>Suami</td>
+          <td class="self-col"><span class="kname"><ruby>夫<rt>おっと</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">ご<ruby>主人<rt>しゅじん</rt></ruby></span></td>
+        </tr>
+        <tr>
+          <td>Istri</td>
+          <td class="self-col"><span class="kname"><ruby>妻<rt>つま</rt></ruby></span></td>
+          <td class="other-col"><span class="kname"><ruby>奥<rt>おく</rt></ruby>さん</span></td>
+        </tr>
+        <tr>
+          <td>Anak laki-laki</td>
+          <td class="self-col"><span class="kname"><ruby>息子<rt>むすこ</rt></ruby></span></td>
+          <td class="other-col"><span class="kname"><ruby>息子<rt>むすこ</rt></ruby>さん</span></td>
+        </tr>
+        <tr>
+          <td>Anak perempuan</td>
+          <td class="self-col"><span class="kname"><ruby>娘<rt>むすめ</rt></ruby></span></td>
+          <td class="other-col"><span class="kname"><ruby>娘<rt>むすめ</rt></ruby>さん <span class="note">／お<ruby>嬢<rt>じょう</rt></ruby>さん</span></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">Ringkasan Istilah Kelompok（家族のまとめ）</h3>
+  <div class="tw">
+    <table class="family-table">
+      <thead>
+        <tr>
+          <th scope="col">Arti</th>
+          <th scope="col" class="self-h">わたしの家族</th>
+          <th scope="col" class="other-h">～さんの家族</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Orang tua</td>
+          <td class="self-col"><span class="kname"><ruby>両親<rt>りょうしん</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">ご<ruby>両親<rt>りょうしん</rt></ruby></span></td>
+        </tr>
+        <tr>
+          <td>Saudara (kakak-adik)</td>
+          <td class="self-col"><span class="kname"><ruby>兄弟<rt>きょうだい</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">ご<ruby>兄弟<rt>きょうだい</rt></ruby></span></td>
+        </tr>
+        <tr>
+          <td>Pasangan suami-istri</td>
+          <td class="self-col"><span class="kname"><ruby>夫婦<rt>ふうふ</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">ご<ruby>夫婦<rt>ふうふ</rt></ruby></span></td>
+        </tr>
+        <tr>
+          <td>Anak</td>
+          <td class="self-col"><span class="kname"><ruby>子供<rt>こども</rt></ruby></span></td>
+          <td class="other-col"><span class="kname">お<ruby>子<rt>こ</rt></ruby>さん</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip">
+    <b>💡 Aturan praktis:</b><br>
+    • Untuk <b>keluarga sendiri</b> → pakai bentuk <b>sederhana</b> (ちち, はは, あに, あね)<br>
+    • Untuk <b>keluarga orang lain</b> → pakai bentuk <b>sopan</b> dengan awalan お/ご, atau akhiran さん<br>
+    • Pengecualian: saat <b>memanggil</b> ayah/ibu sendiri secara langsung, boleh pakai おとうさん/おかあさん.
+  </div>
+</section>
+
+<!-- ================= 7. KONJUGASI ================= -->
+<section id="konjugasi">
+  <h2 class="sec"><span class="num">Ⅶ</span> Tabel Konjugasi Kata Kerja（動詞の活用）</h2>
+  <p class="lead">Semua kata kerja Bab 7 dalam empat bentuk. Hafalkan pola perubahan: <b>～ます → ～ません → ～ました → ～ませんでした</b>.</p>
+
+  <div class="tw">
+    <table class="conj-table">
+      <thead>
+        <tr>
+          <th scope="col">Arti</th>
+          <th scope="col" class="pos">Positif<br>(～ます)</th>
+          <th scope="col" class="neg">Negatif<br>(～ません)</th>
+          <th scope="col" class="past">Lampau<br>(～ました)</th>
+          <th scope="col" class="pastneg">Lampau Negatif<br>(～ませんでした)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>memotong</td>
+          <td class="pos jp"><ruby>切<rt>き</rt></ruby>ります</td>
+          <td class="neg jp"><ruby>切<rt>き</rt></ruby>りません</td>
+          <td class="past jp"><ruby>切<rt>き</rt></ruby>りました</td>
+          <td class="pastneg jp"><ruby>切<rt>き</rt></ruby>りませんでした</td>
+        </tr>
+        <tr>
+          <td>mengirim</td>
+          <td class="pos jp"><ruby>送<rt>おく</rt></ruby>ります</td>
+          <td class="neg jp"><ruby>送<rt>おく</rt></ruby>りません</td>
+          <td class="past jp"><ruby>送<rt>おく</rt></ruby>りました</td>
+          <td class="pastneg jp"><ruby>送<rt>おく</rt></ruby>りませんでした</td>
+        </tr>
+        <tr>
+          <td>memberikan</td>
+          <td class="pos jp">あげます</td>
+          <td class="neg jp">あげません</td>
+          <td class="past jp">あげました</td>
+          <td class="pastneg jp">あげませんでした</td>
+        </tr>
+        <tr>
+          <td>menerima</td>
+          <td class="pos jp">もらいます</td>
+          <td class="neg jp">もらいません</td>
+          <td class="past jp">もらいました</td>
+          <td class="pastneg jp">もらいませんでした</td>
+        </tr>
+        <tr>
+          <td>meminjamkan</td>
+          <td class="pos jp"><ruby>貸<rt>か</rt></ruby>します</td>
+          <td class="neg jp"><ruby>貸<rt>か</rt></ruby>しません</td>
+          <td class="past jp"><ruby>貸<rt>か</rt></ruby>しました</td>
+          <td class="pastneg jp"><ruby>貸<rt>か</rt></ruby>しませんでした</td>
+        </tr>
+        <tr>
+          <td>meminjam</td>
+          <td class="pos jp"><ruby>借<rt>か</rt></ruby>ります</td>
+          <td class="neg jp"><ruby>借<rt>か</rt></ruby>りません</td>
+          <td class="past jp"><ruby>借<rt>か</rt></ruby>りました</td>
+          <td class="pastneg jp"><ruby>借<rt>か</rt></ruby>りませんでした</td>
+        </tr>
+        <tr>
+          <td>mengajar</td>
+          <td class="pos jp"><ruby>教<rt>おし</rt></ruby>えます</td>
+          <td class="neg jp"><ruby>教<rt>おし</rt></ruby>えません</td>
+          <td class="past jp"><ruby>教<rt>おし</rt></ruby>えました</td>
+          <td class="pastneg jp"><ruby>教<rt>おし</rt></ruby>えませんでした</td>
+        </tr>
+        <tr>
+          <td>belajar (dari)</td>
+          <td class="pos jp"><ruby>習<rt>なら</rt></ruby>います</td>
+          <td class="neg jp"><ruby>習<rt>なら</rt></ruby>いません</td>
+          <td class="past jp"><ruby>習<rt>なら</rt></ruby>いました</td>
+          <td class="pastneg jp"><ruby>習<rt>なら</rt></ruby>いませんでした</td>
+        </tr>
+        <tr>
+          <td>menelepon</td>
+          <td class="pos jp">かけます</td>
+          <td class="neg jp">かけません</td>
+          <td class="past jp">かけました</td>
+          <td class="pastneg jp">かけませんでした</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip">
+    <b>💡 Pola konjugasi ます (sama dengan Bab 4 &amp; 6):</b><br>
+    • Positif: <span class="kbd">～ます</span><br>
+    • Negatif: <span class="kbd">～ません</span><br>
+    • Lampau: <span class="kbd">～ました</span><br>
+    • Lampau negatif: <span class="kbd">～ませんでした</span>
+  </div>
+</section>
+
+<!-- ================= 8. LATIHAN ================= -->
+<section id="latihan">
+  <h2 class="sec"><span class="num">✎</span> Latihan Mandiri</h2>
+  <p class="lead">Kerjakan dulu, baru buka jawabannya. Klik "Lihat jawaban" untuk memeriksa.</p>
+
+  <ol class="latihan">
+    <li>
+      Terjemahkan ke bahasa Jepang: <b>"Saya menonton film dengan komputer."</b>
+      <details><summary>Lihat jawaban</summary>パソコンで <ruby>映画<rt>えいが</rt></ruby>を <ruby>見<rt>み</rt></ruby>ます。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Saya memberikan bunga kepada Sdr. Kimura."</b>
+      <details><summary>Lihat jawaban</summary>わたしは <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を あげました。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Saya mendapatkan cokelat dari Sdr. Karina."</b>
+      <details><summary>Lihat jawaban</summary>わたしは <ruby>カリナ<rt>かりな</rt></ruby>さんに チョコレートを もらいました。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Saya telah mengirim e-mail."</b>
+      <details><summary>Lihat jawaban</summary>もう メールを <ruby>送<rt>おく</rt></ruby>りました。</details>
+    </li>
+    <li>
+      Isi dengan partikel yang tepat (<b>で</b>, <b>に</b>, <b>を</b>, atau <b>から</b>):<br>
+      ① はし（　　）<ruby>食<rt>た</rt></ruby>べます。<br>
+      ② <ruby>木村<rt>きむら</rt></ruby>さん（　　）<ruby>花<rt>はな</rt></ruby>（　　）あげました。<br>
+      ③ <ruby>銀行<rt>ぎんこう</rt></ruby>（　　）お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。
+      <details><summary>Lihat jawaban</summary>
+        ① はし<b>で</b> <ruby>食<rt>た</rt></ruby>べます。<span class="note">（で = alat）</span><br>
+        ② <ruby>木村<rt>きむら</rt></ruby>さん<b>に</b> <ruby>花<rt>はな</rt></ruby><b>を</b> あげました。<span class="note">（に = lawan, を = objek）</span><br>
+        ③ <ruby>銀行<rt>ぎんこう</rt></ruby><b>から</b> お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。<span class="note">（organisasi → から, bukan に）</span>
+      </details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Apa bahasa Inggris dari "Arigatou"? — "Thank you"."</b>
+      <details><summary>Lihat jawaban</summary>「ありがとう」は <ruby>英語<rt>えいご</rt></ruby>で <ruby>何<rt>なん</rt></ruby>ですか。……「Thank you」です。</details>
+    </li>
+    <li>
+      Ubah ke bentuk lampau: <b>わたしは <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>本<rt>ほん</rt></ruby>を <ruby>貸<rt>か</rt></ruby>します。</b>
+      <details><summary>Lihat jawaban</summary>わたしは <ruby>木村<rt>きむら</rt></ruby>さんに <ruby>本<rt>ほん</rt></ruby>を <ruby>貸<rt>か</rt></ruby>しました。</details>
+    </li>
+    <li>
+      Jawab dengan bentuk "belum":<br>
+      A：もう <ruby>荷物<rt>にもつ</rt></ruby>を <ruby>送<rt>おく</rt></ruby>りましたか。<br>
+      B：（　　）。
+      <details><summary>Lihat jawaban</summary>いいえ、まだ <ruby>送<rt>おく</rt></ruby>って いません。<span class="note">（atau: いいえ、まだです。）</span></details>
+    </li>
+    <li>
+      Perbaiki kesalahan berikut:<br>
+      <span class="ng">✗ <ruby>銀行<rt>ぎんこう</rt></ruby>に お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。</span>
+      <details><summary>Lihat jawaban</summary><span class="ok">✓ <ruby>銀行<rt>ぎんこう</rt></ruby>から お<ruby>金<rt>かね</rt></ruby>を <ruby>借<rt>か</rt></ruby>りました。</span><span class="note">（organisasi memakai から, bukan に）</span></details>
+    </li>
+    <li>
+      Sebutkan perbedaan <b>あげます</b> dan <b>もらいます</b>.
+      <details><summary>Lihat jawaban</summary>
+        • <b>あげます</b> → dilihat dari <b>pemberi</b> ("saya memberi ke X").<br>
+        • <b>もらいます</b> → dilihat dari <b>penerima</b> ("saya menerima dari X").<br>
+        Dua kalimat bisa menggambarkan situasi yang sama, hanya beda sudut pandang.
+      </details>
+    </li>
+    <li>
+      Sebutkan 5 sebutan anggota keluarga untuk <b>keluarga sendiri</b> dan padanannya untuk <b>keluarga orang lain</b>.
+      <details><summary>Lihat jawaban</summary>
+        • 父（ちち） → おとうさん<br>
+        • 母（はは） → おかあさん<br>
+        • 兄（あに） → おにいさん<br>
+        • 姉（あね） → おねえさん<br>
+        • 妻（つま） → 奥（おく）さん
+      </details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Sudah makan siang? — Belum. Mau makan sekarang."</b>
+      <details><summary>Lihat jawaban</summary>もう <ruby>昼<rt>ひる</rt></ruby>ごはんを <ruby>食<rt>た</rt></ruby>べましたか。……いいえ、まだです。これから <ruby>食<rt>た</rt></ruby>べます。</details>
+    </li>
+    <li>
+      Lengkapi percakapan:<br>
+      山田：いらっしゃい。どうぞ お<ruby>上<rt>あ</rt></ruby>がり ください。<br>
+      サントス：（　　）。 ← permisi saat masuk rumah orang
+      <details><summary>Lihat jawaban</summary><b><ruby>失礼<rt>しつれい</rt></ruby>します。</b></details>
+    </li>
+    <li>
+      Ubah ke bentuk negatif: <b>わたしは <ruby>山田<rt>やまだ</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を もらいました。</b>
+      <details><summary>Lihat jawaban</summary>わたしは <ruby>山田<rt>やまだ</rt></ruby>さんに <ruby>花<rt>はな</rt></ruby>を もらいませんでした。</details>
+    </li>
+    <li>
+      Sebutkan 3 kata yang menunjukkan alat/sarana yang bisa dipakai dengan partikel <b>で</b> di Bab 7.
+      <details><summary>Lihat jawaban</summary>
+        Contoh: はし（sumpit）、スプーン（sendok）、パソコン（komputer）、ケータイ（HP）、<ruby>日本語<rt>にほんご</rt></ruby>（bahasa Jepang）— pilih 3 saja.
+      </details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Menulis laporan dalam bahasa Jepang? — Tidak, menulis dalam bahasa Inggris."</b>
+      <details><summary>Lihat jawaban</summary><ruby>日本語<rt>にほんご</rt></ruby>で レポートを <ruby>書<rt>か</rt></ruby>きますか。……いいえ、<ruby>英語<rt>えいご</rt></ruby>で <ruby>書<rt>か</rt></ruby>きます。</details>
+    </li>
+  </ol>
+</section>
+
+<footer>
+  📘 Catatan Belajar — <b>Minna no Nihongo 1 (みんなの日本語 初級Ⅰ) Bab 7</b><br>
+  Kosa Kata ・ 文型 ・ 例文 ・ 会話 ・ 文法<br>
+  がんばってください！ ✨
+</footer>
+
+</div>
+
+<script>
+  function toggleFuri(){
+    var b = document.body;
+    var btn = document.getElementById('furiBtn');
+    b.classList.toggle('no-furi');
+    if(b.classList.contains('no-furi')){
+      btn.textContent = '👀 Tampilkan Furigana';
+      btn.setAttribute('aria-pressed', 'true');
+    } else {
+      btn.textContent = '🙈 Sembunyikan Furigana';
+      btn.setAttribute('aria-pressed', 'false');
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Catatan lengkap Minna no Nihongo 1 Bab 5: kosa kata, pola kalimat, contoh, percakapan, dan tata bahasa tentang pergi, datang & pulang (行きます・来ます・帰ります).">
+<title>Catatan Lengkap — Minna no Nihongo 1 Bab 5</title>
+<style>
+  /* ============================================================
+     Minna no Nihongo — Bab 5 (Teal)
+     Tema warna: cukup ubah --hue (0–360) per bab
+     ============================================================ */
+  :root{
+    /* ===== Struktural — identik di semua bab ===== */
+    --bg:#f6f9fc;
+    --card:#ffffff;
+    --ink:#1f2430;
+    --ink-2:#2b3240;
+    --muted:#5b6472;
+    --line:#e3e9f0;
+    --line-2:#eef2f8;
+    --green:#12805c;
+    --orange:#e67e22;
+    --red:#c0392b;
+
+    /* ===== Aksen — cukup ubah --hue per bab ===== */
+    --hue:185;                                     /* Bab 5: teal / sian */
+    --accent:      hsl(var(--hue) 55% 40%);
+    --accent2:     hsl(var(--hue) 50% 54%);
+    --accent-deep: hsl(var(--hue) 58% 26%);
+    --accent-soft: hsl(var(--hue) 55% 96%);
+    --accent-line: hsl(var(--hue) 45% 86%);
+    --accent-ink:  hsl(var(--hue) 58% 26%);
+    --accent-p:    hsl(var(--hue) 70% 72%);
+    --accent-hl:   hsl(var(--hue) 65% 82%);
+    --accent-even: hsl(var(--hue) 55% 98%);
+    --accent-glow: hsl(var(--hue) 70% 55% / .35);
+    --accent-shadow: hsl(var(--hue) 55% 40% / .22);
+
+    /* ===== Sistem ukuran ===== */
+    --radius-sm: 8px;
+    --radius:    12px;
+    --radius-lg: 18px;
+    --radius-xl: 22px;
+    --shadow-sm: 0 1px 3px rgba(31,36,48,.04), 0 1px 2px rgba(31,36,48,.03);
+    --shadow:    0 4px 16px rgba(31,36,48,.06), 0 2px 4px rgba(31,36,48,.03);
+    --shadow-lg: 0 12px 32px rgba(31,36,48,.08), 0 4px 8px rgba(31,36,48,.04);
+    --transition: .25s cubic-bezier(.4,0,.2,1);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);
+    line-height:1.75;font-size:16px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+  }
+
+  /* ===== Aksesibilitas ===== */
+  .skip-link{
+    position:absolute;left:-9999px;top:0;z-index:999;
+    background:var(--accent);color:#fff;padding:10px 18px;
+    border-radius:0 0 10px 0;font-weight:700;text-decoration:none;
+    transition:left var(--transition);
+  }
+  .skip-link:focus{left:0}
+  a:focus-visible,button:focus-visible,summary:focus-visible{
+    outline:3px solid var(--accent2);outline-offset:2px;border-radius:6px;
+  }
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:24px 18px 96px;}
+
+  /* ===== Header Hero ===== */
+  header.hero{
+    position:relative;overflow:hidden;
+    background:linear-gradient(135deg,
+      hsl(var(--hue) 62% 22%) 0%,
+      hsl(var(--hue) 58% 34%) 45%,
+      hsl(var(--hue) 55% 46%) 100%);
+    color:#fff;
+    border-radius:var(--radius-xl);
+    padding:32px 30px 30px;
+    box-shadow:
+      0 16px 40px -10px var(--accent-shadow),
+      0 4px 12px -4px var(--accent-shadow);
+    isolation:isolate;
+  }
+  header.hero::before{
+    content:"";
+    position:absolute;inset:0;z-index:-1;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(255,255,255,.18) 0%, transparent 45%),
+      radial-gradient(circle at 85% 90%, rgba(255,255,255,.10) 0%, transparent 55%);
+    pointer-events:none;
+  }
+  header.hero::after{
+    content:"5";
+    position:absolute;right:20px;bottom:-38px;
+    font-size:170px;font-weight:900;opacity:.13;line-height:1;
+    pointer-events:none;user-select:none;
+    letter-spacing:-.05em;
+    text-shadow:0 4px 20px rgba(0,0,0,.15);
+  }
+  header.hero h1{
+    margin:0 0 8px;font-size:1.7rem;font-weight:800;
+    letter-spacing:.01em;line-height:1.32;
+    text-shadow:0 1px 2px rgba(0,0,0,.08);
+  }
+  header.hero p{
+    margin:0;opacity:.94;font-size:.96rem;
+    font-weight:500;letter-spacing:.005em;
+    max-width:65ch;
+  }
+  .badge{
+    display:inline-block;
+    background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.38);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    padding:3px 13px;border-radius:999px;
+    font-size:.76rem;font-weight:700;
+    margin-bottom:14px;letter-spacing:.1em;
+    text-transform:uppercase;
+  }
+  .toolbar{margin:20px 0 0;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{
+    background:#fff;color:var(--accent);
+    border:1.5px solid rgba(255,255,255,.9);
+    padding:9px 18px;border-radius:999px;
+    font-size:.85rem;font-weight:700;
+    cursor:pointer;font-family:inherit;
+    transition:all var(--transition);
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    letter-spacing:.01em;
+  }
+  .btn:hover{
+    background:rgba(255,255,255,.94);
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(0,0,0,.15);
+  }
+  .btn:active{transform:translateY(0)}
+
+  /* ===== Daftar Isi (TOC) ===== */
+  nav.toc{
+    background:var(--card);
+    border-radius:var(--radius-lg);
+    padding:20px 24px;
+    margin-top:22px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+    transition:box-shadow var(--transition);
+  }
+  nav.toc:hover{box-shadow:var(--shadow-lg)}
+  nav.toc h2{
+    margin:0 0 12px;font-size:1rem;font-weight:800;
+    color:var(--accent);letter-spacing:.06em;
+    display:flex;align-items:center;gap:8px;
+  }
+  nav.toc ol{
+    margin:0;padding-left:22px;
+    columns:2;column-gap:32px;
+  }
+  nav.toc li{margin:4px 0;font-size:.93rem}
+  nav.toc a{
+    color:var(--ink);text-decoration:none;
+    border-bottom:1px dashed transparent;
+    transition:all var(--transition);
+    padding-bottom:1px;
+  }
+  nav.toc a:hover{
+    color:var(--accent);
+    border-bottom-color:var(--accent);
+    padding-left:3px;
+  }
+
+  /* ===== Section Card ===== */
+  section{
+    background:var(--card);
+    border-radius:var(--radius-lg);
+    padding:26px 26px 28px;
+    margin-top:24px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+    scroll-margin-top:24px;
+    transition:box-shadow var(--transition);
+  }
+  section:hover{box-shadow:var(--shadow-lg)}
+
+  h2.sec{
+    font-size:1.25rem;margin:0 0 8px;
+    color:var(--accent);font-weight:800;
+    display:flex;align-items:center;gap:12px;
+    letter-spacing:.005em;
+  }
+  h2.sec .num{
+    background:linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+    color:#fff;width:32px;height:32px;flex:0 0 32px;
+    border-radius:10px;
+    display:grid;place-items:center;
+    font-size:.92rem;font-weight:800;
+    box-shadow:0 4px 10px -2px var(--accent-shadow);
+    letter-spacing:.02em;
+  }
+  h3.sub{
+    font-size:1.03rem;margin:28px 0 10px;
+    color:var(--accent2);font-weight:800;
+    border-left:4px solid var(--accent2);
+    padding-left:12px;line-height:1.4;
+  }
+  h4.mini{
+    font-size:.96rem;margin:20px 0 8px;
+    color:var(--ink);font-weight:700;
+  }
+  .lead{
+    color:var(--muted);font-size:.91rem;
+    margin:0 0 16px;line-height:1.7;
+  }
+
+  /* ===== Tabel ===== */
+  .tw{
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    margin:12px 0;
+    box-shadow:var(--shadow-sm);
+  }
+  table{
+    width:100%;border-collapse:collapse;
+    font-size:.93rem;background:#fff;
+  }
+  th{
+    background:linear-gradient(180deg, var(--accent-soft) 0%, hsl(var(--hue) 55% 94%) 100%);
+    color:var(--accent-ink);
+    text-align:left;font-weight:800;
+    padding:11px 14px;
+    border-bottom:2px solid var(--accent-line);
+    white-space:nowrap;font-size:.84rem;
+    letter-spacing:.02em;
+  }
+  td{
+    padding:11px 14px;
+    border-bottom:1px solid var(--line-2);
+    vertical-align:top;
+    transition:background var(--transition);
+  }
+  tr:last-child td{border-bottom:none}
+  tbody tr:nth-child(even){background:var(--accent-even)}
+  tbody tr:hover{background:hsl(var(--hue) 55% 95%)}
+  td.jp{font-size:1.02rem;white-space:nowrap;font-weight:500}
+  td.art{color:var(--ink-2)}
+  .note{color:var(--muted);font-size:.85rem}
+
+  /* ===== Furigana ===== */
+  ruby{ruby-position:over}
+  rt{
+    font-size:.55em;color:var(--accent);
+    font-weight:700;letter-spacing:.02em;
+    line-height:1.2;font-style:normal;
+  }
+  body.no-furi rt{display:none}
+
+  /* ===== Kotak Contoh ===== */
+  .ex{
+    background:linear-gradient(90deg, var(--accent-soft) 0%, var(--accent-even) 100%);
+    border-left:4px solid var(--accent);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:12px 0;
+    transition:all var(--transition);
+    position:relative;
+  }
+  .ex:hover{
+    border-left-width:6px;
+    padding-left:20px;
+    box-shadow:0 4px 12px -4px var(--accent-shadow);
+  }
+  .ex .jp-line{
+    font-size:1.06rem;line-height:2.05;margin:0;
+    font-weight:500;
+  }
+  .ex .id-line{
+    margin:4px 0 0;color:var(--muted);
+    font-size:.88rem;line-height:1.6;
+  }
+  .ex .lbl{
+    display:inline-block;
+    background:var(--accent);color:#fff;
+    font-size:.68rem;font-weight:800;
+    padding:2px 9px;border-radius:999px;
+    margin-right:8px;vertical-align:2px;
+    letter-spacing:.03em;
+    box-shadow:0 2px 4px -1px var(--accent-shadow);
+  }
+  .ok{color:var(--green);font-weight:700}
+  .ng{color:var(--red);font-weight:700}
+  .hl{
+    background:linear-gradient(transparent 62%, var(--accent-hl) 62%);
+    font-weight:700;padding:0 1px;
+    border-radius:2px;
+  }
+  .hl2{
+    background:linear-gradient(transparent 62%, #ffe08a 62%);
+    font-weight:700;padding:0 1px;
+    border-radius:2px;
+  }
+
+  /* ===== Kotak Informasi / Peringatan ===== */
+  .tip{
+    background:#eef7ff;
+    border:1px solid #cfe6fb;
+    border-left:4px solid #2c5aa0;
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:16px 0;
+    font-size:.9rem;line-height:1.7;
+    box-shadow:0 2px 6px -2px rgba(44,90,160,.08);
+  }
+  .tip b{color:#2c5aa0}
+  .warn{
+    background:#fff2f0;
+    border:1px solid #f7d5cf;
+    border-left:4px solid var(--red);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:16px 0;
+    font-size:.9rem;line-height:1.7;
+    box-shadow:0 2px 6px -2px rgba(192,57,43,.08);
+  }
+  .warn b{color:var(--red)}
+  .tip-amber{
+    background:#fff9ec;
+    border:1px solid #f5e0b8;
+    border-left:4px solid var(--orange);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:14px 18px;margin:16px 0;
+    font-size:.9rem;line-height:1.7;
+    box-shadow:0 2px 6px -2px rgba(230,126,34,.08);
+  }
+  .tip-amber b{color:#b35c00}
+
+  /* ===== Rumus Pola Kalimat ===== */
+  .formula{
+    display:inline-block;
+    background:linear-gradient(135deg, var(--ink) 0%, #2b3240 100%);
+    color:#fff;font-weight:700;
+    padding:10px 18px;
+    border-radius:var(--radius);
+    letter-spacing:.03em;font-size:1rem;
+    margin:6px 0 12px;
+    max-width:100%;overflow-x:auto;
+    box-shadow:
+      0 6px 16px -4px rgba(31,36,48,.25),
+      0 2px 4px -1px rgba(31,36,48,.1);
+    border:1px solid rgba(255,255,255,.06);
+  }
+  .formula .p{color:var(--accent-p)}
+  .formula rt{color:var(--accent-p)}
+
+  /* ===== Dialog Percakapan ===== */
+  .dialog{
+    background:var(--accent-even);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:18px 20px;margin:14px 0;
+    position:relative;
+  }
+  .dialog .who{
+    display:inline-block;min-width:108px;
+    font-weight:800;color:var(--accent);
+    font-size:.88rem;letter-spacing:.01em;
+  }
+  .dialog p{
+    margin:8px 0;font-size:1rem;
+    line-height:1.75;
+    padding-left:2px;
+    transition:background var(--transition);
+  }
+  .dialog p:hover{background:hsl(var(--hue) 55% 96%);border-radius:6px}
+
+  /* ===== Diagram Gerak (Bab 5) ===== */
+  .move-diagram{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0;
+  }
+  .move-box{
+    background:linear-gradient(145deg, var(--accent-soft) 0%, var(--accent-even) 100%);
+    border:2px dashed var(--accent-line);
+    border-radius:var(--radius);
+    padding:18px 14px;text-align:center;font-size:.88rem;
+    transition:all var(--transition);
+  }
+  .move-box:hover{
+    border-style:solid;
+    border-color:var(--accent);
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px -6px var(--accent-shadow);
+  }
+  .move-box .verb{
+    font-size:1.3rem;font-weight:900;
+    color:var(--accent);display:block;margin-bottom:6px;
+    letter-spacing:.02em;
+  }
+  .move-box .arrow{font-size:1.9rem;display:block;margin:8px 0}
+
+  /* ===== Transportasi (Bab 5) ===== */
+  .transport-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:12px;margin:16px 0;
+  }
+  .transport-card{
+    background:linear-gradient(145deg, var(--accent-soft) 0%, var(--accent-even) 100%);
+    border:1px solid var(--accent-line);
+    border-radius:var(--radius);
+    padding:14px 12px;text-align:center;font-size:.85rem;
+    transition:all var(--transition);
+  }
+  .transport-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 16px -4px var(--accent-shadow);
+    border-color:var(--accent);
+  }
+  .transport-card .t-icon{font-size:1.9rem;display:block;margin-bottom:6px}
+  .transport-card .t-jp{
+    font-size:1rem;font-weight:800;
+    color:var(--accent);display:block;
+    letter-spacing:.01em;
+  }
+  .transport-card .t-art{font-size:.78rem;color:var(--muted);display:block;margin-top:3px}
+
+  /* ===== Kalender & Tanggal (Bab 5) ===== */
+  .date-table{table-layout:auto;width:100%}
+  .date-table th,
+  .date-table td{text-align:center;vertical-align:middle;padding:11px 8px}
+  .date-table th{
+    font-size:.82rem;font-weight:800;
+    letter-spacing:.02em;
+  }
+  .date-table td{font-size:.92rem;font-weight:500}
+  .date-table .special{
+    background:linear-gradient(145deg, #fff5e6 0%, #ffeed2 100%);
+    font-weight:800;color:#b35c00;
+  }
+  .date-table .num{
+    font-weight:800;color:var(--accent2);
+    font-size:.85rem;letter-spacing:.02em;
+  }
+
+  /* ===== Hari Libur (Bab 5) ===== */
+  .holiday-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:12px;margin:16px 0;
+  }
+  .holiday-card{
+    background:linear-gradient(145deg, #fff5e6 0%, #fffaf0 100%);
+    border:1px solid #f5d9a8;
+    border-radius:var(--radius);
+    padding:12px 16px;font-size:.85rem;
+    transition:all var(--transition);
+  }
+  .holiday-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px -4px rgba(179,92,0,.15);
+    border-color:#e5c98a;
+  }
+  .holiday-card .h-date{
+    font-weight:800;color:#b35c00;
+    font-size:.85rem;display:block;margin-bottom:3px;
+    letter-spacing:.01em;
+  }
+  .holiday-card .h-name{
+    font-weight:700;display:block;margin-bottom:3px;
+    color:var(--ink);
+  }
+  .holiday-card .h-art{color:var(--muted);font-size:.78rem;line-height:1.5}
+  .ast{
+    color:#b35c00;font-weight:900;
+    font-size:.85em;letter-spacing:.05em;
+  }
+
+  /* ===== Bulan (Bab 5) ===== */
+  .month-grid{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:16px 0;
+  }
+  .month-card{
+    background:linear-gradient(145deg, var(--accent-soft) 0%, var(--accent-even) 100%);
+    border:1px solid var(--accent-line);
+    border-radius:var(--radius-sm);
+    padding:10px 8px;text-align:center;font-size:.8rem;
+    transition:all var(--transition);
+  }
+  .month-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 12px -3px var(--accent-shadow);
+    border-color:var(--accent);
+  }
+  .month-card .m-num{
+    font-size:1.25rem;font-weight:900;
+    color:var(--accent);display:block;
+    letter-spacing:.01em;line-height:1.2;
+  }
+  .month-card .m-read{
+    font-size:.78rem;font-weight:700;
+    color:var(--accent2);display:block;margin-top:2px;
+    letter-spacing:.02em;
+  }
+
+  /* ===== Latihan Mandiri ===== */
+  details{
+    background:#f7fbf8;
+    border:1px solid #d6ece3;
+    border-radius:var(--radius);
+    padding:12px 16px;margin:10px 0;
+    font-size:.92rem;
+    transition:all var(--transition);
+  }
+  details:hover{border-color:#b8dccb;background:#f4faf6}
+  details[open]{
+    background:#fff;
+    box-shadow:var(--shadow-sm);
+  }
+  details summary{
+    cursor:pointer;font-weight:700;
+    color:var(--green);
+    list-style:none;
+    display:flex;align-items:center;gap:8px;
+    padding:2px 0;
+    transition:color var(--transition);
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::before{
+    content:"▸";display:inline-block;
+    transition:transform var(--transition);
+    color:var(--green);font-size:1.1em;
+  }
+  details[open] summary::before{transform:rotate(90deg)}
+  details[open] summary{margin-bottom:10px}
+  ol.latihan{padding-left:24px}
+  ol.latihan li{margin:12px 0;line-height:1.75}
+
+  /* ===== Footer & Kbd ===== */
+  footer{
+    text-align:center;color:var(--muted);
+    font-size:.83rem;margin-top:36px;
+    line-height:2;padding-top:24px;
+    border-top:1px solid var(--line);
+  }
+  .kbd{
+    background:var(--accent-soft);
+    border:1px solid var(--accent-line);
+    border-bottom-width:2px;
+    border-radius:6px;
+    padding:2px 8px;
+    font-size:.85em;font-family:inherit;font-weight:700;
+    color:var(--accent-ink);
+    white-space:nowrap;
+    transition:all var(--transition);
+  }
+  .kbd:hover{background:hsl(var(--hue) 55% 92%)}
+
+  /* ===== Animasi masuk ===== */
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(8px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+  section{animation:fadeUp .5s ease-out backwards}
+  section:nth-of-type(1){animation-delay:.05s}
+  section:nth-of-type(2){animation-delay:.1s}
+  section:nth-of-type(3){animation-delay:.15s}
+  section:nth-of-type(4){animation-delay:.2s}
+
+  /* ===== Responsif Mobile ===== */
+  @media(max-width:620px){
+    .wrap{padding:18px 14px 80px}
+    header.hero{padding:26px 22px 24px;border-radius:var(--radius-lg)}
+    header.hero h1{font-size:1.45rem}
+    header.hero::after{font-size:120px;right:14px;bottom:-24px}
+    section{padding:20px 18px 22px;border-radius:var(--radius);margin-top:18px}
+    nav.toc{padding:16px 18px;border-radius:var(--radius)}
+    nav.toc ol{columns:1}
+    .dialog .who{min-width:auto;display:block;margin-bottom:3px}
+    .formula{font-size:.92rem;padding:9px 14px}
+    h2.sec{font-size:1.15rem}
+    h2.sec .num{width:28px;height:28px;flex:0 0 28px;font-size:.85rem}
+    h3.sub{font-size:.98rem}
+    .btn{font-size:.82rem;padding:8px 15px}
+    .move-diagram{grid-template-columns:1fr}
+    .month-grid{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#kosakata">Lewati ke konten utama</a>
+
+<div class="wrap">
+
+<!-- ================= HEADER ================= -->
+<header class="hero">
+  <span class="badge">みんなの日本語 Ⅰ ・ 第５課</span>
+  <h1>Catatan Lengkap Minna no Nihongo 1 — Bab 5</h1>
+  <p>Pergi, Datang &amp; Pulang ・ 行きます・来ます・帰ります — Kosa Kata, Pola Kalimat, Contoh, Percakapan &amp; Tata Bahasa</p>
+  <div class="toolbar">
+    <button type="button" class="btn" id="furiBtn" onclick="toggleFuri()" aria-pressed="false">🙈 Sembunyikan Furigana</button>
+  </div>
+</header>
+
+<!-- ================= DAFTAR ISI ================= -->
+<nav class="toc" aria-label="Daftar isi">
+  <h2>📑 DAFTAR ISI</h2>
+  <ol>
+    <li><a href="#kosakata">Kosa Kata（単語）</a></li>
+    <li><a href="#pola">Pola Kalimat（文型）</a></li>
+    <li><a href="#contoh">Contoh Kalimat（例文）</a></li>
+    <li><a href="#percakapan">Percakapan（会話）</a></li>
+    <li><a href="#tatabahasa">Keterangan Tata Bahasa（文法）</a></li>
+    <li><a href="#tanggal">Tanggal &amp; Bulan（日・月）</a></li>
+    <li><a href="#libur">Hari Libur Nasional Jepang（祝日）</a></li>
+    <li><a href="#latihan">Latihan Mandiri</a></li>
+  </ol>
+</nav>
+
+<!-- ================= 1. KOSA KATA ================= -->
+<section id="kosakata">
+  <h2 class="sec"><span class="num">Ⅰ</span> Kosa Kata（単語）</h2>
+  <p class="lead">Tips membaca tabel: kolom <b>Jepang</b> memakai furigana (huruf kecil di atas kanji) sebagai panduan baca. Klik tombol di atas untuk menyembunyikan furigana saat berlatih.</p>
+
+  <h3 class="sub">1) Kata Kerja Perpindahan（移動の動詞）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>行<rt>い</rt></ruby>きます</td><td>ikimasu</td><td class="art">pergi <span class="note">(menjauh dari pembicara)</span></td></tr>
+        <tr><td class="jp"><ruby>来<rt>き</rt></ruby>ます</td><td>kimasu</td><td class="art">datang <span class="note">(mendekat ke pembicara)</span></td></tr>
+        <tr><td class="jp"><ruby>帰<rt>かえ</rt></ruby>ります</td><td>kaerimasu</td><td class="art">pulang <span class="note">(kembali ke tempat asal)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="move-diagram">
+    <div class="move-box">
+      <span class="verb"><ruby>行<rt>い</rt></ruby>きます</span>
+      <span class="arrow">🚶‍♂️➡️</span>
+      <b>Pergi</b><br><span class="note">menjauh dari titik pembicara</span>
+    </div>
+    <div class="move-box">
+      <span class="verb"><ruby>来<rt>き</rt></ruby>ます</span>
+      <span class="arrow">➡️🚶‍♂️</span>
+      <b>Datang</b><br><span class="note">mendekat ke titik pembicara</span>
+    </div>
+    <div class="move-box">
+      <span class="verb"><ruby>帰<rt>かえ</rt></ruby>ります</span>
+      <span class="arrow">🏠⬅️🚶‍♂️</span>
+      <b>Pulang</b><br><span class="note">kembali ke rumah/tempat asal</span>
+    </div>
+  </div>
+
+  <h3 class="sub">2) Tempat（場所）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>学校<rt>がっこう</rt></ruby></td><td>gakkō</td><td class="art">sekolah</td></tr>
+        <tr><td class="jp">スーパー</td><td>sūpā</td><td class="art">pasar swalayan</td></tr>
+        <tr><td class="jp"><ruby>駅<rt>えき</rt></ruby></td><td>eki</td><td class="art">stasiun</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">3) Kendaraan &amp; Cara Perjalanan（乗り物）</h3>
+  <div class="transport-grid">
+    <div class="transport-card">
+      <span class="t-icon">✈️</span>
+      <span class="t-jp"><ruby>飛行機<rt>ひこうき</rt></ruby></span>
+      <span class="t-art">pesawat terbang</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚢</span>
+      <span class="t-jp"><ruby>船<rt>ふね</rt></ruby></span>
+      <span class="t-art">kapal laut</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚃</span>
+      <span class="t-jp"><ruby>電車<rt>でんしゃ</rt></ruby></span>
+      <span class="t-art">kereta rel listrik</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚇</span>
+      <span class="t-jp"><ruby>地下鉄<rt>ちかてつ</rt></ruby></span>
+      <span class="t-art">kereta bawah tanah</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚄</span>
+      <span class="t-jp"><ruby>新幹線<rt>しんかんせん</rt></ruby></span>
+      <span class="t-art">Shinkansen</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚌</span>
+      <span class="t-jp">バス</span>
+      <span class="t-art">bus</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚕</span>
+      <span class="t-jp">タクシー</span>
+      <span class="t-art">taksi</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚲</span>
+      <span class="t-jp"><ruby>自転車<rt>じてんしゃ</rt></ruby></span>
+      <span class="t-art">sepeda</span>
+    </div>
+    <div class="transport-card">
+      <span class="t-icon">🚶</span>
+      <span class="t-jp"><ruby>歩<rt>ある</rt></ruby>いて</span>
+      <span class="t-art">dengan berjalan kaki</span>
+    </div>
+  </div>
+
+  <h3 class="sub">4) Orang（人）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>人<rt>ひと</rt></ruby></td><td>hito</td><td class="art">orang</td></tr>
+        <tr><td class="jp"><ruby>友達<rt>ともだち</rt></ruby></td><td>tomodachi</td><td class="art">teman</td></tr>
+        <tr><td class="jp"><ruby>彼<rt>かれ</rt></ruby></td><td>kare</td><td class="art">dia (laki-laki)</td></tr>
+        <tr><td class="jp"><ruby>彼女<rt>かのじょ</rt></ruby></td><td>kanojo</td><td class="art">dia (perempuan)</td></tr>
+        <tr><td class="jp"><ruby>家族<rt>かぞく</rt></ruby></td><td>kazoku</td><td class="art">keluarga</td></tr>
+        <tr><td class="jp"><ruby>一人<rt>ひとり</rt></ruby>で</td><td>hitori de</td><td class="art">sendirian, dengan sendiri</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">5) Keterangan Waktu（時の表現）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Satuan</th><th scope="col">Lampau</th><th scope="col">Ini</th><th scope="col">Depan</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>Minggu</b></td>
+          <td class="jp"><ruby>先週<rt>せんしゅう</rt></ruby></td>
+          <td class="jp"><ruby>今週<rt>こんしゅう</rt></ruby></td>
+          <td class="jp"><ruby>来週<rt>らいしゅう</rt></ruby></td>
+        </tr>
+        <tr>
+          <td><b>Bulan</b></td>
+          <td class="jp"><ruby>先月<rt>せんげつ</rt></ruby></td>
+          <td class="jp"><ruby>今月<rt>こんげつ</rt></ruby></td>
+          <td class="jp"><ruby>来月<rt>らいげつ</rt></ruby></td>
+        </tr>
+        <tr>
+          <td><b>Tahun</b></td>
+          <td class="jp"><ruby>去年<rt>きょねん</rt></ruby></td>
+          <td class="jp"><ruby>今年<rt>ことし</rt></ruby></td>
+          <td class="jp"><ruby>来年<rt>らいねん</rt></ruby></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">6) Satuan Tahun, Bulan &amp; Tanggal（年・月・日）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">～<ruby>年<rt>ねん</rt></ruby></td><td>~nen</td><td class="art">tahun ~</td></tr>
+        <tr><td class="jp"><ruby>何年<rt>なんねん</rt></ruby></td><td>nannen</td><td class="art">tahun berapa</td></tr>
+        <tr><td class="jp">～<ruby>月<rt>がつ</rt></ruby></td><td>~gatsu</td><td class="art">bulan ~</td></tr>
+        <tr><td class="jp"><ruby>何月<rt>なんがつ</rt></ruby></td><td>nangatsu</td><td class="art">bulan apa</td></tr>
+        <tr><td class="jp">～<ruby>日<rt>にち</rt></ruby></td><td>~nichi</td><td class="art">tanggal ~, ~ hari</td></tr>
+        <tr><td class="jp"><ruby>何日<rt>なんにち</rt></ruby></td><td>nannichi</td><td class="art">tanggal berapa, berapa hari</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">7) Kata Tanya &amp; Lainnya</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti &amp; Penjelasan</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">いつ</td><td>itsu</td><td class="art">kapan <span class="note">(tidak memakai partikel に)</span></td></tr>
+        <tr><td class="jp"><ruby>誕生日<rt>たんじょうび</rt></ruby></td><td>tanjōbi</td><td class="art">hari ulang tahun</td></tr>
+        <tr><td class="jp">そうですね。</td><td>sō desu ne</td><td class="art">Ya, betul. / Ya, begitulah. <span class="note">(menyetujui pendapat lawan bicara)</span></td></tr>
+        <tr><td class="jp">［どうも］ありがとう ございました。</td><td>dōmo arigatō gozaimashita</td><td class="art">Terima kasih (banyak). <span class="note">(bentuk lampau)</span></td></tr>
+        <tr><td class="jp">どういたしまして。</td><td>dō itashimashite</td><td class="art">Sama-sama. <span class="note">(jawaban atas terima kasih)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">8) Peron &amp; Jenis Kereta（駅）</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Romaji</th><th scope="col">Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">～<ruby>番線<rt>ばんせん</rt></ruby></td><td>~bansen</td><td class="art">peron nomor ~ <span class="note">(contoh: 一番線 = peron 1)</span></td></tr>
+        <tr><td class="jp"><ruby>次<rt>つぎ</rt></ruby>の</td><td>tsugi no</td><td class="art">yang berikutnya</td></tr>
+        <tr><td class="jp"><ruby>普通<rt>ふつう</rt></ruby></td><td>futsū</td><td class="art">kereta biasa <span class="note">(berhenti di semua stasiun)</span></td></tr>
+        <tr><td class="jp"><ruby>急行<rt>きゅうこう</rt></ruby></td><td>kyūkō</td><td class="art">ekspres</td></tr>
+        <tr><td class="jp"><ruby>特急<rt>とっきゅう</rt></ruby></td><td>tokkyū</td><td class="art">super ekspres</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">9) Nama Tempat</h3>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bahasa Jepang</th><th scope="col">Arti</th></tr></thead>
+      <tbody>
+        <tr><td class="jp"><ruby>甲子園<rt>こうしえん</rt></ruby></td><td class="art">Koshien <span class="note">(nama kota dekat Osaka)</span></td></tr>
+        <tr><td class="jp"><ruby>大阪城<rt>おおさかじょう</rt></ruby></td><td class="art">Istana Osaka <span class="note">(benteng kuno terkenal di Osaka)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 2. POLA KALIMAT ================= -->
+<section id="pola">
+  <h2 class="sec"><span class="num">Ⅱ</span> Pola Kalimat（文型）</h2>
+  <p class="lead">Tiga pola dasar Bab 5, semuanya berkaitan dengan perpindahan (pergi, datang, pulang).</p>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">1</span><ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Saya pergi ke Kyoto.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">2</span>うちへ タクシーで <ruby>帰<rt>かえ</rt></ruby>ります。</p>
+    <p class="id-line">Saya pulang ke rumah dengan taksi.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">3</span><ruby>家族<rt>かぞく</rt></ruby>と <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ました。</p>
+    <p class="id-line">Saya datang ke Jepang bersama dengan keluarga.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Tiga partikel penting Bab 5:</b><br>
+    ① <span class="kbd">へ</span> → arah perpindahan <span class="note">(dibaca "e")</span><br>
+    ② <span class="kbd">で</span> → sarana transportasi<br>
+    ③ <span class="kbd">と</span> → bersama siapa
+  </div>
+</section>
+
+<!-- ================= 3. CONTOH KALIMAT ================= -->
+<section id="contoh">
+  <h2 class="sec"><span class="num">Ⅲ</span> Contoh Kalimat（例文）</h2>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">1</span><ruby>明日<rt>あした</rt></ruby> どこ［へ］ <ruby>行<rt>い</rt></ruby>きますか。<br>……<ruby>奈良<rt>なら</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Besok pergi ke mana? — Pergi ke Nara.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">2</span><ruby>日曜日<rt>にちようび</rt></ruby> どこ［へ］ <ruby>行<rt>い</rt></ruby>きますか。<br>……どこ［へ］も <ruby>行<rt>い</rt></ruby>きません。</p>
+    <p class="id-line">Hari Minggu pergi ke mana? — Tidak pergi ke mana-mana.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">3</span><ruby>何<rt>なに</rt></ruby>で <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。<br>……<ruby>新幹線<rt>しんかんせん</rt></ruby>で <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Dengan apa pergi ke Tokyo? — Pergi dengan Shinkansen.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">4</span>だれと <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。<br>……<ruby>山田<rt>やまだ</rt></ruby>さんと <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Dengan siapa pergi ke Tokyo? — Pergi dengan Sdr. Yamada.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">5</span>いつ <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ましたか。<br>……３<ruby>月<rt>がつ</rt></ruby>２５<ruby>日<rt>にち</rt></ruby>に <ruby>来<rt>き</rt></ruby>ました。</p>
+    <p class="id-line">Kapan datang di Jepang? — Datang pada tanggal 25 Maret.</p>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line"><span class="lbl">6</span><ruby>誕生日<rt>たんじょうび</rt></ruby>は いつですか。<br>……６<ruby>月<rt>がつ</rt></ruby>１３<ruby>日<rt>にち</rt></ruby>です。</p>
+    <p class="id-line">Kapan hari ulang tahun? — Tanggal 13 Juni.</p>
+  </div>
+</section>
+
+<!-- ================= 4. PERCAKAPAN ================= -->
+<section id="percakapan">
+  <h2 class="sec"><span class="num">Ⅳ</span> Percakapan（会話）— この電車は甲子園へ行きますか</h2>
+  <p class="lead">Situasi: Santos bertanya kepada petugas stasiun dan penumpang tentang kereta menuju Koshien.</p>
+
+  <div class="dialog">
+    <p><span class="who">サントス：</span>すみません。<ruby>甲子園<rt>こうしえん</rt></ruby>まで いくらですか。</p>
+    <p><span class="who">女の人：</span>３５０<ruby>円<rt>えん</rt></ruby>です。</p>
+    <p><span class="who">サントス：</span>３５０<ruby>円<rt>えん</rt></ruby>ですね。どうも ありがとう ございます。</p>
+    <p><span class="who">女の人：</span>どういたしまして。</p>
+    <p><span class="who">サントス：</span>すみません。<ruby>甲子園<rt>こうしえん</rt></ruby>へ <ruby>行<rt>い</rt></ruby>く <ruby>電車<rt>でんしゃ</rt></ruby>は <ruby>何番線<rt>なんばんせん</rt></ruby>ですか。</p>
+    <p><span class="who">駅員：</span>５<ruby>番線<rt>ばんせん</rt></ruby>です。</p>
+    <p><span class="who">サントス：</span>どうも ありがとう ございます。</p>
+    <p><span class="who">サントス：</span>すみません。この <ruby>電車<rt>でんしゃ</rt></ruby>は <ruby>甲子園<rt>こうしえん</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。</p>
+    <p><span class="who">男の人：</span>いいえ、<ruby>行<rt>い</rt></ruby>きません。<ruby>次<rt>つぎ</rt></ruby>の「<ruby>普通<rt>ふつう</rt></ruby>」ですよ。</p>
+    <p><span class="who">サントス：</span>ああ、そうですか。どうも ありがとう ございました。</p>
+  </div>
+
+  <h4 class="mini">Terjemahan</h4>
+  <div class="dialog">
+    <p><span class="who">Santos：</span>Maaf. Sampai dengan Koshien berapa?</p>
+    <p><span class="who">Wanita：</span>¥350.</p>
+    <p><span class="who">Santos：</span>¥350, ya? Terima kasih.</p>
+    <p><span class="who">Wanita：</span>Sama-sama.</p>
+    <p><span class="who">Santos：</span>Maaf. Kereta yang menuju Koshien di peron berapa?</p>
+    <p><span class="who">Petugas：</span>Peron nomor lima.</p>
+    <p><span class="who">Santos：</span>Terima kasih.</p>
+    <p><span class="who">Santos：</span>Permisi, apakah kereta ini menuju Koshien?</p>
+    <p><span class="who">Pria：</span>Tidak. Yang "Biasa" berikutnya.</p>
+    <p><span class="who">Santos：</span>O, begitu. Terima kasih banyak.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Perhatikan:</b> <span class="kbd">駅員（えきいん）</span> berarti "petugas stasiun" dan <span class="kbd">女の人（おんなのひと）</span> berarti "wanita", <span class="kbd">男の人（おとこのひと）</span> berarti "pria". Kata-kata ini muncul di percakapan meskipun bukan kosa kata resmi Bab 5.
+  </div>
+</section>
+
+<!-- ================= 5. TATA BAHASA ================= -->
+<section id="tatabahasa">
+  <h2 class="sec"><span class="num">Ⅴ</span> Keterangan Tata Bahasa（文法）</h2>
+
+  <!-- 1 -->
+  <h3 class="sub">1. Kata Benda (tempat) へ 行きます／来ます／帰ります</h3>
+  <span class="formula">N（tempat）<span class="p">へ</span> <ruby>行<rt>い</rt></ruby>きます／<ruby>来<rt>き</rt></ruby>ます／<ruby>帰<rt>かえ</rt></ruby>ります</span>
+  <p>Jika menunjukkan <b>pindah</b>, arah pindahnya dinyatakan dengan membubuhkan partikel <span class="kbd">へ</span>.</p>
+
+  <div class="ex">
+    <p class="jp-line">① <ruby>京都<rt>きょうと</rt></ruby><span class="hl">へ</span> <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Pergi ke Kyoto.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">② <ruby>日本<rt>にほん</rt></ruby><span class="hl">へ</span> <ruby>来<rt>き</rt></ruby>ました。</p>
+    <p class="id-line">Datang ke Jepang.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">③ うち<span class="hl">へ</span> <ruby>帰<rt>かえ</rt></ruby>ります。</p>
+    <p class="id-line">Pulang ke rumah.</p>
+  </div>
+
+  <div class="tip-amber">
+    <b>⚠ Perhatian:</b> Partikel <span class="kbd">へ</span> <b>diucapkan "e"</b>, bukan "he".
+  </div>
+
+  <div class="tip">
+    <b>💡 Catatan:</b> Partikel <span class="kbd">へ</span> dan <span class="kbd">に</span> sama-sama bisa menunjukkan arah tujuan. <span class="kbd">へ</span> lebih menekankan <b>arah</b>, sedangkan <span class="kbd">に</span> lebih menekankan <b>titik tujuan</b>. Dalam banyak situasi, keduanya bisa saling menggantikan.
+  </div>
+
+  <!-- 2 -->
+  <h3 class="sub">2. どこ［へ］も 行きません／行きませんでした</h3>
+  <span class="formula">Kata Tanya + <span class="p">も</span> + Kata Kerja Negatif</span>
+  <p>Apabila ingin <b>menyangkal hal yang ditanyakan oleh Kata Tanya secara total</b>, pembentukan Kata Kerja negatif dengan membubuhkan partikel <span class="kbd">も</span> pada Kata Tanya.</p>
+
+  <div class="ex">
+    <p class="jp-line">④ どこ［へ］<span class="hl">も</span> <ruby>行<rt>い</rt></ruby>きません。</p>
+    <p class="id-line">Tidak pergi ke mana-mana.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑤ <ruby>何<rt>なに</rt></ruby><span class="hl">も</span> <ruby>食<rt>た</rt></ruby>べません。</p>
+    <p class="id-line">Tidak makan apa-apa.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑥ だれ<span class="hl">も</span> <ruby>来<rt>き</rt></ruby>ませんでした。</p>
+    <p class="id-line">Tidak datang siapa-siapa.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Pola umum:</b><br>
+    <span class="kbd">どこも</span> + negatif = tidak ke mana-mana<br>
+    <span class="kbd">何も</span> + negatif = tidak apa-apa<br>
+    <span class="kbd">だれも</span> + negatif = tidak siapa-siapa
+  </div>
+
+  <!-- 3 -->
+  <h3 class="sub">3. Kata Benda (kendaraan) で 行きます／来ます／帰ります</h3>
+  <span class="formula">N（kendaraan）<span class="p">で</span> <ruby>行<rt>い</rt></ruby>きます／<ruby>来<rt>き</rt></ruby>ます／<ruby>帰<rt>かえ</rt></ruby>ります</span>
+  <p>Partikel <span class="kbd">で</span> menunjukkan <b>sarana dan cara</b>. Yang dimaksud di bagian ini adalah Kata Benda yang menunjukkan <b>kendaraan</b> sebagai sarana transportasi.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑦ <ruby>電車<rt>でんしゃ</rt></ruby><span class="hl">で</span> <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Pergi dengan kereta rel listrik.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑧ タクシー<span class="hl">で</span> <ruby>来<rt>き</rt></ruby>ました。</p>
+    <p class="id-line">Datang dengan taksi.</p>
+  </div>
+
+  <p>Jika pergi dengan <b>jalan kaki</b>, digunakan <span class="kbd">あるいて</span>, tetapi <b>tidak dibubuhkan partikel で</b>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑨ <ruby>駅<rt>えき</rt></ruby>から <ruby>歩<rt>ある</rt></ruby>いて <ruby>帰<rt>かえ</rt></ruby>りました。</p>
+    <p class="id-line">Pulang dengan jalan kaki dari stasiun.</p>
+  </div>
+
+  <div class="warn">
+    <b>⚠ Perhatian:</b><br>
+    <span class="ok">✓ <ruby>歩<rt>ある</rt></ruby>いて <ruby>行<rt>い</rt></ruby>きます。</span> (benar)<br>
+    <span class="ng">✗ <ruby>歩<rt>ある</rt></ruby>いてで <ruby>行<rt>い</rt></ruby>きます。</span> (salah — <span class="kbd">あるいて</span> sudah bentuk "dengan berjalan kaki", tidak perlu で)
+  </div>
+
+  <!-- 4 -->
+  <h3 class="sub">4. Kata Benda (orang/hewan) と Kata Kerja</h3>
+  <span class="formula">N（orang/hewan）<span class="p">と</span> Kata Kerja</span>
+  <p>Jika melakukan sesuatu <b>bersama orang (hewan)</b>, maka ditunjukkan dengan membubuhkan partikel <span class="kbd">と</span>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑩ <ruby>家族<rt>かぞく</rt></ruby><span class="hl">と</span> <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ました。</p>
+    <p class="id-line">Datang ke Jepang bersama dengan keluarga.</p>
+  </div>
+
+  <p>Jika melakukan suatu aksi <b>sendiri</b>, digunakan <span class="kbd">ひとりで</span>. Dalam hal ini <b>tidak menggunakan partikel と</b>.</p>
+
+  <div class="ex">
+    <p class="jp-line">⑪ <ruby>一人<rt>ひとり</rt></ruby>で <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Pergi ke Tokyo sendirian.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Ringkasan:</b><br>
+    • <span class="kbd">ともだちと</span> 行きます → pergi dengan teman<br>
+    • <span class="kbd">ひとりで</span> 行きます → pergi sendirian<br>
+    • <span class="ng">✗ ひとりでと</span> 行きます → SALAH
+  </div>
+
+  <!-- 5 -->
+  <h3 class="sub">5. いつ（Kata Tanya Waktu）</h3>
+  <span class="formula"><span class="p">いつ</span> + Kata Kerja</span>
+  <p>Untuk menanyakan waktu, selain digunakan Kata Tanya <span class="kbd">なんじ</span>, <span class="kbd">なんようび</span>, <span class="kbd">なんがつ</span>, <span class="kbd">なんにち</span>, juga digunakan Kata Tanya <span class="kbd">いつ</span>.</p>
+
+  <div class="warn">
+    <b>⚠ Perhatian penting:</b> Kata <span class="kbd">いつ</span> <b>tidak dapat dibubuhkan partikel に</b>.<br>
+    <span class="ok">✓ いつ 日本へ 来ましたか。</span> (benar)<br>
+    <span class="ng">✗ いつに 日本へ 来ましたか。</span> (salah)
+  </div>
+
+  <div class="ex">
+    <p class="jp-line">⑫ <span class="hl">いつ</span> <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ましたか。<br>……３<ruby>月<rt>がつ</rt></ruby>２５<ruby>日<rt>にち</rt></ruby>に <ruby>来<rt>き</rt></ruby>ました。</p>
+    <p class="id-line">Kapan datang ke Jepang? — Datang pada tanggal 25 Maret.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑬ <span class="hl">いつ</span> <ruby>広島<rt>ひろしま</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。<br>……<ruby>来週<rt>らいしゅう</rt></ruby> <ruby>行<rt>い</rt></ruby>きます。</p>
+    <p class="id-line">Kapan pergi ke Hiroshima? — Pergi minggu depan.</p>
+  </div>
+
+  <!-- 6 -->
+  <h3 class="sub">6. よ（Partikel akhir kalimat）</h3>
+  <span class="formula">Kalimat + <span class="p">よ</span></span>
+  <p>Partikel <span class="kbd">よ</span> dibubuhkan pada akhir kalimat dan digunakan untuk:</p>
+  <ul>
+    <li><b>Memberitahukan suatu hal yang belum diketahui</b> oleh lawan bicara</li>
+    <li><b>Menyampaikan tanggapan dan pendapat</b> si pembicara kepada lawan bicara</li>
+  </ul>
+
+  <div class="ex">
+    <p class="jp-line">⑭ この <ruby>電車<rt>でんしゃ</rt></ruby>は <ruby>甲子園<rt>こうしえん</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。<br>……いいえ、<ruby>行<rt>い</rt></ruby>きません。<ruby>次<rt>つぎ</rt></ruby>の「<ruby>普通<rt>ふつう</rt></ruby>」です<span class="hl2">よ</span>。</p>
+    <p class="id-line">Apakah kereta ini menuju Koshien? — Tidak, tidak pergi. Yang "Biasa" berikutnya.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑮ <ruby>北海道<rt>ほっかいどう</rt></ruby>に <ruby>馬<rt>うま</rt></ruby>が たくさん います<span class="hl2">よ</span>。</p>
+    <p class="id-line">Di Hokkaido ada banyak kuda. <span class="note">(Pel.18)</span></p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">⑯ マリアさん、この アイスクリーム、おいしいです<span class="hl2">よ</span>。</p>
+    <p class="id-line">Ibu Maria, es krim ini enak. <span class="note">(Pel.19)</span></p>
+  </div>
+
+  <!-- 7 -->
+  <h3 class="sub">7. そうですね vs そうですか</h3>
+  <span class="formula"><span class="p">そうですね</span> ／ <span class="p">そうですか</span></span>
+  <p><span class="kbd">そうですね</span> digunakan jika <b>menyetujui</b> atau <b>sependapat</b> dengan hal yang dikatakan oleh lawan bicara.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Ungkapan</th><th scope="col">Fungsi</th><th scope="col">Contoh Situasi</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="jp"><b>そうですか</b></td>
+          <td class="art">ekspresi ketika mendapat <b>informasi baru</b> yang belum diketahui si pembicara kemudian memahaminya</td>
+          <td class="art">A: Saya orang Indonesia.<br>B: そうですか。 <span class="note">(O, begitu.)</span></td>
+        </tr>
+        <tr>
+          <td class="jp"><b>そうですね</b></td>
+          <td class="art">menunjukkan bahwa si pembicara <b>berpikir hal yang sama</b>, menyetujui hal yang telah dikenal, atau sependapat</td>
+          <td class="art">A: Besok hari Minggu, ya.<br>B: そうですね。 <span class="note">(O, ya betul.)</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ex">
+    <p class="jp-line">⑰ <ruby>明日<rt>あした</rt></ruby>は <ruby>日曜日<rt>にちようび</rt></ruby>です<span class="hl2">ね</span>。<br>……あ、<span class="hl">そうですね</span>。</p>
+    <p class="id-line">Besok hari Minggu, ya. — O, ya betul.</p>
+  </div>
+
+  <div class="tip">
+    <b>💡 Cara membedakan:</b><br>
+    • <span class="kbd">そうですか</span> (intonasi turun) → "O, begitu" <span class="note">(menerima info baru)</span><br>
+    • <span class="kbd">そうですね</span> → "Ya, betul" <span class="note">(menyetujui)</span>
+  </div>
+
+  <!-- Tambahan -->
+  <h3 class="sub">➕ Tambahan Penting (Referensi Lain yang Relevan)</h3>
+
+  <h4 class="mini">a) へ vs に — kapan pakai yang mana?</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Partikel</th><th scope="col">Fokus</th><th scope="col">Contoh</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">へ</td><td class="art">menekankan <b>arah</b> perjalanan</td><td class="jp"><ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます</td></tr>
+        <tr><td class="jp">に</td><td class="art">menekankan <b>titik tujuan</b></td><td class="jp"><ruby>京都<rt>きょうと</rt></ruby>に <ruby>行<rt>い</rt></ruby>きます</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tip"><b>💡 Catatan:</b> Dalam percakapan sehari-hari, keduanya sering dianggap sama dan bisa saling menggantikan. Namun <span class="kbd">へ</span> lebih sering dipakai dalam bahasa tulis/formal.</div>
+
+  <h4 class="mini">b) で (sarana) vs に (waktu)</h4>
+  <p>Partikel <span class="kbd">で</span> dan <span class="kbd">に</span> punya fungsi yang sangat berbeda:</p>
+  <div class="ex">
+    <p class="jp-line"><ruby>電車<rt>でんしゃ</rt></ruby><span class="hl">で</span> <ruby>行<rt>い</rt></ruby>きます。 <span class="note">(で = sarana)</span></p>
+    <p class="id-line">Pergi dengan kereta.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line">６<ruby>時<rt>じ</rt></ruby><span class="hl">に</span> <ruby>起<rt>お</rt></ruby>きます。 <span class="note">(に = waktu)</span></p>
+    <p class="id-line">Bangun pukul enam.</p>
+  </div>
+
+  <h4 class="mini">c) どこも / なにも / だれも — pola negatif total</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Kata Tanya + も</th><th scope="col">Arti</th><th scope="col">Contoh</th></tr></thead>
+      <tbody>
+        <tr><td class="jp">どこ［へ］も</td><td class="art">tidak ke mana-mana</td><td class="jp">どこへも <ruby>行<rt>い</rt></ruby>きません</td></tr>
+        <tr><td class="jp"><ruby>何<rt>なに</rt></ruby>も</td><td class="art">tidak apa-apa</td><td class="jp"><ruby>何<rt>なに</rt></ruby>も <ruby>食<rt>た</rt></ruby>べません</td></tr>
+        <tr><td class="jp">だれも</td><td class="art">tidak siapa-siapa</td><td class="jp">だれも <ruby>来<rt>き</rt></ruby>ませんでした</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 class="mini">d) Ringkasan bentuk kalimat Bab 5</h4>
+  <div class="tw">
+    <table>
+      <thead><tr><th scope="col">Bentuk</th><th scope="col">Rumus</th><th scope="col">Contoh</th></tr></thead>
+      <tbody>
+        <tr><td>Arah perpindahan</td><td class="jp">N（tempat）へ V</td><td class="jp"><ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます</td></tr>
+        <tr><td>Sarana transportasi</td><td class="jp">N（kendaraan）で V</td><td class="jp"><ruby>電車<rt>でんしゃ</rt></ruby>で <ruby>行<rt>い</rt></ruby>きます</td></tr>
+        <tr><td>Bersama siapa</td><td class="jp">N（orang）と V</td><td class="jp"><ruby>家族<rt>かぞく</rt></ruby>と <ruby>来<rt>き</rt></ruby>ました</td></tr>
+        <tr><td>Sendirian</td><td class="jp">ひとりで V</td><td class="jp"><ruby>一人<rt>ひとり</rt></ruby>で <ruby>行<rt>い</rt></ruby>きます</td></tr>
+        <tr><td>Jalan kaki</td><td class="jp"><ruby>歩<rt>ある</rt></ruby>いて V</td><td class="jp"><ruby>歩<rt>ある</rt></ruby>いて <ruby>帰<rt>かえ</rt></ruby>ります</td></tr>
+        <tr><td>Kapan</td><td class="jp">いつ V か</td><td class="jp">いつ <ruby>来<rt>き</rt></ruby>ましたか</td></tr>
+        <tr><td>Negatif total</td><td class="jp">Kata Tanya + も + V negatif</td><td class="jp">どこへも <ruby>行<rt>い</rt></ruby>きません</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 6. TANGGAL & BULAN ================= -->
+<section id="tanggal">
+  <h2 class="sec"><span class="num">Ⅵ</span> Tanggal &amp; Bulan（日・月）</h2>
+  <p class="lead">Tanggal dalam bahasa Jepang punya bacaan khusus yang harus dihafal, terutama tanggal 1–10, 14, 20, dan 24.</p>
+
+  <h3 class="sub">1) Tanggal 1–10（一日〜十日）</h3>
+  <div class="tw">
+    <table class="date-table">
+      <thead>
+        <tr>
+          <th scope="col">Tanggal</th><th scope="col">Kanji</th><th scope="col">Bacaan</th>
+          <th scope="col">Tanggal</th><th scope="col">Kanji</th><th scope="col">Bacaan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td><td class="jp">1日</td><td class="jp special">ついたち</td>
+          <td class="num">6</td><td class="jp">6日</td><td class="jp">むいか</td>
+        </tr>
+        <tr>
+          <td class="num">2</td><td class="jp">2日</td><td class="jp">ふつか</td>
+          <td class="num">7</td><td class="jp">7日</td><td class="jp special">なのか</td>
+        </tr>
+        <tr>
+          <td class="num">3</td><td class="jp">3日</td><td class="jp">みっか</td>
+          <td class="num">8</td><td class="jp">8日</td><td class="jp special">ようか</td>
+        </tr>
+        <tr>
+          <td class="num">4</td><td class="jp">4日</td><td class="jp">よっか</td>
+          <td class="num">9</td><td class="jp">9日</td><td class="jp">ここのか</td>
+        </tr>
+        <tr>
+          <td class="num">5</td><td class="jp">5日</td><td class="jp">いつか</td>
+          <td class="num">10</td><td class="jp">10日</td><td class="jp">とおか</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">2) Tanggal 11–31（十一日〜三十一日）</h3>
+  <div class="tw">
+    <table class="date-table">
+      <thead>
+        <tr>
+          <th scope="col">Tanggal</th><th scope="col">Bacaan</th>
+          <th scope="col">Tanggal</th><th scope="col">Bacaan</th>
+          <th scope="col">Tanggal</th><th scope="col">Bacaan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">11</td><td class="jp">じゅういちにち</td><td class="num">12</td><td class="jp">じゅうににち</td><td class="num">13</td><td class="jp">じゅうさんにち</td></tr>
+        <tr><td class="num">14</td><td class="jp special">じゅうよっか</td><td class="num">15</td><td class="jp">じゅうごにち</td><td class="num">16</td><td class="jp">じゅうろくにち</td></tr>
+        <tr><td class="num">17</td><td class="jp">じゅうしちにち</td><td class="num">18</td><td class="jp">じゅうはちにち</td><td class="num">19</td><td class="jp">じゅうくにち</td></tr>
+        <tr><td class="num">20</td><td class="jp special">はつか</td><td class="num">21</td><td class="jp">にじゅういちにち</td><td class="num">22</td><td class="jp">にじゅうににち</td></tr>
+        <tr><td class="num">23</td><td class="jp">にじゅうさんにち</td><td class="num">24</td><td class="jp special">にじゅうよっか</td><td class="num">25</td><td class="jp">にじゅうごにち</td></tr>
+        <tr><td class="num">26</td><td class="jp">にじゅうろくにち</td><td class="num">27</td><td class="jp">にじゅうしちにち</td><td class="num">28</td><td class="jp">にじゅうはちにち</td></tr>
+        <tr><td class="num">29</td><td class="jp">にじゅうくにち</td><td class="num">30</td><td class="jp">さんじゅうにち</td><td class="num">31</td><td class="jp">さんじゅういちにち</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">
+    <b>⚠ Tanggal istimewa yang wajib dihafal:</b><br>
+    • <b>1日</b> = ついたち (bukan いちにち)<br>
+    • <b>7日</b> = なのか &nbsp;·&nbsp; <b>8日</b> = ようか<br>
+    • <b>14日</b> = じゅうよっか &nbsp;·&nbsp; <b>24日</b> = にじゅうよっか<br>
+    • <b>19日</b> = じゅうくにち &nbsp;·&nbsp; <b>29日</b> = にじゅうくにち (bukan きゅう)<br>
+    • <b>20日</b> = はつか
+  </div>
+
+  <h3 class="sub">3) Bulan（～月）</h3>
+  <div class="month-grid">
+    <div class="month-card"><span class="m-num">1月</span><span class="m-read">いちがつ</span></div>
+    <div class="month-card"><span class="m-num">2月</span><span class="m-read">にがつ</span></div>
+    <div class="month-card"><span class="m-num">3月</span><span class="m-read">さんがつ</span></div>
+    <div class="month-card"><span class="m-num">4月</span><span class="m-read">しがつ</span></div>
+    <div class="month-card"><span class="m-num">5月</span><span class="m-read">ごがつ</span></div>
+    <div class="month-card"><span class="m-num">6月</span><span class="m-read">ろくがつ</span></div>
+    <div class="month-card"><span class="m-num">7月</span><span class="m-read">しちがつ</span></div>
+    <div class="month-card"><span class="m-num">8月</span><span class="m-read">はちがつ</span></div>
+    <div class="month-card"><span class="m-num">9月</span><span class="m-read">くがつ</span></div>
+    <div class="month-card"><span class="m-num">10月</span><span class="m-read">じゅうがつ</span></div>
+    <div class="month-card"><span class="m-num">11月</span><span class="m-read">じゅういちがつ</span></div>
+    <div class="month-card"><span class="m-num">12月</span><span class="m-read">じゅうにがつ</span></div>
+  </div>
+
+  <div class="tip">
+    <b>💡 Bacaan khusus bulan:</b><br>
+    • <b>4月</b> = <span class="kbd">しがつ</span> (bukan よんがつ)<br>
+    • <b>7月</b> = <span class="kbd">しちがつ</span> (bukan なながつ)<br>
+    • <b>9月</b> = <span class="kbd">くがつ</span> (bukan きゅうがつ)
+  </div>
+
+  <h3 class="sub">4) Menanyakan Tanggal</h3>
+  <div class="ex">
+    <p class="jp-line"><ruby>誕生日<rt>たんじょうび</rt></ruby>は いつですか。<br>……６<ruby>月<rt>がつ</rt></ruby>１３<ruby>日<rt>にち</rt></ruby>です。</p>
+    <p class="id-line">Kapan hari ulang tahun? — Tanggal 13 Juni.</p>
+  </div>
+  <div class="ex">
+    <p class="jp-line"><ruby>今日<rt>きょう</rt></ruby>は <ruby>何月<rt>なんがつ</rt></ruby><ruby>何日<rt>なんにち</rt></ruby>ですか。<br>……５<ruby>月<rt>がつ</rt></ruby>２４<ruby>日<rt>にち</rt></ruby>です。</p>
+    <p class="id-line">Hari ini tanggal berapa bulan apa? — Tanggal 24 Mei.</p>
+  </div>
+</section>
+
+<!-- ================= 7. HARI LIBUR NASIONAL ================= -->
+<section id="libur">
+  <h2 class="sec"><span class="num">Ⅶ</span> Hari Libur Nasional Jepang（祝日）</h2>
+  <p class="lead">Daftar hari raya nasional Jepang yang berlaku mulai tahun 2021 ke atas.</p>
+
+  <div class="holiday-grid">
+    <div class="holiday-card">
+      <span class="h-date">1月1日</span>
+      <span class="h-name"><ruby>元日<rt>がんじつ</rt></ruby></span>
+      <span class="h-art">Tahun Baru</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">1月第2月曜日<span class="ast">**</span></span>
+      <span class="h-name"><ruby>成人<rt>せいじん</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Perayaan Menjadi Dewasa (20 tahun)</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">2月11日</span>
+      <span class="h-name"><ruby>建国記念<rt>けんこくきねん</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Pembangunan Nasional</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">2月23日</span>
+      <span class="h-name"><ruby>天皇誕生日<rt>てんのうたんじょうび</rt></ruby></span>
+      <span class="h-art">Hari Ulang Tahun Kaisar</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">3月20日<span class="ast">*</span></span>
+      <span class="h-name"><ruby>春分<rt>しゅんぶん</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Equinox Musim Semi</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">4月29日</span>
+      <span class="h-name"><ruby>昭和<rt>しょうわ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Showa</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">5月3日</span>
+      <span class="h-name"><ruby>憲法記念日<rt>けんぽうきねんび</rt></ruby></span>
+      <span class="h-art">Hari Peringatan Konstitusi</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">5月4日</span>
+      <span class="h-name"><ruby>緑<rt>みどり</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Penghijauan</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">5月5日</span>
+      <span class="h-name"><ruby>子供<rt>こども</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Anak</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">7月第3月曜日<span class="ast">***</span></span>
+      <span class="h-name"><ruby>海<rt>うみ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Bahari</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">8月11日</span>
+      <span class="h-name"><ruby>山<rt>やま</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Gunung</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">9月第3月曜日<span class="ast">***</span></span>
+      <span class="h-name"><ruby>敬老<rt>けいろう</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Hormat kepada Orang Tua</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">9月23日<span class="ast">*</span></span>
+      <span class="h-name"><ruby>秋分<rt>しゅうぶん</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Equinox Musim Gugur</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">10月第2月曜日<span class="ast">**</span></span>
+      <span class="h-name">スポーツの<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Olahraga</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">11月3日</span>
+      <span class="h-name"><ruby>文化<rt>ぶんか</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Kebudayaan</span>
+    </div>
+    <div class="holiday-card">
+      <span class="h-date">11月23日</span>
+      <span class="h-name"><ruby>勤労感謝<rt>きんろうかんしゃ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby></span>
+      <span class="h-art">Hari Bersyukur untuk Pekerjaan</span>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:6px">
+    Keterangan tanda: <b class="ast">*</b> = tanggal berubah setiap tahun &nbsp;·&nbsp;
+    <b class="ast">**</b> = Hari Senin minggu kedua &nbsp;·&nbsp;
+    <b class="ast">***</b> = Hari Senin minggu ketiga
+  </p>
+
+  <div class="tip-amber">
+    <b>💡 Info tambahan:</b><br>
+    • Jika hari libur nasional jatuh pada hari <b>Minggu</b>, maka akan diganti dengan <b>hari Senin</b> (振替休日 / furikae kyūjitsu).<br>
+    • Dari tanggal <b>29 April sampai 5 Mei</b> merupakan rangkaian hari libur yang disebut <span class="kbd">ゴールデンウィーク</span> (Golden Week). Perusahaan-perusahaan akan memberikan libur seminggu penuh bagi para karyawan.
+  </div>
+
+  <div class="tip">
+    <b>💡 Catatan:</b> Daftar hari raya ini berlaku mulai tahun 2021 ke atas. Hari raya pada tahun 2019 dan 2020 berbeda dengan tahun yang lain dan hanya berlaku untuk tahun tersebut. <span class="note">(Berdasarkan pada bulan Juni 2019)</span>
+  </div>
+</section>
+
+<!-- ================= 8. LATIHAN ================= -->
+<section id="latihan">
+  <h2 class="sec"><span class="num">✎</span> Latihan Mandiri</h2>
+  <p class="lead">Kerjakan dulu, baru buka jawabannya. Klik "Lihat jawaban" untuk memeriksa.</p>
+
+  <ol class="latihan">
+    <li>
+      Terjemahkan ke bahasa Jepang: <b>"Saya pergi ke Kyoto."</b>
+      <details><summary>Lihat jawaban</summary><ruby>京都<rt>きょうと</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。<span class="note">（bisa juga: 京都に 行きます。）</span></details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Saya pulang ke rumah dengan taksi."</b>
+      <details><summary>Lihat jawaban</summary>うちへ タクシーで <ruby>帰<rt>かえ</rt></ruby>ります。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Saya datang ke Jepang bersama keluarga."</b>
+      <details><summary>Lihat jawaban</summary><ruby>家族<rt>かぞく</rt></ruby>と <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ました。</details>
+    </li>
+    <li>
+      Isi dengan partikel yang tepat (<b>へ</b>, <b>で</b>, atau <b>と</b>):<br>
+      ① <ruby>電車<rt>でんしゃ</rt></ruby>（　　）<ruby>東京<rt>とうきょう</rt></ruby>（　　）<ruby>行<rt>い</rt></ruby>きます。<br>
+      ② <ruby>友達<rt>ともだち</rt></ruby>（　　）<ruby>奈良<rt>なら</rt></ruby>（　　）<ruby>行<rt>い</rt></ruby>きました。
+      <details><summary>Lihat jawaban</summary>
+        ① <ruby>電車<rt>でんしゃ</rt></ruby><b>で</b> <ruby>東京<rt>とうきょう</rt></ruby><b>へ</b> <ruby>行<rt>い</rt></ruby>きます。<br>
+        ② <ruby>友達<rt>ともだち</rt></ruby><b>と</b> <ruby>奈良<rt>なら</rt></ruby><b>へ</b> <ruby>行<rt>い</rt></ruby>きました。
+      </details>
+    </li>
+    <li>
+      Ubah ke bentuk negatif: <b><ruby>日曜日<rt>にちようび</rt></ruby> どこへも <ruby>行<rt>い</rt></ruby>きます。</b>
+      <details><summary>Lihat jawaban</summary><ruby>日曜日<rt>にちようび</rt></ruby> どこへも <ruby>行<rt>い</rt></ruby>きません。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Tidak makan apa-apa."</b>
+      <details><summary>Lihat jawaban</summary><ruby>何<rt>なに</rt></ruby>も <ruby>食<rt>た</rt></ruby>べません。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Tidak datang siapa-siapa."</b>
+      <details><summary>Lihat jawaban</summary>だれも <ruby>来<rt>き</rt></ruby>ませんでした。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Pergi ke Tokyo sendirian."</b>
+      <details><summary>Lihat jawaban</summary><ruby>一人<rt>ひとり</rt></ruby>で <ruby>東京<rt>とうきょう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</details>
+    </li>
+    <li>
+      Perbaiki kesalahan berikut:<br>
+      <span class="ng">✗ <ruby>歩<rt>ある</rt></ruby>いてで <ruby>駅<rt>えき</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</span>
+      <details><summary>Lihat jawaban</summary><span class="ok">✓ <ruby>歩<rt>ある</rt></ruby>いて <ruby>駅<rt>えき</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きます。</span><span class="note">（あるいて sudah berarti "dengan berjalan kaki", tidak perlu で）</span></details>
+    </li>
+    <li>
+      Perbaiki kesalahan berikut:<br>
+      <span class="ng">✗ いつに <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ましたか。</span>
+      <details><summary>Lihat jawaban</summary><span class="ok">✓ いつ <ruby>日本<rt>にほん</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ましたか。</span><span class="note">（いつ tidak memakai に）</span></details>
+    </li>
+    <li>
+      Baca tanggal berikut dalam bahasa Jepang:<br>
+      ① １日 ② ８日 ③ １４日 ④ ２０日 ⑤ ２４日
+      <details><summary>Lihat jawaban</summary>
+        ① ついたち ② ようか ③ じゅうよっか ④ はつか ⑤ にじゅうよっか
+      </details>
+    </li>
+    <li>
+      Baca bulan berikut dalam bahasa Jepang:<br>
+      ① ４月 ② ７月 ③ ９月
+      <details><summary>Lihat jawaban</summary>
+        ① しがつ ② しちがつ ③ くがつ
+      </details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Kapan hari ulang tahun? — Tanggal 13 Juni."</b>
+      <details><summary>Lihat jawaban</summary><ruby>誕生日<rt>たんじょうび</rt></ruby>は いつですか。……６<ruby>月<rt>がつ</rt></ruby>１３<ruby>日<rt>にち</rt></ruby>です。</details>
+    </li>
+    <li>
+      Lengkapi percakapan:<br>
+      A：<ruby>明日<rt>あした</rt></ruby>は <ruby>日曜日<rt>にちようび</rt></ruby>です<span class="hl2">ね</span>。<br>
+      B：（　　）。 ← menyetujui
+      <details><summary>Lihat jawaban</summary>あ、<b>そうですね</b>。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Apakah kereta ini menuju Koshien? — Tidak, yang 'Biasa' berikutnya."</b>
+      <details><summary>Lihat jawaban</summary>この <ruby>電車<rt>でんしゃ</rt></ruby>は <ruby>甲子園<rt>こうしえん</rt></ruby>へ <ruby>行<rt>い</rt></ruby>きますか。……いいえ、<ruby>次<rt>つぎ</rt></ruby>の「<ruby>普通<rt>ふつう</rt></ruby>」ですよ。</details>
+    </li>
+    <li>
+      Terjemahkan: <b>"Sampai dengan Koshien berapa? — ¥350."</b>
+      <details><summary>Lihat jawaban</summary><ruby>甲子園<rt>こうしえん</rt></ruby>まで いくらですか。……３５０<ruby>円<rt>えん</rt></ruby>です。</details>
+    </li>
+    <li>
+      Sebutkan <b>Golden Week</b> dalam bahasa Jepang beserta rentang tanggalnya.
+      <details><summary>Lihat jawaban</summary><b>ゴールデンウィーク</b> — dari tanggal <b>29 April sampai 5 Mei</b>.</details>
+    </li>
+  </ol>
+</section>
+
+<footer>
+  📘 Catatan Belajar — <b>Minna no Nihongo 1 (みんなの日本語 初級Ⅰ) Bab 5</b><br>
+  Kosa Kata ・ 文型 ・ 例文 ・ 会話 ・ 文法<br>
+  がんばってください！ ✨
+</footer>
+
+</div>
+
+<script>
+  function toggleFuri(){
+    var b = document.body;
+    var btn = document.getElementById('furiBtn');
+    b.classList.toggle('no-furi');
+    if(b.classList.contains('no-furi')){
+      btn.textContent = '👀 Tampilkan Furigana';
+      btn.setAttribute('aria-pressed', 'true');
+    } else {
+      btn.textContent = '🙈 Sembunyikan Furigana';
+      btn.setAttribute('aria-pressed', 'false');
+    }
+  }
+</script>
+</body>
+</html>
